@@ -1,0 +1,34 @@
+Fase 1:
+	Elementos Gráficos:
+		Fundo:
+			vamos fazer parallaxing pra essa merda ficar bonita pra kct, ou seja vão ter uns 3 ou 4 "níveis" de cenário, o mais detalhado será o que o player irá interagir, no caso dessa fase a cidade, no fundo terá montanhas, em partes portuarias terá o mar também, e no fundo fundão o céu e núvens, pode tentar fazer uns elementos próximos a câmera para dar uma impressão maior ainda de profundidade.
+			Obs: adicionar barcos no background durante a parte que tem mar
+
+		Objetos secundários(barrís, arvores, caixas, caixotes, carroças, barraquinha de vendedor)
+		Animar uma NPC de um vendedor na barraquinha de vendedor se escondendo.
+		Desenhar e animar portugal1385(em progresso)
+		Desenhar e animar as armas de portugal1385
+		Desenhar e animar os inimgigos(ainda não definidos(em progresso))
+		Desenhar e animar as armas dos inimigos(em progresso)
+		tentar animar elementos ambientais(passaros voando, plantas se movendo com o vento)
+		casas e coisas pegando fogo "here and there"
+
+	Programação:
+		movimentação do personagem(andar, pular, subir escadas etc)
+		criação da Ai básica(persegue e ataca(tipo a do lulinha(quase pronto)))
+		criação de variações dessa Ai(ataque mais poderoso e demorado(tipo a do luccas))
+		criação da Ai do arqueiro
+		script da câmera
+		criar scripts para eventos simples(tipo a parada de subir na corda, por exemplo bater em um barril e ele quebrar, coisa do tipo)
+
+
+LP: fundo, desenhar e animar armas(portugal e inimigos), ajudar luccas a desenhar e animar os personagens.
+Luccas: desenhar e animar portugal1385, desenhar e animar inimigos.
+victor: animar um npc de um vendedor na barraquinha de vendedor se escondendo, objetos secundários.
+
+Lulinha: terminar as paradas q ele começou
+Samuel: Ai arqueiro.
+
+William: tirinhas e pá
+
+tem q ter sonoplastia e trilha sonora q não temos a menor ideia de como fazer
