@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c7ba515f1bb213c4f868472baee3dd23
-timeCreated: 1442785127
+timeCreated: 1442969625
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,6 +15,14 @@ TextureImporter:
     21300016: PortugalLP_8
     21300018: PortugalLP_9
     21300020: PortugalLP_10
+    21300022: PortugalLP_11
+    21300024: PortugalLP_12
+    21300026: PortugalLP_13
+    21300028: PortugalLP_14
+    21300030: PortugalLP_15
+    21300032: PortugalLP_16
+    21300034: PortugalLP_17
+    21300036: PortugalLP_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -154,8 +162,8 @@ TextureImporter:
     - name: PortugalLP_9
       rect:
         serializedVersion: 2
-        x: 185
-        y: 78
+        x: 913
+        y: 182
         width: 19
         height: 95
       alignment: 0
@@ -164,10 +172,90 @@ TextureImporter:
     - name: PortugalLP_10
       rect:
         serializedVersion: 2
-        x: 216
-        y: 78
+        x: 944
+        y: 182
         width: 19
         height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_11
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 64
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_12
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 56
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 56
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_14
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 58
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_15
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 53
+        width: 69
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_16
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 54
+        width: 69
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_17
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 53
+        width: 69
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_18
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 58
+        width: 69
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
