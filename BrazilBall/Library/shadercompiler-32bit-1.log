@@ -1,23 +1,7 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-6880
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-2440
 Cmd: getPlatforms
-Cmd: compileSnippet
-  api=1 type=0 insize=541 outsize=832 kw=SHADOWS_DEPTH pd= ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=541 outsize=61 kw=SHADOWS_DEPTH pd= ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=6895 outsize=580 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=6895 outsize=263 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=3666 outsize=339 kw=DIRECTIONAL pd= ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=3666 outsize=223 kw=DIRECTIONAL pd= ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=6816 outsize=580 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=6816 outsize=241 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=3588 outsize=339 kw=DIRECTIONAL pd= ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=3588 outsize=201 kw=DIRECTIONAL pd= ok=1
+Unhandled exception: Readfile from pipe failed. GLE=O pipe foi finalizado.
+
+
+Quitting shader compiler process
