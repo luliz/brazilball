@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 34b28d8e484d5c24ba8f0d91adb31083
 timeCreated: 1443872688
+=======
+guid: 577b3e28645496341bdbf60de8c39e1a
+timeCreated: 1443891929
+>>>>>>> origin/master
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -13,7 +18,11 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
     enableMipMap: 1
+=======
+    enableMipMap: 0
+>>>>>>> origin/master
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -32,10 +41,17 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
+<<<<<<< HEAD
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+=======
+  textureFormat: -2
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+>>>>>>> origin/master
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -61,30 +77,51 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 10
+<<<<<<< HEAD
         width: 59
         height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+>>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: FlagMarinidAnim_1
       rect:
         serializedVersion: 2
         x: 93
         y: 10
+<<<<<<< HEAD
         width: 59
         height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+>>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: FlagMarinidAnim_2
       rect:
         serializedVersion: 2
         x: 167
         y: 10
+<<<<<<< HEAD
         width: 59
         height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+>>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: FlagMarinidAnim_3
       rect:
@@ -94,27 +131,45 @@ TextureImporter:
         width: 60
         height: 94
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: .5, y: .5}
+>>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: FlagMarinidAnim_4
       rect:
         serializedVersion: 2
         x: 316
         y: 10
+<<<<<<< HEAD
         width: 59
         height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+>>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: FlagMarinidAnim_5
       rect:
         serializedVersion: 2
         x: 386
         y: 10
+<<<<<<< HEAD
         width: 59
         height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+>>>>>>> origin/master
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
