@@ -1,9 +1,98 @@
 fileFormatVersion: 2
 guid: 03635a2bbaa97f042a300f9ff47a000d
-timeCreated: 1442349170
+timeCreated: 1443890497
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Janissary2.0beta_0
+    21300002: Janissary2.0beta_1
+    21300004: Janissary2.0beta_2
+    21300006: Janissary2.0beta_3
+    21300008: Janissary2.0beta_4
+    21300010: Janissary2.0beta_5
+    21300012: Janissary2.0beta_6
+    21300014: Janissary2.0beta_7
+    21300016: Janissary2.0beta_8
+    21300018: Janissary2.0beta_9
+    21300020: Janissary2.0beta_10
+    21300022: Janissary2.0beta_11
+    21300024: Janissary2.0beta_12
+    21300026: Janissary2.0beta_13
+    21300028: Janissary2.0beta_14
+    21300030: Janissary2.0beta_15
+    21300032: Janissary2.0beta_16
+    21300034: Janissary2.0beta_17
+    21300036: Janissary2.0beta_18
+    21300038: Janissary2.0beta_19
+    21300040: Janissary2.0beta_20
+    21300042: Janissary2.0beta_21
+    21300044: Janissary2.0beta_22
+    21300046: Janissary2.0beta_23
+    21300048: Janissary2.0beta_24
+    21300050: Janissary2.0beta_25
+    21300052: Janissary2.0beta_26
+    21300054: Janissary2.0beta_27
+    21300056: Janissary2.0beta_28
+    21300058: Janissary2.0beta_29
+    21300060: Janissary2.0beta_30
+    21300062: Janissary2.0beta_31
+    21300064: Janissary2.0beta_32
+    21300066: Janissary2.0beta_33
+    21300068: Janissary2.0beta_34
+    21300070: Janissary2.0beta_35
+    21300072: Janissary2.0beta_36
+    21300074: Janissary2.0beta_37
+    21300076: Janissary2.0beta_38
+    21300078: Janissary2.0beta_39
+    21300080: Janissary2.0beta_40
+    21300082: Janissary2.0beta_41
+    21300084: Janissary2.0beta_42
+    21300086: Janissary2.0beta_43
+    21300088: Janissary2.0beta_44
+    21300090: Janissary2.0beta_45
+    21300092: Janissary2.0beta_46
+    21300094: Janissary2.0beta_47
+    21300096: Janissary2.0beta_48
+    21300098: Janissary2.0beta_49
+    21300100: Janissary2.0beta_50
+    21300102: Janissary2.0beta_51
+    21300104: Janissary2.0beta_52
+    21300106: Janissary2.0beta_53
+    21300108: Janissary2.0beta_54
+    21300110: Janissary2.0beta_55
+    21300112: Janissary2.0beta_56
+    21300114: Janissary2.0beta_57
+    21300116: Janissary2.0beta_58
+    21300118: Janissary2.0beta_59
+    21300120: Janissary2.0beta_60
+    21300122: Janissary2.0beta_61
+    21300124: Janissary2.0beta_62
+    21300126: Janissary2.0beta_63
+    21300128: Janissary2.0beta_64
+    21300130: Janissary2.0beta_65
+    21300132: Janissary2.0beta_66
+    21300134: Janissary2.0beta_67
+    21300136: Janissary2.0beta_68
+    21300138: Janissary2.0beta_69
+    21300140: Janissary2.0beta_70
+    21300142: Janissary2.0beta_71
+    21300144: Janissary2.0beta_72
+    21300146: Janissary2.0beta_73
+    21300148: Janissary2.0beta_74
+    21300150: Janissary2.0beta_75
+    21300152: Janissary2.0beta_76
+    21300154: Janissary2.0beta_77
+    21300156: Janissary2.0beta_78
+    21300158: Janissary2.0beta_79
+    21300160: Janissary2.0beta_80
+    21300162: Janissary2.0beta_81
+    21300164: Janissary2.0beta_82
+    21300166: Janissary2.0beta_83
+    21300168: Janissary2.0beta_84
+    21300170: Janissary2.0beta_85
+    21300172: Janissary2.0beta_86
+    21300174: Janissary2.0beta_87
+    21300176: Janissary2.0beta_88
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +115,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +127,888 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 70
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Janissary2.0beta_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 610
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 612
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 612
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 612
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 610
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 612
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 610
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 612
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 612
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_9
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 612
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 610
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_11
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 612
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_12
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 596
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 598
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_14
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 598
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_15
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 598
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_16
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 598
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_17
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 598
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 597
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_19
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 520
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_20
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 520
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_21
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 327
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_22
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 355
+        width: 4
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_23
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 206
+        width: 80
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_24
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 281
+        width: 4
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_25
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 205
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_26
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 205
+        width: 122
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_27
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 205
+        width: 114
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_28
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 280
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_29
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 205
+        width: 120
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_30
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 207
+        width: 150
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_31
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 207
+        width: 129
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_32
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 272
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_33
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 244
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_34
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 264
+        width: 40
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_35
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 245
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_36
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 223
+        width: 15
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 223
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_38
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 241
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_39
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 243
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_40
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 239
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_41
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 238
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_42
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 206
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 206
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_44
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 206
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_47
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 96
+        width: 83
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_48
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 96
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_49
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 96
+        width: 90
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_50
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 96
+        width: 87
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_51
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 96
+        width: 90
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_52
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 96
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_53
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 96
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_54
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 101
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_55
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 101
+        width: 69
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_56
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 97
+        width: 58
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_57
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 168
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_58
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 97
+        width: 61
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_59
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 164
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_60
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 97
+        width: 93
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_61
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 152
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_62
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 100
+        width: 79
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_63
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 27
+        width: 93
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_64
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_65
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 27
+        width: 192
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_66
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 69
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_67
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 66
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_68
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 61
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_69
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 27
+        width: 161
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_70
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 65
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_71
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 58
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_72
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 50
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_73
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 61
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_74
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 56
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_75
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 37
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_76
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 50
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_77
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 54
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_78
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 54
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_79
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 48
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_80
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 27
+        width: 161
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_81
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 27
+        width: 161
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_82
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 40
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_83
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 27
+        width: 161
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_84
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 42
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_85
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 37
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_86
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 36
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_87
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 37
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Janissary2.0beta_88
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 2
+        width: 93
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
