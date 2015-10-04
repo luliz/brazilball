@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 3107800643
+    locked: 0
+  - name: objetos
+    uniqueID: 3122058241
+    locked: 0
+  - name: personagens
+    uniqueID: 2727677377
+    locked: 0
