@@ -17,17 +17,17 @@ public class arroww : MonoBehaviour
         target = GameObject.FindWithTag("Player").transform; 
 
         
-        Power = 850f;
+        Power = 600f;
 
         if (target.position.x > transform.position.x)
         {
-            myRB.AddForce(new Vector2(Power, 30));
+            myRB.AddForce(new Vector2(Power, 100));
             
         }
 
         else if (target.position.x < transform.position.x)
         {
-            myRB.AddForce(new Vector2(-Power, 30));
+            myRB.AddForce(new Vector2(-Power, 100));
             transform.Rotate(new Vector3(0, 0, 180));
         }
         Destroy(gameObject, 1);

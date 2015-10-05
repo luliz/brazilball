@@ -32,6 +32,7 @@ public class Archer : MonoBehaviour {
     //	VARIAVEIS QUE FAZEM REFERENCIA A COMPONENTES
 
     private Animator thisAnimator;
+    private Animator arcoAnimator;
     private Collider2D  thisCollider;
     private SpriteRenderer expression;
     public Sprite exclamation;
@@ -52,14 +53,17 @@ public class Archer : MonoBehaviour {
     private float contador=0f;
     public Transform arrow;
     public Transform Ponta;
-              
-   void Awake()
+  
+
+    void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         thisAnimator = GetComponent<Animator>();
+        arcoAnimator = GameObject.Find("Arco").GetComponent<Animator>();
         thisCollider = GetComponentInChildren<Collider2D>();
         expression = GameObject.Find("Expressions").GetComponent<SpriteRenderer>();
-     }
+        
+    }
 
     void Update()
     {
@@ -122,9 +126,10 @@ public class Archer : MonoBehaviour {
             expression.sprite = interrogation;
         }
 
-        if (Mathf.Abs(target.position.x - transform.position.x) > 5f && Mathf.Abs(target.position.x - transform.position.x) < 15f)
+        if (Mathf.Abs(target.position.x - transform.position.x) >= 6f && Mathf.Abs(target.position.x - transform.position.x) < 15f)
         {
             Walk();
+            
             if (transform.position.x > target.position.x)
             {
                 facingDirection = -1;
@@ -134,9 +139,10 @@ public class Archer : MonoBehaviour {
                 facingDirection = 1;
             }
         }       
-        else if (Mathf.Abs(target.position.x - transform.position.x) < 5f && Mathf.Abs(target.position.x - transform.position.x) > 4f)
+        else if (Mathf.Abs(target.position.x - transform.position.x) < 6f && Mathf.Abs(target.position.x - transform.position.x) > 5.9f)
         {
-            thisAnimator.SetBool("walk", false);
+            
+            
             Attack();
             if (transform.position.x > target.position.x)
             {
@@ -157,6 +163,7 @@ public class Archer : MonoBehaviour {
 
         else 
         {
+            
             Walk();
             if (transform.position.x > target.position.x)
             {
@@ -172,12 +179,23 @@ public class Archer : MonoBehaviour {
 
     void Attack()
     {
-         if (contador <= Time.time)
-        { 
-            Instantiate(arrow, Ponta.transform.position, Quaternion.identity); 
+       
+        if (contador <= Time.time)
+
+        {
             
+            Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
+          
+            
+
+
             contador = Time.time + 1.5f; 
-        }       
+        }
+
+      
+     
+
+
     }
 
     bool Found()
