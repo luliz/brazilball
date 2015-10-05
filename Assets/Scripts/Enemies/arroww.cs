@@ -21,13 +21,13 @@ public class arroww : MonoBehaviour
 
         if (target.position.x > transform.position.x)
         {
-            myRB.AddForce(new Vector2(Power, 0));
+            myRB.AddForce(new Vector2(Power, 50));
             
         }
 
         else if (target.position.x < transform.position.x)
         {
-            myRB.AddForce(new Vector2(-Power, 0));
+            myRB.AddForce(new Vector2(-Power, 30));
             transform.Rotate(new Vector3(0, 0, 180));
         }
         Destroy(gameObject, 1);
