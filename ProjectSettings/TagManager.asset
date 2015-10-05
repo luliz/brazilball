@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Jumpable
+  - target
   layers:
   - Default
   - TransparentFX
@@ -50,4 +51,10 @@ TagManager:
     locked: 0
   - name: personagens
     uniqueID: 2727677377
+    locked: 0
+  - name: palmeira
+    uniqueID: 258050943
+    locked: 0
+  - name: 
+    uniqueID: 130113967
     locked: 0

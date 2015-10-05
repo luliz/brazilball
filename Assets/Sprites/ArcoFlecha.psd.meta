@@ -1,9 +1,23 @@
 fileFormatVersion: 2
 guid: 6dd01cb936022484e9d819d4f66f4148
-timeCreated: 1444011321
+timeCreated: 1444062039
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ArcoFlecha_0
+    21300002: ArcoFlecha_1
+    21300004: ArcoFlecha_2
+    21300006: ArcoFlecha_3
+    21300008: ArcoFlecha_4
+    21300010: ArcoFlecha_5
+    21300012: ArcoFlecha_6
+    21300014: ArcoFlecha_7
+    21300016: ArcoFlecha_8
+    21300018: ArcoFlecha_9
+    21300020: ArcoFlecha_10
+    21300022: ArcoFlecha_11
+    21300024: ArcoFlecha_12
+    21300026: ArcoFlecha_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +40,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +52,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +63,147 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: ArcoFlecha_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 132
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 132
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 132
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 132
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 132
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 67
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 67
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 67
+        width: 16
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_8
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 67
+        width: 16
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_9
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 67
+        width: 18
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_10
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 67
+        width: 20
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 6
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 6
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArcoFlecha_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 6
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

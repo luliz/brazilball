@@ -6,8 +6,8 @@ public class arroww : MonoBehaviour
 
     private Transform target; 
 
-    private float absDistance; 
-    private float Power;  
+   
+    public float Power;  
     public Rigidbody2D myRB;
 
    
@@ -16,21 +16,27 @@ public class arroww : MonoBehaviour
         myRB = GetComponentInChildren<Rigidbody2D>();
         target = GameObject.FindWithTag("Player").transform; 
 
-        absDistance = Mathf.Abs(transform.position.x - target.position.x);
-        Power = 800f;
+        
+        Power = 600f;
 
         if (target.position.x > transform.position.x)
         {
-            myRB.AddForce(new Vector2(Power, 0));
-            transform.Rotate(new Vector3(0, 0, -180));
+            myRB.AddForce(new Vector2(Power, 100));
+            
         }
 
         else if (target.position.x < transform.position.x)
         {
-            myRB.AddForce(new Vector2(-Power, 0));
+            myRB.AddForce(new Vector2(-Power, 100));
             transform.Rotate(new Vector3(0, 0, 180));
         }
+        Destroy(gameObject, 1);
 
     }
-    
+
+
+
+        
+
+
 }
