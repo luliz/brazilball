@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11431126}
   m_Layer: 0
   m_Name: arrow
-  m_TagString: Untagged
+  m_TagString: Jumpable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,6 +117,10 @@ Prefab:
       propertyPath: myRB
       value: 
       objectReference: {fileID: 5087884}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Jumpable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 196930}
