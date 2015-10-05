@@ -16,19 +16,19 @@ public class arroww : MonoBehaviour
         myRB = GetComponentInChildren<Rigidbody2D>();
         target = GameObject.FindWithTag("Player").transform; 
 
-        absDistance = Mathf.Abs(transform.position.x - target.position.x); 
-        Power = (1000 * absDistance) / 37;
+        absDistance = Mathf.Abs(transform.position.x - target.position.x);
+        Power = 800f;
 
         if (target.position.x > transform.position.x)
         {
-            myRB.AddForce(new Vector2(Power, 400));
-            transform.Rotate(new Vector3(0, 0, 180));
+            myRB.AddForce(new Vector2(Power, 0));
+            transform.Rotate(new Vector3(0, 0, -180));
         }
 
         else if (target.position.x < transform.position.x)
         {
-            myRB.AddForce(new Vector2(-Power, 400));
-            transform.Rotate(new Vector3(0, 0, 360));
+            myRB.AddForce(new Vector2(-Power, 0));
+            transform.Rotate(new Vector3(0, 0, 180));
         }
 
     }
