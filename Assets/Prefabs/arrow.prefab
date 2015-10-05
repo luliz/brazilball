@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8dd7c96df3f96440adc0dc275ef15ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Power: 1500
+  Power: 0
   myRB: {fileID: 5087884}
 --- !u!212 &21225034
 SpriteRenderer:
@@ -148,7 +148,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: Power
-      value: 1500
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
