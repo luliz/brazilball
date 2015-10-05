@@ -28,17 +28,11 @@ public class Archer : MonoBehaviour {
     //0-searching
     //1-following
     //2-attacking
-
-
-
-
-
     private int estado = 0;
-
     //	VARIAVEIS QUE FAZEM REFERENCIA A COMPONENTES
 
     private Animator thisAnimator;
-    private Rigidbody2D thisCollider;
+    private Collider2D  thisCollider;
     private SpriteRenderer expression;
     public Sprite exclamation;
     public Sprite interrogation;
@@ -46,23 +40,26 @@ public class Archer : MonoBehaviour {
     //  INICIALIZACAO DAS DEMAIS VARIAVEIS
 
     private RaycastHit2D saw; //Variavel que guarda informacoes sobre o raycast da visao do janissary
-    public Transform target; //transform da poland
+    private Transform target; //transform da poland
     private float timeAfterIsaw;//Tempo que faz desde que a polonia foi avistada. (serve pra decidir quando o janissary deve desistir de procurar)
     private int facingDirection = 1;//1=direita, -1=esquerda
     public LayerMask visaoJanissary;//Layer mask q armazena quais objetos podem ser 'vistos' pelo janissary. (serve principalmente para impedir q sua visao pare em si mesmo (em seu proprio collider)
-    public float speed;
+    public float speed=1;
     public LayerMask barreiras;
     private int decision;
     private float counter;
     private float spriteCounter;
-
-    void Awake()
+    public float contador=0f;
+    public Transform arrow;
+    public Transform Ponta;
+              
+   void Awake()
     {
-
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         thisAnimator = GetComponent<Animator>();
-        thisCollider = GetComponentInChildren<Rigidbody2D>();
+        thisCollider = GetComponentInChildren<Collider2D>();
         expression = GameObject.Find("Expressions").GetComponent<SpriteRenderer>();
-    }
+     }
 
     void Update()
     {
@@ -82,7 +79,7 @@ public class Archer : MonoBehaviour {
         if (expression.sprite != null)
         {
             spriteCounter += Time.deltaTime;
-            if (spriteCounter > 1)
+            if (spriteCounter > 0.7)
             {
                 spriteCounter = 0;
                 expression.sprite = null;
@@ -125,51 +122,70 @@ public class Archer : MonoBehaviour {
             expression.sprite = interrogation;
         }
 
-        if (Mathf.Abs(target.position.x - transform.position.x) > 0.2)
+        if (Mathf.Abs(target.position.x - transform.position.x) > 5f && Mathf.Abs(target.position.x - transform.position.x) < 15f)
         {
-
+            Walk();
             if (transform.position.x > target.position.x)
             {
-                Walk();
+                facingDirection = -1;
             }
             else
             {
-                Walk();
+                facingDirection = 1;
             }
-        }
-        else
+        }       
+        else if (Mathf.Abs(target.position.x - transform.position.x) < 5f && Mathf.Abs(target.position.x - transform.position.x) > 4f)
         {
+            thisAnimator.SetBool("walk", false);
+            Attack();
+
+            if (transform.position.x > target.position.x)
+            {
+                facingDirection = -1;
+            }
+            else
+            {
+
+                facingDirection = 1;
+            }
 
             if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
-                estado = 2;
+                
+            estado = 2;                      
         }
 
-        if (transform.position.x > target.position.x)
+        else 
         {
-            facingDirection = -1;
+            Walk();
+            if (transform.position.x > target.position.x)
+            {
+                facingDirection = 1;
+            }
+            else
+            {
+                
+                facingDirection = -1;
+            }           
         }
-        else
-        {
-            facingDirection = 1;
-        }
-
-    }
+   }
 
     void Attack()
     {
-
-        thisAnimator.SetBool("walk", false);
-        //TODO depois da animacao feita fazer o script de ataque
-        //por enquanto ele simplesmente retorna ao estado 1
-        estado = 1;
-
+         if (contador <= Time.time)
+        { 
+            Instantiate(arrow, Ponta.transform.position, Quaternion.identity); 
+            
+            contador = Time.time + 1.5f; 
+        }       
     }
 
     bool Found()
     {
-        saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.1f), Vector2.right * facingDirection, 3f, visaoJanissary);
+        saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.1f), Vector2.right * facingDirection, 10f, visaoJanissary);
+        
         if (saw.transform == target)
         {
+           
             timeAfterIsaw = 0;
             if (estado == 0)
                 expression.sprite = exclamation;
@@ -177,32 +193,28 @@ public class Archer : MonoBehaviour {
         }
         return false;
     }
-
     void Walk()
     {
 
         if (thisCollider.IsTouchingLayers(barreiras))
             thisAnimator.SetBool("walk", false);
-        
         else
-        {
-            thisAnimator.SetBool("walk", true);
-            transform.Translate(new Vector2(speed * facingDirection * Time.deltaTime, 0));
-        }
+        {       
+                thisAnimator.SetBool("walk", true);
+                transform.Translate(new Vector2(speed * facingDirection * Time.deltaTime, 0));
+            }
     }
-
-
     //Mudei um pouco o funcionamento do Flip()
     //Agora ele eh chamado todo frame
     //fazendo o flip quando necessario
     //diminuindo a chance de bugs
     //quem conseguir pensar numa maneira menos idiota de fazer isso pode faze-lo
     //talvez eu mesmo faça isso dps
-
     void Flip()
     {
+       
         transform.localScale = new Vector3(facingDirection, 1, 1);
         expression.transform.localScale = new Vector3(facingDirection, 1, 1);
-
+       
     }
 }
