@@ -49,7 +49,7 @@ public class Archer : MonoBehaviour {
     private int decision;
     private float counter;
     private float spriteCounter;
-    public float contador=0f;
+    private float contador=0f;
     public Transform arrow;
     public Transform Ponta;
               
@@ -138,15 +138,16 @@ public class Archer : MonoBehaviour {
         {
             thisAnimator.SetBool("walk", false);
             Attack();
-
             if (transform.position.x > target.position.x)
             {
                 facingDirection = -1;
+                
             }
             else
             {
 
                 facingDirection = 1;
+                
             }
 
             if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
