@@ -7,7 +7,7 @@ public class arroww : MonoBehaviour
     private Transform target; 
 
    
-    private float Power;  
+    public float Power;  
     public Rigidbody2D myRB;
 
    
