@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 47ed802226043f44a97cb3e87dae9f90
-timeCreated: 1444053169
+timeCreated: 1444060719
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -59,10 +59,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3
-        y: 2
+        y: 1
         width: 23
         height: 27
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: galinha_1
@@ -72,7 +72,7 @@ TextureImporter:
         y: 2
         width: 25
         height: 26
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: galinha_2
@@ -82,7 +82,7 @@ TextureImporter:
         y: 2
         width: 26
         height: 21
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: galinha_3
@@ -92,7 +92,7 @@ TextureImporter:
         y: 2
         width: 31
         height: 18
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: galinha_4
@@ -102,7 +102,7 @@ TextureImporter:
         y: 2
         width: 30
         height: 18
-      alignment: 0
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
