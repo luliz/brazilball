@@ -141,8 +141,8 @@ public class Archer : MonoBehaviour {
         }       
         else if (Mathf.Abs(target.position.x - transform.position.x) < 6f && Mathf.Abs(target.position.x - transform.position.x) > 5.9f)
         {
-            
-            
+
+            thisAnimator.SetBool("walk", false);
             Attack();
             if (transform.position.x > target.position.x)
             {

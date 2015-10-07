@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jumpable
   - target
+  - enemyArcher
   layers:
   - Default
   - TransparentFX
