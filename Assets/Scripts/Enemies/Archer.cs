@@ -44,7 +44,7 @@ public class Archer : MonoBehaviour {
     private float timeAfterIsaw;//Tempo que faz desde que a polonia foi avistada. (serve pra decidir quando o janissary deve desistir de procurar)
     private int facingDirection = 1;//1=direita, -1=esquerda
     public LayerMask visaoJanissary;//Layer mask q armazena quais objetos podem ser 'vistos' pelo janissary. (serve principalmente para impedir q sua visao pare em si mesmo (em seu proprio collider)
-    private float speed=2f;
+    private float speed=5f;
     public LayerMask barreiras;
     private int decision;
     private float counter;
@@ -52,8 +52,10 @@ public class Archer : MonoBehaviour {
     private float contador;
     public Transform arrow;
     public Transform Ponta;
-    private float min = 6f;
-  
+    private float min = 4f;
+    private float contador2;
+    public AudioClip soundshoot;
+
 
 
 
@@ -73,6 +75,7 @@ public class Archer : MonoBehaviour {
         if (Found())
             estado = 1;
 
+       
         if (estado == 0)
             Search();
         else if (estado == 1)
@@ -92,6 +95,14 @@ public class Archer : MonoBehaviour {
                 expression.sprite = null;
             }
         }
+        if (transform.position.x > 2)
+        {
+            speed = 2;
+        }
+
+       
+
+
     }
 
     void Search()
@@ -129,7 +140,7 @@ public class Archer : MonoBehaviour {
             expression.sprite = interrogation;
         }
 
-        if (Mathf.Abs(target.position.x - transform.position.x) >= 9f && Mathf.Abs(target.position.x - transform.position.x) < 15f)
+        if (Mathf.Abs(target.position.x - transform.position.x) >= 5f && Mathf.Abs(target.position.x - transform.position.x) < 20f)
         {
             Walk();
 
@@ -143,31 +154,28 @@ public class Archer : MonoBehaviour {
             }
 
         }
-        else if (Mathf.Abs(target.position.x - transform.position.x) < 9f && Mathf.Abs(target.position.x - transform.position.x) > min)
+        else if (Mathf.Abs(target.position.x - transform.position.x) < 5f && Mathf.Abs(target.position.x - transform.position.x) > min)
         {
 
             thisAnimator.SetBool("walk", false);
-            min = 4f;
-            
-
-            Attack();
-
-          
-
-
+            min = 2f;
             if (transform.position.x > target.position.x )
             {
                 facingDirection = -1;
-                
+
                 
             }
             else
             {
              facingDirection = 1;
-               
+                
             }
+            if(contador2 > Time.time)
+            Attack();
+            else
+            contador2 = Time.time + 0.1f;
 
-       if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
+            if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
 
                 estado = 2;
         }
@@ -175,7 +183,7 @@ public class Archer : MonoBehaviour {
         else
         {
             Walk();
-            min = 6f;       
+            min = 4f;       
                                     
             if (transform.position.x > target.position.x)
             {
@@ -186,8 +194,7 @@ public class Archer : MonoBehaviour {
 
                 facingDirection = -1;
             }
-        }
-
+        }               
     }
    
     void Attack()
@@ -196,6 +203,8 @@ public class Archer : MonoBehaviour {
                {
                 Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
                 contador = Time.time + 1f;
+                contador2 = 0f;
+                AudioSource.PlayClipAtPoint(soundshoot, transform.position * 0);
                }
           }
 

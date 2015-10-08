@@ -1457,11 +1457,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 460056, guid: 5eb767a09afec174da963e5926881a63, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -27.2099991
+      value: -27.1599998
       objectReference: {fileID: 0}
     - target: {fileID: 460056, guid: 5eb767a09afec174da963e5926881a63, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.1500001
+      value: -4.28999996
       objectReference: {fileID: 0}
     - target: {fileID: 460056, guid: 5eb767a09afec174da963e5926881a63, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1487,6 +1487,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11491772, guid: 5eb767a09afec174da963e5926881a63, type: 2}
+      propertyPath: soundshoot
+      value: 
+      objectReference: {fileID: 8300000, guid: 353cb49fb9b7c904b8ede21c4e86847a, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5eb767a09afec174da963e5926881a63, type: 2}
   m_IsPrefabParent: 0
@@ -1635,6 +1639,14 @@ Prefab:
     - target: {fileID: 11493444, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
       propertyPath: forcaPulo
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873962, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
+      propertyPath: m_Radius
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873962, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
+      propertyPath: m_Offset.y
+      value: -.0299999993
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}

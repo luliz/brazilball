@@ -14,7 +14,7 @@ GameObject:
   - 61: {fileID: 6140080}
   m_Layer: 0
   m_Name: arrow
-  m_TagString: Untagged
+  m_TagString: arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8dd7c96df3f96440adc0dc275ef15ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Power: 0
 --- !u!212 &21225034
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -119,7 +118,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString
-      value: Untagged
+      value: arrow
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Constraints
