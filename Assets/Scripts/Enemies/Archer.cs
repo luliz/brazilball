@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Archer : MonoBehaviour {
     //Novo Script de movimentaçao
@@ -32,7 +31,7 @@ public class Archer : MonoBehaviour {
     //	VARIAVEIS QUE FAZEM REFERENCIA A COMPONENTES
 
     private Animator thisAnimator;
-    private Animator arcoAnimator;
+  
     private Collider2D  thisCollider;
     private SpriteRenderer expression;
     public Sprite exclamation;
@@ -45,21 +44,25 @@ public class Archer : MonoBehaviour {
     private float timeAfterIsaw;//Tempo que faz desde que a polonia foi avistada. (serve pra decidir quando o janissary deve desistir de procurar)
     private int facingDirection = 1;//1=direita, -1=esquerda
     public LayerMask visaoJanissary;//Layer mask q armazena quais objetos podem ser 'vistos' pelo janissary. (serve principalmente para impedir q sua visao pare em si mesmo (em seu proprio collider)
-    public float speed=1;
+    private float speed=2f;
     public LayerMask barreiras;
     private int decision;
     private float counter;
     private float spriteCounter;
-    private float contador=0f;
+    private float contador;
     public Transform arrow;
     public Transform Ponta;
+    private float min = 6f;
   
+
+
+
 
     void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         thisAnimator = GetComponent<Animator>();
-        arcoAnimator = GameObject.Find("Arco").GetComponent<Animator>();
+        
         thisCollider = GetComponentInChildren<Collider2D>();
         expression = GameObject.Find("Expressions").GetComponent<SpriteRenderer>();
         
@@ -126,10 +129,10 @@ public class Archer : MonoBehaviour {
             expression.sprite = interrogation;
         }
 
-        if (Mathf.Abs(target.position.x - transform.position.x) >= 6f && Mathf.Abs(target.position.x - transform.position.x) < 15f)
+        if (Mathf.Abs(target.position.x - transform.position.x) >= 9f && Mathf.Abs(target.position.x - transform.position.x) < 15f)
         {
             Walk();
-            
+
             if (transform.position.x > target.position.x)
             {
                 facingDirection = -1;
@@ -138,65 +141,63 @@ public class Archer : MonoBehaviour {
             {
                 facingDirection = 1;
             }
-        }       
-        else if (Mathf.Abs(target.position.x - transform.position.x) < 6f && Mathf.Abs(target.position.x - transform.position.x) > 5.9f)
+
+        }
+        else if (Mathf.Abs(target.position.x - transform.position.x) < 9f && Mathf.Abs(target.position.x - transform.position.x) > min)
         {
 
             thisAnimator.SetBool("walk", false);
+            min = 4f;
+            
+
             Attack();
-            if (transform.position.x > target.position.x)
-            {
-                facingDirection = -1;
-                
-            }
-            else
-            {
 
-                facingDirection = 1;
-                
-            }
-
-            if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
-                
-            estado = 2;                      
-        }
-
-        else 
-        {
-            
-            Walk();
-            if (transform.position.x > target.position.x)
-            {
-                facingDirection = 1;
-            }
-            else
-            {
-                
-                facingDirection = -1;
-            }           
-        }
-   }
-
-    void Attack()
-    {
-       
-        if (contador <= Time.time)
-
-        {
-            
-            Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
           
-            
 
 
-            contador = Time.time + 1.5f; 
+            if (transform.position.x > target.position.x )
+            {
+                facingDirection = -1;
+                
+                
+            }
+            else
+            {
+             facingDirection = 1;
+               
+            }
+
+       if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
+
+                estado = 2;
         }
 
-      
-     
+        else
+        {
+            Walk();
+            min = 6f;       
+                                    
+            if (transform.position.x > target.position.x)
+            {
+                facingDirection = 1;
+            }
+            else
+            {
 
+                facingDirection = -1;
+            }
+        }
 
     }
+   
+    void Attack()
+    {
+        if (contador <= Time.time)
+               {
+                Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
+                contador = Time.time + 1f;
+               }
+          }
 
     bool Found()
     {

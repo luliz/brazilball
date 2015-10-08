@@ -30,10 +30,9 @@ GameObject:
   - 114: {fileID: 11491772}
   - 58: {fileID: 5810596}
   - 50: {fileID: 5069530}
-  - 61: {fileID: 6156424}
   m_Layer: 2
   m_Name: Archer
-  m_TagString: Untagged
+  m_TagString: enemyArcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.3899994, y: -4.1500001, z: 0}
+  m_LocalPosition: {x: -27.2099991, y: -4.1500001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 406946}
@@ -115,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .105999999, y: -.00700000022, z: 0}
+  m_LocalPosition: {x: .129999995, y: .0120000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400590}
@@ -149,19 +148,6 @@ CircleCollider2D:
   m_Offset: {x: .0500000007, y: -.0599999987}
   serializedVersion: 2
   m_Radius: .209999993
---- !u!61 &6156424
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 116988}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: .0500000007, y: -.230000004}
-  serializedVersion: 2
-  m_Size: {x: .200000003, y: .0799999982}
 --- !u!95 &9507646
 Animator:
   serializedVersion: 3
@@ -212,7 +198,6 @@ MonoBehaviour:
   visaoJanissary:
     serializedVersion: 2
     m_Bits: 51
-  speed: 3
   barreiras:
     serializedVersion: 2
     m_Bits: 256
