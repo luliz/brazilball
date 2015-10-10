@@ -1,38 +1,14 @@
 ﻿using UnityEngine;
+using System.Collections;
 
-public class Archer : MonoBehaviour {
-    //Novo Script de movimentaçao
-    //Introduçao:
-    //
-    //O Janissary tem basicamente 3 estados diferentes que ele pode estar
-    //esses estados determinarao que codigo sera executado
-    //Esses estados sao: searching, following e attacking
-    //Durante toda a execucao do codigo o janissary vai ficar variando entre esses tres
-    //
-    //A linha de raciocinio para a mudança entre esses estados eh a seguinte:
-    //1-searching
-    //2-caso a poland nao esteja no campo de visao:
-    //	3-retorna a 1
-    //4-following; seta timeAfterISaw = 0
-    //5-caso ele se aproxime da poland o suciciente:
-    //	6-attacking
-    //	7-quando os codigos do attacking acabarem retorna a 4
-    //8-caso ele perca a poland de vista && timeAfterIsaw > 2 segundos:
-    //	retorn a 1
-    //
-    //A variavel timeAfterISaw serve como uma 'memoria' para o janissary, para que ele n desista de procurar no momento em que ela sair do campo de visao dele (oq seria suscetivel a bugs)
-    //
-    //Uma variavel chamada estado sera usada para guardar informacoes sobre o atual estado do janissary
-    //Ela eh do tipo int em que cada numero representa um estado como a seguir:
-    //0-searching
-    //1-following
-    //2-attacking
+public class SwordAI : MonoBehaviour {
+
     private int estado = 0;
+
     //	VARIAVEIS QUE FAZEM REFERENCIA A COMPONENTES
 
     private Animator thisAnimator;
-  
-    private Collider2D  thisCollider;
+    private Rigidbody2D thisCollider;
     private SpriteRenderer expression;
     public Sprite exclamation;
     public Sprite interrogation;
@@ -44,44 +20,34 @@ public class Archer : MonoBehaviour {
     private float timeAfterIsaw;//Tempo que faz desde que a polonia foi avistada. (serve pra decidir quando o janissary deve desistir de procurar)
     private int facingDirection = 1;//1=direita, -1=esquerda
     public LayerMask visaoJanissary;//Layer mask q armazena quais objetos podem ser 'vistos' pelo janissary. (serve principalmente para impedir q sua visao pare em si mesmo (em seu proprio collider)
-    private float speed=5f;
+    public float speed;
     public LayerMask barreiras;
     private int decision;
     private float counter;
     private float spriteCounter;
-    private float contador;
-    public Transform arrow;
-    public Transform Ponta;
-    private float min = 4f;
-    private float contador2;
-    public AudioClip soundshoot;
-
-
-
-
 
     void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         thisAnimator = GetComponent<Animator>();
-        
-        thisCollider = GetComponentInChildren<Collider2D>();
-        expression = GameObject.Find("Expressions").GetComponent<SpriteRenderer>();
-        
+        thisCollider = GetComponent<Rigidbody2D>();
+        expression = GameObject.Find("Expressions3").GetComponent<SpriteRenderer>();
     }
-
+    
     void Update()
+
     {
+        
         if (Found())
             estado = 1;
 
-       
         if (estado == 0)
             Search();
         else if (estado == 1)
             Follow();
         else
             Attack();
+            
 
         timeAfterIsaw += Time.deltaTime;
         Flip();
@@ -89,20 +55,12 @@ public class Archer : MonoBehaviour {
         if (expression.sprite != null)
         {
             spriteCounter += Time.deltaTime;
-            if (spriteCounter > 0.7)
+            if (spriteCounter > 2)
             {
                 spriteCounter = 0;
                 expression.sprite = null;
             }
         }
-        if (transform.position.x > 2)
-        {
-            speed = 2;
-        }
-
-       
-
-
     }
 
     void Search()
@@ -120,7 +78,7 @@ public class Archer : MonoBehaviour {
         }
         else
         {
-            thisAnimator.SetBool("walk", false);
+            thisAnimator.SetBool("walking", false);
         }
 
         counter += Time.deltaTime;
@@ -140,10 +98,10 @@ public class Archer : MonoBehaviour {
             expression.sprite = interrogation;
         }
 
-        if (Mathf.Abs(target.position.x - transform.position.x) >= 5f && Mathf.Abs(target.position.x - transform.position.x) < 20f)
+        if (Mathf.Abs(target.position.x - transform.position.x) >= 0.5f && Mathf.Abs(target.position.x - transform.position.x) < 10f)
         {
             Walk();
-
+            thisAnimator.SetBool("walking", true);
             if (transform.position.x > target.position.x)
             {
                 facingDirection = -1;
@@ -154,96 +112,79 @@ public class Archer : MonoBehaviour {
             }
 
         }
-        else if (Mathf.Abs(target.position.x - transform.position.x) < 5f && Mathf.Abs(target.position.x - transform.position.x) > min)
+        else  
         {
+            thisAnimator.SetBool("walking", false);
 
-            thisAnimator.SetBool("walk", false);
-            min = 2f;
-            if (transform.position.x > target.position.x )
-            {
-                facingDirection = -1;
 
-                
-            }
-            else
-            {
-             facingDirection = 1;
-                
-            }
-            if(contador2 > Time.time)
-            Attack();
-            else
-            contador2 = Time.time + 0.1f;
-
-            if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
-
-                estado = 2;
-        }
-
-        else
-        {
-            Walk();
-            min = 4f;       
-                                    
             if (transform.position.x > target.position.x)
             {
-                facingDirection = 1;
+                facingDirection = -1;
+
+
             }
             else
             {
+                facingDirection = 1;
 
-                facingDirection = -1;
             }
-        }               
+
+
+        }
     }
-   
+
+       
+
     void Attack()
     {
-        if (contador <= Time.time)
-               {
-                Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
-                contador = Time.time + 1f;
-                contador2 = 0f;
-                AudioSource.PlayClipAtPoint(soundshoot, transform.position);
-               }
-          }
+
+        
+        
+        //TODO depois da animacao feita fazer o script de ataque
+        //por enquanto ele simplesmente retorna ao estado 1
+        
+
+    }
 
     bool Found()
     {
         saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.1f), Vector2.right * facingDirection, 10f, visaoJanissary);
-        
         if (saw.transform == target)
         {
-           
+            
             timeAfterIsaw = 0;
             if (estado == 0)
                 expression.sprite = exclamation;
+            
             return true;
         }
         return false;
     }
+
     void Walk()
     {
 
         if (thisCollider.IsTouchingLayers(barreiras))
-            thisAnimator.SetBool("walk", false);
+            thisAnimator.SetBool("walking", false);
         else
-        {       
-                thisAnimator.SetBool("walk", true);
-                transform.Translate(new Vector2(speed * facingDirection * Time.deltaTime, 0));
-            }
+        {
+            thisAnimator.SetBool("walking", true);
+            transform.Translate(new Vector2(speed * facingDirection * Time.deltaTime, 0));
+        }
     }
+
+
     //Mudei um pouco o funcionamento do Flip()
     //Agora ele eh chamado todo frame
     //fazendo o flip quando necessario
     //diminuindo a chance de bugs
     //quem conseguir pensar numa maneira menos idiota de fazer isso pode faze-lo
     //talvez eu mesmo faça isso dps
+
     void Flip()
     {
-       
         transform.localScale = new Vector3(facingDirection, 1, 1);
         expression.transform.localScale = new Vector3(facingDirection, 1, 1);
-       
+
     }
 }

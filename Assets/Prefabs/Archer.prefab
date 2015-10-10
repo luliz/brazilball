@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.2099991, y: -4.1500001, z: 0}
+  m_LocalPosition: {x: -36, y: -4.03999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 406946}
@@ -203,6 +203,7 @@ MonoBehaviour:
     m_Bits: 256
   arrow: {fileID: 498178, guid: aa4923f2e15e40944b14c6a30a35daf2, type: 2}
   Ponta: {fileID: 460682}
+  soundshoot: {fileID: 8300000, guid: 353cb49fb9b7c904b8ede21c4e86847a, type: 3}
 --- !u!212 &21219598
 SpriteRenderer:
   m_ObjectHideFlags: 1
