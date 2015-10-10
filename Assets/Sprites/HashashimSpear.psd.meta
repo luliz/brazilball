@@ -1,13 +1,27 @@
 fileFormatVersion: 2
 guid: a73d58be5794bb846a4c623efea6ad8b
-timeCreated: 1444312726
+timeCreated: 1444330365
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: HashashimSpear_0
+    21300002: HashashimSpear_1
+    21300004: HashashimSpear_2
+    21300006: HashashimSpear_3
+    21300008: HashashimSpear_4
+    21300010: HashashimSpear_5
+    21300012: HashashimSpear_6
+    21300014: HashashimSpear_7
+    21300016: HashashimSpear_8
+    21300018: HashashimSpear_9
+    21300020: HashashimSpear_10
+    21300022: HashashimSpear_11
+    21300024: HashashimSpear_12
+    21300026: HashashimSpear_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,11 +40,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +52,148 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: HashashimSpear_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 166
+        width: 181
+        height: 111
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 166
+        width: 168
+        height: 111
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 166
+        width: 165
+        height: 111
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_3
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 142
+        width: 182
+        height: 136
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_5
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 148
+        width: 205
+        height: 131
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_6
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 166
+        width: 181
+        height: 112
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 181
+        height: 111
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_8
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 17
+        width: 182
+        height: 112
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_9
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 17
+        width: 183
+        height: 113
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_10
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 17
+        width: 183
+        height: 112
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_11
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 17
+        width: 182
+        height: 113
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_12
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 17
+        width: 181
+        height: 112
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimSpear_13
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 17
+        width: 181
+        height: 111
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
