@@ -2824,27 +2824,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410036, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11493444, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
-      propertyPath: velocidade
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5056712, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11493444, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
-      propertyPath: forcaPulo
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873962, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
-      propertyPath: m_Radius
-      value: .200000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873962, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
-      propertyPath: m_Offset.y
-      value: -.0299999993
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}

@@ -134,7 +134,6 @@ public abstract class BasicAI : MonoBehaviour {
 	protected void Flip()
 	{
 
-		print (Time.time);
 		transform.localScale = new Vector3(facingDirection, 1, 1);
 		if (expressions)
 			expressions.transform.localScale = new Vector3(facingDirection, 1, 1);

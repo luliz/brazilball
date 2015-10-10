@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 41ac8195236695e40a9c0cdffd3c7938
-timeCreated: 1443905089
+timeCreated: 1444513439
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -22,6 +22,23 @@ TextureImporter:
     21300030: PortugalLP_16
     21300032: PortugalLP_17
     21300034: PortugalLP_18
+    21300036: PortugalLP_0
+    21300038: PortugalLP_19
+    21300040: PortugalLP_20
+    21300042: PortugalLP_21
+    21300044: PortugalLP_22
+    21300046: PortugalLP_23
+    21300048: PortugalLP_24
+    21300050: PortugalLP_25
+    21300052: PortugalLP_26
+    21300054: PortugalLP_27
+    21300056: PortugalLP_28
+    21300058: PortugalLP_29
+    21300060: PortugalLP_30
+    21300062: PortugalLP_31
+    21300064: PortugalLP_32
+    21300066: PortugalLP_33
+    21300068: PortugalLP_34
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -68,185 +85,355 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
+    - name: PortugalLP_0
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 415
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 415
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 415
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_3
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 415
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_4
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 415
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_5
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 415
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_6
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 415
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_7
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 415
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 297
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 289
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_10
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 289
+        width: 68
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_11
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 291
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_12
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 286
+        width: 67
+        height: 72
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_13
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 287
+        width: 67
+        height: 71
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_14
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 286
+        width: 67
+        height: 72
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 291
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_16
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 182
+        width: 67
+        height: 67
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalLP_17
       rect:
         serializedVersion: 2
         x: 121
         y: 182
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_2
+    - name: PortugalLP_18
       rect:
         serializedVersion: 2
         x: 233
         y: 182
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_3
+    - name: PortugalLP_19
       rect:
         serializedVersion: 2
         x: 333
         y: 182
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_4
+    - name: PortugalLP_20
       rect:
         serializedVersion: 2
         x: 425
         y: 182
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_5
+    - name: PortugalLP_21
       rect:
         serializedVersion: 2
         x: 520
         y: 182
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_6
+    - name: PortugalLP_22
       rect:
         serializedVersion: 2
         x: 615
         y: 182
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_7
+    - name: PortugalLP_23
       rect:
         serializedVersion: 2
         x: 709
         y: 182
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_8
+    - name: PortugalLP_24
       rect:
         serializedVersion: 2
         x: 797
         y: 182
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_9
+    - name: PortugalLP_25
       rect:
         serializedVersion: 2
         x: 913
         y: 182
         width: 19
         height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_10
+    - name: PortugalLP_26
       rect:
         serializedVersion: 2
         x: 944
         y: 182
         width: 19
         height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_11
+    - name: PortugalLP_27
       rect:
         serializedVersion: 2
         x: 28
         y: 64
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_12
+    - name: PortugalLP_28
       rect:
         serializedVersion: 2
         x: 234
         y: 56
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_13
+    - name: PortugalLP_29
       rect:
         serializedVersion: 2
         x: 333
         y: 56
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_14
+    - name: PortugalLP_30
       rect:
         serializedVersion: 2
         x: 427
         y: 58
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_15
+    - name: PortugalLP_31
       rect:
         serializedVersion: 2
         x: 520
         y: 53
         width: 69
         height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_16
+    - name: PortugalLP_32
       rect:
         serializedVersion: 2
         x: 615
         y: 54
         width: 69
         height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_17
+    - name: PortugalLP_33
       rect:
         serializedVersion: 2
         x: 709
         y: 53
         width: 69
         height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_18
+    - name: PortugalLP_34
       rect:
         serializedVersion: 2
         x: 797
         y: 58
         width: 69
         height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
