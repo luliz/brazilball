@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 41ac8195236695e40a9c0cdffd3c7938
-timeCreated: 1444513439
+timeCreated: 1444600267
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -92,8 +92,8 @@ TextureImporter:
         y: 415
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_1
       rect:
@@ -102,8 +102,8 @@ TextureImporter:
         y: 415
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_2
       rect:
@@ -112,8 +112,8 @@ TextureImporter:
         y: 415
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_3
       rect:
@@ -122,8 +122,8 @@ TextureImporter:
         y: 415
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_4
       rect:
@@ -132,8 +132,8 @@ TextureImporter:
         y: 415
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_5
       rect:
@@ -142,8 +142,8 @@ TextureImporter:
         y: 415
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_6
       rect:
@@ -152,8 +152,8 @@ TextureImporter:
         y: 415
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_7
       rect:
@@ -162,8 +162,8 @@ TextureImporter:
         y: 415
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_8
       rect:
@@ -172,8 +172,8 @@ TextureImporter:
         y: 297
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_9
       rect:
@@ -182,8 +182,8 @@ TextureImporter:
         y: 289
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_10
       rect:
@@ -192,8 +192,8 @@ TextureImporter:
         y: 289
         width: 68
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_11
       rect:
@@ -202,8 +202,8 @@ TextureImporter:
         y: 291
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_12
       rect:
@@ -212,8 +212,8 @@ TextureImporter:
         y: 286
         width: 67
         height: 72
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_13
       rect:
@@ -222,8 +222,8 @@ TextureImporter:
         y: 287
         width: 67
         height: 71
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_14
       rect:
@@ -232,8 +232,8 @@ TextureImporter:
         y: 286
         width: 67
         height: 72
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_15
       rect:
@@ -242,18 +242,8 @@ TextureImporter:
         y: 291
         width: 67
         height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PortugalLP_16
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 182
-        width: 67
-        height: 67
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_17
       rect:
@@ -262,8 +252,8 @@ TextureImporter:
         y: 182
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_18
       rect:
@@ -272,8 +262,8 @@ TextureImporter:
         y: 182
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_19
       rect:
@@ -282,8 +272,8 @@ TextureImporter:
         y: 182
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_20
       rect:
@@ -292,8 +282,8 @@ TextureImporter:
         y: 182
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_21
       rect:
@@ -302,8 +292,8 @@ TextureImporter:
         y: 182
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_22
       rect:
@@ -312,8 +302,8 @@ TextureImporter:
         y: 182
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_23
       rect:
@@ -322,8 +312,8 @@ TextureImporter:
         y: 182
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_24
       rect:
@@ -332,8 +322,8 @@ TextureImporter:
         y: 182
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_25
       rect:
@@ -342,8 +332,8 @@ TextureImporter:
         y: 182
         width: 19
         height: 95
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_26
       rect:
@@ -352,8 +342,8 @@ TextureImporter:
         y: 182
         width: 19
         height: 95
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_27
       rect:
@@ -362,8 +352,8 @@ TextureImporter:
         y: 64
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_28
       rect:
@@ -372,8 +362,8 @@ TextureImporter:
         y: 56
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_29
       rect:
@@ -382,8 +372,8 @@ TextureImporter:
         y: 56
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_30
       rect:
@@ -392,8 +382,8 @@ TextureImporter:
         y: 58
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_31
       rect:
@@ -402,8 +392,8 @@ TextureImporter:
         y: 53
         width: 69
         height: 82
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_32
       rect:
@@ -412,8 +402,8 @@ TextureImporter:
         y: 54
         width: 69
         height: 81
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_33
       rect:
@@ -422,8 +412,8 @@ TextureImporter:
         y: 53
         width: 69
         height: 82
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: PortugalLP_34
       rect:
@@ -432,8 +422,8 @@ TextureImporter:
         y: 58
         width: 69
         height: 77
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
