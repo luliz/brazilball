@@ -1,13 +1,32 @@
 fileFormatVersion: 2
 guid: cc3b218932ed1ca429b9d9bda1f3b55a
-timeCreated: 1444525616
+timeCreated: 1444602666
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Portugal1385AttackSword_19
+    21300002: Portugal1385AttackSword_20
+    21300004: Portugal1385AttackSword_21
+    21300006: Portugal1385AttackSword_22
+    21300008: Portugal1385AttackSword_23
+    21300010: Portugal1385AttackSword_24
+    21300012: Portugal1385AttackSword_25
+    21300014: Portugal1385AttackSword_26
+    21300016: Portugal1385AttackSword_27
+    21300018: Portugal1385AttackSword_28
+    21300020: Portugal1385AttackSword_29
+    21300022: Portugal1385AttackSword_30
+    21300024: Portugal1385AttackSword_31
+    21300026: Portugal1385AttackSword_32
+    21300028: Portugal1385AttackSword_33
+    21300030: Portugal1385AttackSword_34
+    21300032: Portugal1385AttackSword_35
+    21300034: Portugal1385AttackSword_36
+    21300036: Portugal1385AttackSword_37
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,11 +45,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +57,208 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 1
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Portugal1385AttackSword_19
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 234
+        width: 30
+        height: 114
+      alignment: 9
+      pivot: {x: .50999999, y: .0299999993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_20
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 239
+        width: 110
+        height: 108
+      alignment: 9
+      pivot: {x: .970000029, y: .0599999987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_21
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 243
+        width: 113
+        height: 93
+      alignment: 9
+      pivot: {x: .980000019, y: .839999974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 212
+        width: 99
+        height: 110
+      alignment: 9
+      pivot: {x: .0299999993, y: .980000019}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_23
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 249
+        width: 93
+        height: 74
+      alignment: 9
+      pivot: {x: .0299999993, y: .0299999993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_24
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 246
+        width: 81
+        height: 81
+      alignment: 9
+      pivot: {x: .0299999993, y: .0299999993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_25
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 246
+        width: 81
+        height: 81
+      alignment: 9
+      pivot: {x: .0299999993, y: .0299999993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_26
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 137
+        width: 111
+        height: 65
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_27
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 133
+        width: 114
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_28
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 133
+        width: 114
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_29
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 136
+        width: 129
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_30
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 144
+        width: 141
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_31
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 148
+        width: 125
+        height: 31
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_32
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 20
+        width: 125
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_33
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 20
+        width: 114
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_34
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 20
+        width: 114
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_35
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 20
+        width: 114
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_36
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 32
+        width: 81
+        height: 81
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Portugal1385AttackSword_37
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 20
+        width: 30
+        height: 113
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -43,6 +43,11 @@ public class PlayerController : MonoBehaviour{
 
 			myRigidBody2D.AddForce(new Vector2 (0, forcaPulo), ForceMode2D.Impulse);
 		}
+
+		if (Input.GetKeyDown (Controls.strongAttack)) {
+
+			animator.SetTrigger ("ataqueGiratorio");
+		}
         
     }
     private void Flip(){
