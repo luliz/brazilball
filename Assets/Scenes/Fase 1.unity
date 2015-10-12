@@ -2643,7 +2643,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1615584774}
   - 212: {fileID: 1615584773}
-  - 95: {fileID: 1615584775}
   m_Layer: 0
   m_Name: muro1
   m_TagString: Untagged
@@ -2689,23 +2688,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1466127886}
   m_RootOrder: 0
---- !u!95 &1615584775
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1615584772}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7facc2c162dff0240b60a3954c1bb1c3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &1641983484 stripped
 Transform:
   m_PrefabParentObject: {fileID: 427582, guid: 41bde9da3f166444e9e4382bc0ca2b91, type: 2}
