@@ -11,8 +11,10 @@ public class PlayerStatus : MonoBehaviour {
 	
 	public Color blinkColor;
 	private SpriteRenderer spriteRenderer;
-	private float timeBetweenBlinks = 0.25f;
-	private float blinkCounter = 0;
+	private float timeBetweenBlinks = 0.5f;
+
+	public GameObject gameOverScreen;
+	public bool gameOver;
 
 	void Awake () {
 
@@ -21,7 +23,6 @@ public class PlayerStatus : MonoBehaviour {
 	void Update () {
 		counter += Time.deltaTime;
 		if (blink) {
-			print (Mathf.Round (counter * 100f) / 100f % timeBetweenBlinks);
 			if (Mathf.Round (counter * 100f) / 100f % timeBetweenBlinks < 0.1) {
 
 				spriteRenderer.color = blinkColor;
@@ -37,6 +38,15 @@ public class PlayerStatus : MonoBehaviour {
 			}
 			
 		}
+
+		if (gameOver) {
+
+			if (Input.GetKeyDown (KeyCode.Return)) {
+
+				Application.LoadLevel(0);
+				Time.timeScale = 1f;
+			}
+		}
 	}
 	public void TakeDamage (int direction) {
 
@@ -50,8 +60,12 @@ public class PlayerStatus : MonoBehaviour {
 
 			} else {
 
-				print ("DEAD!!!!!!!!!!!!!!!!!!!!");
+				Time.timeScale = 0.000000000001f;
+				Vector3 desiredPosition= new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0.5f);
+				Instantiate(gameOverScreen, desiredPosition, Quaternion.identity);
+				gameOver = true;
 			}
 		}
 	}
+
 }

@@ -182,6 +182,8 @@ MonoBehaviour:
   maxImmuneTime: 2
   counter: 0
   blinkColor: {r: .970588207, g: .549524188, b: .549524188, a: 1}
+  gameOverScreen: {fileID: 170572, guid: a8ddaa4a05b1a814180e327e08f746ac, type: 2}
+  gameOver: 0
 --- !u!114 &11489508
 MonoBehaviour:
   m_ObjectHideFlags: 1
