@@ -6,9 +6,9 @@ public class Charger : BasicAI {
 	public int health = 5;
 
 	private float memory = 3.5f;
-	private float minDistanceToAttack = 0f;
+	private float minDistanceToAttack = 0.3f;
 	private float maxDistanceToAttack = 2f;
-	private float maxDistanceToFollow = 10f;
+	private float maxDistanceToFollow = 40f;
 	private float maxVerticalDistanceToAttack = 0.5f;
 	private float attackCounter;
 	private float timeToAttack = 0.3f;
@@ -19,7 +19,7 @@ public class Charger : BasicAI {
 
 	// Update is called once per frame
 	public override void Follow () {
-	
+		
 		if (timeAfterISaw > memory)
 		{
 			estado = 0;
