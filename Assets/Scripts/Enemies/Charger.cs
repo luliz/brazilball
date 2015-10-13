@@ -74,7 +74,7 @@ public class Charger : BasicAI {
 		attackCounter += Time.deltaTime;
 		if (attackCounter >= timeToAttack) {
 			if (!attacked) {
-				this.GetComponent<Rigidbody2D> ().AddForce (Vector2.right * facingDirection * chargePower, ForceMode2D.Impulse);
+				this.GetComponent<Rigidbody2D> ().AddForce (Vector2.right * transform.localScale.x * chargePower, ForceMode2D.Impulse);
 				animator.SetInteger ("status", 2);
 				spearCollider.enabled = true;
 				attacked = true;
@@ -96,6 +96,7 @@ public class Charger : BasicAI {
 
 	public override void DoExtraStuff () {
 		counter += Time.deltaTime;
+		print (facingDirection);
 	}
 
 	public override void TakeDamage() {
