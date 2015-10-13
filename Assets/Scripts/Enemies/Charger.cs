@@ -11,6 +11,7 @@ public class Charger : BasicAI {
 	private float attackCounter;
 	private float timeToAttack = 0.3f;
 	public float chargePower = 10;
+	public BoxCollider2D spearCollider;
 	private float counter;
 	private bool attacked = false;
 
@@ -73,12 +74,14 @@ public class Charger : BasicAI {
 			if (!attacked) {
 				this.GetComponent<Rigidbody2D> ().AddForce (Vector2.right * facingDirection * chargePower, ForceMode2D.Impulse);
 				animator.SetInteger ("status", 2);
+				spearCollider.enabled = true;
 				attacked = true;
 			}
 			else {
 
 				if (Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.x) <= 4) {
 
+					spearCollider.enabled = false;
 					canFlip = true;
 					attacked = false;
 					animator.SetInteger ("status", 0);
@@ -88,6 +91,7 @@ public class Charger : BasicAI {
 			}
 		}
 	}
+
 	public override void DoExtraStuff () {
 		counter += Time.deltaTime;
 	}

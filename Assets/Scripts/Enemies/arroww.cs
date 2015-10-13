@@ -60,7 +60,7 @@ public class arroww : MonoBehaviour
             transform.parent = other.transform;
             Destroy(myRB);
             Destroy(myCL);
-			other.gameObject.GetComponent<PlayerStatus>().TakeDamage();
+			other.gameObject.GetComponent<PlayerStatus>().TakeDamage(1);
           
 
 
