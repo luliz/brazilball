@@ -181,6 +181,7 @@ MonoBehaviour:
   lives: 1
   maxImmuneTime: 2
   counter: 0
+  blinkColor: {r: .970588207, g: .549524188, b: .549524188, a: 1}
 --- !u!114 &11489508
 MonoBehaviour:
   m_ObjectHideFlags: 1
