@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class Charger : BasicAI {
-	
+
+	public int health = 5;
+
 	private float memory = 3.5f;
 	private float minDistanceToAttack = 0f;
 	private float maxDistanceToAttack = 2f;
@@ -94,5 +96,14 @@ public class Charger : BasicAI {
 
 	public override void DoExtraStuff () {
 		counter += Time.deltaTime;
+	}
+
+	public override void TakeDamage() {
+
+		if (health > 0) {
+			health--;
+		} else {
+			Destroy(this.gameObject);
+		}
 	}
 }

@@ -7,6 +7,8 @@ TagManager:
   - Jumpable
   - target
   - enemyArcher
+  - arrow
+  - enemy
   layers:
   - Default
   - TransparentFX

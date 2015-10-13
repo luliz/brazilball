@@ -10,6 +10,10 @@ public class Archer2 : BasicAI {
 	private float contador2;
 	public AudioClip soundshoot;
 
+	public override void TakeDamage() {
+
+		return;
+	}
 	public override void Follow() {
 
 		if (timeAfterISaw > 3.5)

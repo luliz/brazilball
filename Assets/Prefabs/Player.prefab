@@ -10,6 +10,8 @@ GameObject:
   - 4: {fileID: 402010}
   - 212: {fileID: 21237426}
   - 95: {fileID: 9578812}
+  - 61: {fileID: 6127202}
+  - 114: {fileID: 11489508}
   m_Layer: 0
   m_Name: Espada
   m_TagString: Untagged
@@ -107,6 +109,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -.150000006}
   serializedVersion: 2
   m_Size: {x: .159999996, y: .0846710205}
+--- !u!61 &6127202
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135504}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .415752411, y: .0902884007}
+  serializedVersion: 2
+  m_Size: {x: .310624719, y: .363090038}
 --- !u!95 &9578812
 Animator:
   serializedVersion: 3
@@ -164,6 +179,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 1
+  maxImmuneTime: 2
+  counter: 0
+--- !u!114 &11489508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0ad0fa2b65c3e744abd5a579342f07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11493444
 MonoBehaviour:
   m_ObjectHideFlags: 1

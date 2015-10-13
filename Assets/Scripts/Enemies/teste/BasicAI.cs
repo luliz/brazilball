@@ -29,7 +29,7 @@ public abstract class BasicAI : MonoBehaviour {
 	public abstract void Follow ();
 	public abstract void Attack ();
 	public abstract void DoExtraStuff ();
-
+	public abstract void TakeDamage ();
 	void Awake() {
 		thisCollider = GetComponentInChildren<Collider2D>();
 	}
