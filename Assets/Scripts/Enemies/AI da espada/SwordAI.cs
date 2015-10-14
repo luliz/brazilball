@@ -8,6 +8,7 @@ public class SwordAI : MonoBehaviour {
     //	VARIAVEIS QUE FAZEM REFERENCIA A COMPONENTES
 
     private Animator thisAnimator;
+    private Animator SwordAnimator;
     private Rigidbody2D thisCollider;
     private SpriteRenderer expression;
     public Sprite exclamation;
@@ -30,6 +31,7 @@ public class SwordAI : MonoBehaviour {
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         thisAnimator = GetComponent<Animator>();
+        SwordAnimator = GameObject.Find("EspadaAI").GetComponent<Animator>();
         thisCollider = GetComponent<Rigidbody2D>();
         expression = GameObject.Find("Expressions3").GetComponent<SpriteRenderer>();
     }
@@ -102,6 +104,8 @@ public class SwordAI : MonoBehaviour {
         {
             Walk();
             thisAnimator.SetBool("walking", true);
+            SwordAnimator.SetBool("atacar", false);
+
             if (transform.position.x > target.position.x)
             {
                 facingDirection = -1;
@@ -115,6 +119,8 @@ public class SwordAI : MonoBehaviour {
         else  
         {
             thisAnimator.SetBool("walking", false);
+            SwordAnimator.SetBool("atacar", true);
+
 
 
             if (transform.position.x > target.position.x)
