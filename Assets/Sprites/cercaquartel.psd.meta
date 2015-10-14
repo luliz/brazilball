@@ -1,15 +1,17 @@
 fileFormatVersion: 2
-guid: ab545ee585e769f4bb959ad7bcc9857d
-timeCreated: 1444786392
+guid: 5745afc022b69894691f505b3c89dfac
+timeCreated: 1444785247
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Estabulo_Alvo_0
-    21300002: Estabulo_Alvo_1
+    21300000: cercaquartel_0
+    21300002: cercaquartel_1
+    21300004: cercaquartel_2
+    21300006: cercaquartel_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -28,10 +30,10 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
-  maxTextureSize: 2048
+  textureFormat: -1
+  maxTextureSize: 4096
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -52,23 +54,43 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Estabulo_Alvo_0
+    - name: cercaquartel_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1173
-        height: 119
+        x: 36
+        y: 595
+        width: 3501
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Estabulo_Alvo_1
+    - name: cercaquartel_1
       rect:
         serializedVersion: 2
-        x: 1202
-        y: 6
-        width: 36
-        height: 67
+        x: 99
+        y: 274
+        width: 90
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cercaquartel_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 303
+        width: 62
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cercaquartel_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 30
+        width: 3638
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
