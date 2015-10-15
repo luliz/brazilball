@@ -3,12 +3,28 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
-	
+
+	PlayerStatus status;
+
 	public GameObject mainMenu;
 	public GameObject areYouSure;
 	public static GameObject menuCreated = null;
 	public static GameObject windowCreated = null;
 
+	void Awake () {
+
+		status = GameObject.Find ("Player").GetComponent<PlayerStatus> ();
+	}
+	void Update () {
+		if (Input.GetKeyDown (Controls.pause) && !status.gameOver) {
+			if (menuCreated) {
+				DestroyMenu ();
+			}
+			else {
+				CreateMenu ();
+			}
+		} 
+	}
 	public void Pause () {
 		if (Time.timeScale == 1) {
 			GameObject.Find("Player").GetComponent<PlayerController>().enabled = false;

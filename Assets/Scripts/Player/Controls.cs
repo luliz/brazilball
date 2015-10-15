@@ -9,6 +9,6 @@ public static class Controls : object
     public static KeyCode walkRight = KeyCode.D;
     public static KeyCode jump = KeyCode.Space;
 	public static KeyCode strongAttack = KeyCode.LeftControl;
-	public static KeyCode pause = KeyCode.Return;
+	public static KeyCode pause = KeyCode.Escape;
 
 }

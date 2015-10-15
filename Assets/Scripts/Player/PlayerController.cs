@@ -57,9 +57,6 @@ public class PlayerController : MonoBehaviour{
 			swordAnimator.SetTrigger("attack");
 		}
 
-		if (Input.GetKeyDown (Controls.pause) && !status.gameOver && !GameManager.menuCreated) {
-			gameManager.CreateMenu();
-		}
         
     }
     private void Flip(){
