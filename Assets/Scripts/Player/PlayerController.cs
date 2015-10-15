@@ -12,9 +12,14 @@ public class PlayerController : MonoBehaviour{
 	public bool grounded;
 	private float attackCounter = 0;
 
+	private GameManager gameManager;
+	private PlayerStatus status;
+
 
     // Executado uma vez e logo no inicio.
-    void Start(){
+    void Awake(){
+		status = this.GetComponent<PlayerStatus> ();
+		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
     }
     // Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
     void Update(){
@@ -51,15 +56,19 @@ public class PlayerController : MonoBehaviour{
 			attackCounter = 0;
 			swordAnimator.SetTrigger("attack");
 		}
+
+		if (Input.GetKeyDown (Controls.pause) && !status.gameOver && !GameManager.menuCreated) {
+			gameManager.CreateMenu();
+		}
         
     }
     private void Flip(){
-        // Troca pra onde o player ta olhando.
-        right = !right;
-        // Vira o player .
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+		// Troca pra onde o player ta olhando.
+		right = !right;
+		// Vira o player .
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		transform.localScale = theScale;
     }
 }
 

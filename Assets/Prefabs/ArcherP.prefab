@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 436856}
   - 212: {fileID: 21264072}
   m_Layer: 2
-  m_Name: Expressions
+  m_Name: Expressions4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ GameObject:
   - 95: {fileID: 9535434}
   - 58: {fileID: 5817924}
   - 50: {fileID: 5004038}
-  - 114: {fileID: 11433744}
+  - 114: {fileID: 11446172}
   m_Layer: 2
   m_Name: ArcherP
   m_TagString: enemyArcher
@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .129999995, y: .0120000001, z: 0}
+  m_LocalPosition: {x: .0847000033, y: .00139999995, z: -.00200000009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 448794}
@@ -112,8 +112,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0340000018, y: -.0460000001, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -.71566236, w: .698446453}
+  m_LocalPosition: {x: .0799999982, y: -.257999986, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413126}
@@ -182,7 +182,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11433744
+--- !u!114 &11446172
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -190,24 +190,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 133910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 268795f8d8b975940b27cb55a55b9f2b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7900c6d3139fac04d9f3881b12c5301d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  animator: {fileID: 0}
-  expressions: {fileID: 0}
-  interrogation: {fileID: 0}
-  exclamation: {fileID: 0}
-  visao:
+  exclamation: {fileID: 21300072, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
+  interrogation: {fileID: 21300074, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
+  visaoJanissary:
     serializedVersion: 2
     m_Bits: 0
-  barreira:
-    serializedVersion: 2
-    m_Bits: 0
-  speed: 0
-  arrow: {fileID: 0}
-  ponta: {fileID: 0}
-  soundshoot: {fileID: 0}
+  arrow: {fileID: 417876, guid: f30db7cd1c662064a8b3367c6c066f85, type: 2}
+  Ponta: {fileID: 413126}
+  soundshoot: {fileID: 8300000, guid: 353cb49fb9b7c904b8ede21c4e86847a, type: 3}
 --- !u!212 &21207892
 SpriteRenderer:
   m_ObjectHideFlags: 1

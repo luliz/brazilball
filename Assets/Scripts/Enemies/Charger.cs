@@ -6,7 +6,7 @@ public class Charger : BasicAI {
 	public int health = 5;
 
 	private float memory = 3.5f;
-	private float minDistanceToAttack = 0.3f;
+	private float minDistanceToAttack = 0f;
 	private float maxDistanceToAttack = 2f;
 	private float maxDistanceToFollow = 40f;
 	private float maxVerticalDistanceToAttack = 0.5f;
@@ -96,7 +96,6 @@ public class Charger : BasicAI {
 
 	public override void DoExtraStuff () {
 		counter += Time.deltaTime;
-		print (facingDirection);
 	}
 
 	public override void TakeDamage() {

@@ -61,8 +61,7 @@ public class PlayerStatus : MonoBehaviour {
 			} else {
 
 				Time.timeScale = 0.000000000001f;
-				Vector3 desiredPosition= new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0.5f);
-				Instantiate(gameOverScreen, desiredPosition, Quaternion.identity);
+				Instantiate(gameOverScreen);
 				gameOver = true;
 			}
 		}
