@@ -1262,6 +1262,39 @@ SpriteRenderer:
 Transform:
   m_PrefabParentObject: {fileID: 417052, guid: 8137f3f6fea313a419441fe556e9cd1a, type: 2}
   m_PrefabInternal: {fileID: 281021412}
+--- !u!1 &516981697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 516981698}
+  m_Layer: 0
+  m_Name: PontosF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &516981698
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516981697}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 178.276367, y: -1.48429084, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1541995943}
+  - {fileID: 1702685955}
+  - {fileID: 1094497170}
+  - {fileID: 1080753737}
+  - {fileID: 1147100862}
+  - {fileID: 1928576478}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
 --- !u!1 &518015390
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2529,48 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 417052, guid: 8137f3f6fea313a419441fe556e9cd1a, type: 2}
   m_PrefabInternal: {fileID: 1002229252}
+--- !u!1 &1080753735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1080753737}
+  - 114: {fileID: 1080753736}
+  m_Layer: 0
+  m_Name: PontoF (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1080753736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080753735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf4d678938082242b74172a5e043f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow3: {fileID: 465648, guid: e403261517bef1f4ba202b54e6d29c0f, type: 2}
+  PontaF: {fileID: 1080753737}
+  contador: 0
+--- !u!4 &1080753737
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080753735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.51999998, y: .730000019, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 516981698}
+  m_RootOrder: 3
 --- !u!1 &1089045002
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,6 +2625,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1517170368}
   m_RootOrder: 4
+--- !u!1 &1094497169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1094497170}
+  - 114: {fileID: 1094497171}
+  m_Layer: 0
+  m_Name: PontoF (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1094497170
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1094497169}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.22000003, y: 1.84000003, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 516981698}
+  m_RootOrder: 2
+--- !u!114 &1094497171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1094497169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf4d678938082242b74172a5e043f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow3: {fileID: 465648, guid: e403261517bef1f4ba202b54e6d29c0f, type: 2}
+  PontaF: {fileID: 1094497170}
+  contador: 0
 --- !u!1 &1115930692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2645,6 +2762,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 13168444}
   m_RootOrder: 4
+--- !u!1 &1147100861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1147100862}
+  - 114: {fileID: 1147100863}
+  m_Layer: 0
+  m_Name: PontoF (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1147100862
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147100861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1400001, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 516981698}
+  m_RootOrder: 4
+--- !u!114 &1147100863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147100861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf4d678938082242b74172a5e043f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow3: {fileID: 465648, guid: e403261517bef1f4ba202b54e6d29c0f, type: 2}
+  PontaF: {fileID: 1147100862}
+  contador: 0
 --- !u!4 &1150086485 stripped
 Transform:
   m_PrefabParentObject: {fileID: 417052, guid: 8137f3f6fea313a419441fe556e9cd1a, type: 2}
@@ -3465,6 +3624,48 @@ Transform:
   - {fileID: 1654474298}
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!1 &1541995942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1541995943}
+  - 114: {fileID: 1541995944}
+  m_Layer: 0
+  m_Name: PontoF (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1541995943
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541995942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.55999994, y: 2.8900001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 516981698}
+  m_RootOrder: 0
+--- !u!114 &1541995944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541995942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf4d678938082242b74172a5e043f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow3: {fileID: 465648, guid: e403261517bef1f4ba202b54e6d29c0f, type: 2}
+  PontaF: {fileID: 1541995943}
+  contador: 0
 --- !u!1 &1544198034
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,7 +3921,7 @@ MonoBehaviour:
   lookAheadMoveThreshold: .100000001
   yPosRestriction: -2
   yPosRestrictionUp: 8
-  xPlusRestrict: 150
+  xPlusRestrict: 300
   xMinusRestrict: -35
 --- !u!114 &1568736735
 MonoBehaviour:
@@ -3849,6 +4050,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1517170368}
   m_RootOrder: 7
+--- !u!1 &1702685954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1702685955}
+  - 114: {fileID: 1702685956}
+  m_Layer: 0
+  m_Name: PontoF (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1702685955
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702685954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.42000008, y: 1.28999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 516981698}
+  m_RootOrder: 1
+--- !u!114 &1702685956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702685954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf4d678938082242b74172a5e043f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow3: {fileID: 465648, guid: e403261517bef1f4ba202b54e6d29c0f, type: 2}
+  PontaF: {fileID: 1702685955}
+  contador: 0
 --- !u!1 &1705963248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4299,11 +4542,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 410036, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.7999992
+      value: 179.399994
       objectReference: {fileID: 0}
     - target: {fileID: 410036, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.84899998
+      value: -4.26999998
       objectReference: {fileID: 0}
     - target: {fileID: 410036, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4378,6 +4621,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b9fc8d4c3599604a81f0e94f94be5d1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1928576477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1928576478}
+  - 114: {fileID: 1928576479}
+  m_Layer: 0
+  m_Name: PontoF (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1928576478
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1928576477}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.23999977, y: -.460000008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 516981698}
+  m_RootOrder: 5
+--- !u!114 &1928576479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1928576477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf4d678938082242b74172a5e043f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow3: {fileID: 465648, guid: e403261517bef1f4ba202b54e6d29c0f, type: 2}
+  PontaF: {fileID: 1928576478}
+  contador: 0
 --- !u!1 &1992586369
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,7 +4872,7 @@ Transform:
   - {fileID: 1500039223}
   - {fileID: 1757107218}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1 &2129220462
 GameObject:
   m_ObjectHideFlags: 0
