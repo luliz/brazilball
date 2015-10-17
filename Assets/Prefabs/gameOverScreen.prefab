@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11420686}
   - 114: {fileID: 11452894}
   m_Layer: 5
-  m_Name: GameOverScreen
+  m_Name: gameOverScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
