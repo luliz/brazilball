@@ -12,12 +12,11 @@ public class PlayerStatus : MonoBehaviour {
 	public Color blinkColor;
 	private SpriteRenderer spriteRenderer;
 	private float timeBetweenBlinks = 0.5f;
-
-	public GameObject gameOverScreen;
-	public bool gameOver;
+	GameManager gameManager;
 
 	void Awake () {
 
+		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
 		spriteRenderer = this.GetComponent<SpriteRenderer> ();
 	}
 	void Update () {
@@ -38,15 +37,7 @@ public class PlayerStatus : MonoBehaviour {
 			}
 			
 		}
-
-		if (gameOver) {
-
-			if (Input.GetKeyDown (KeyCode.Return)) {
-
-				Application.LoadLevel(0);
-				Time.timeScale = 1f;
-			}
-		}
+		
 	}
 	public void TakeDamage (int direction) {
 
@@ -60,9 +51,7 @@ public class PlayerStatus : MonoBehaviour {
 
 			} else {
 
-				Time.timeScale = 0.000000000001f;
-				Instantiate(gameOverScreen);
-				gameOver = true;
+				gameManager.GameOver();
 			}
 		}
 	}

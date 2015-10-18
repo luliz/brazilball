@@ -28,6 +28,7 @@ namespace UnitySampleAssets._2D
             lastTargetPosition = target.position;
             offsetZ = (transform.position - target.position).z;
             transform.parent = null;
+			transform.position = new Vector3 (target.position.x, transform.position.y, transform.position.z);
         }
 
         // Update is called once per frame

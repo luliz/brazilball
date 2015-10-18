@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject areYouSure;
 	public GameObject changeKeyGUI;
 	public GameObject pressKeyNowGUI;
+	public GameObject gameOverScreen;
 
 	public static GameObject pressKeyNowCreated = null;
 	public static GameObject menuCreated = null;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour {
 	private static bool allowed = true;
 	static bool changeKey;
 	static string key;
+	bool gameOver = false;
 
 	int next = 0;
 	void Awake () {
@@ -67,8 +69,17 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 	void Update () {
-		print (allowed);
-		if (Input.GetKeyDown (Controls.pause) && !status.gameOver && allowed) {
+
+		if (gameOver) {
+			
+			if (Input.GetKeyDown (KeyCode.Return)) {
+				
+				Application.LoadLevel(0);
+				Pause ();
+			}
+		}
+
+		if (Input.GetKeyDown (Controls.pause) && !gameOver && allowed) {
 			if (menuCreated) {
 				DestroyMenu ();
 			}
@@ -141,5 +152,12 @@ public class GameManager : MonoBehaviour {
 		allowed = true;
 		Destroy (windowCreated);
 		menuCreated = Instantiate (mainMenu);
+	}
+
+	public void GameOver () {
+
+		Pause ();
+		Instantiate (gameOverScreen);
+		gameOver = true;
 	}
 }

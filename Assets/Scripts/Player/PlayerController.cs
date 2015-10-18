@@ -24,6 +24,12 @@ public class PlayerController : MonoBehaviour{
     // Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
     void Update(){
 
+		print ("posiçao player -> " + transform.position.y + " | Camera -> " + Camera.main.ScreenToWorldPoint (new Vector3 (0, Camera.main.orthographicSize - 100f, 0)).y);
+		if (transform.position.y < Camera.main.ScreenToWorldPoint (new Vector3 (0, Camera.main.orthographicSize - 100f, 0)).y) {
+
+			gameManager.GameOver ();
+		}
+
 		attackCounter += Time.deltaTime;
         if (Input.GetKey(Controls.walkLeft) )
         { //Se o A(Ele chama o script Controls que é estatico) for apertado ele vai ativar a animação de correr.
