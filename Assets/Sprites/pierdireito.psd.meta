@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: cc7b78f54e6b6e244ac297e658450c8b
-timeCreated: 1445295051
+guid: 94a22b47017bac64dbe0414bf1b5b2eb
+timeCreated: 1445293799
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: mar03e04_0
-    21300002: mar03e04_1
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -40,38 +38,18 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 80
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: mar03e04_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 106
-        width: 676
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mar03e04_1
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 0
-        width: 666
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

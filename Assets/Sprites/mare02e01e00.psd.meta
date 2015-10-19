@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: cc7b78f54e6b6e244ac297e658450c8b
-timeCreated: 1445295051
+guid: 0303a11365df5664abd79bc6619d11f4
+timeCreated: 1445295798
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: mar03e04_0
-    21300002: mar03e04_1
+    21300000: mare02e01e00_0
+    21300002: mare02e01e00_1
+    21300004: mare02e01e00_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -52,23 +53,33 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: mar03e04_0
+    - name: mare02e01e00_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 106
-        width: 676
-        height: 92
+        y: 150
+        width: 492
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mar03e04_1
+    - name: mare02e01e00_1
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
+        y: 93
+        width: 492
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mare02e01e00_2
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 666
-        height: 95
+        width: 492
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
