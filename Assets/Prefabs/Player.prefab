@@ -18,6 +18,25 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &139214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 425356}
+  - 212: {fileID: 21208744}
+  - 95: {fileID: 9508492}
+  - 114: {fileID: 11431916}
+  - 61: {fileID: 6156472}
+  m_Layer: 0
+  m_Name: Warhammer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &175258
 GameObject:
@@ -61,12 +80,25 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.5960007, y: -3.84899998, z: 0}
+  m_LocalPosition: {x: 13.6999998, y: -3.49099994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402010}
+  - {fileID: 425356}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &425356
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0370000005, y: -.158000007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 410036}
+  m_RootOrder: 1
 --- !u!50 &5056712
 Rigidbody2D:
   serializedVersion: 2
@@ -122,6 +154,36 @@ BoxCollider2D:
   m_Offset: {x: .415752411, y: .0902884007}
   serializedVersion: 2
   m_Size: {x: .310624719, y: .363090038}
+--- !u!61 &6156472
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139214}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: .375458062, y: .138037935}
+  serializedVersion: 2
+  m_Size: {x: .457133293, y: .35451597}
+--- !u!95 &9508492
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139214}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b53199482194b5429f1da79fe4f0cb7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9578812
 Animator:
   serializedVersion: 3
@@ -167,6 +229,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40946c78c69c80f47901eefe8c3cd15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11431916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0ad0fa2b65c3e744abd5a579342f07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11458752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,8 +255,6 @@ MonoBehaviour:
   maxImmuneTime: 2
   counter: 0
   blinkColor: {r: .970588207, g: .549524188, b: .549524188, a: 1}
-  gameOverScreen: {fileID: 124674, guid: a8ddaa4a05b1a814180e327e08f746ac, type: 2}
-  gameOver: 0
 --- !u!114 &11489508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -209,9 +280,35 @@ MonoBehaviour:
   myRigidBody2D: {fileID: 5056712}
   velocidade: 3
   animator: {fileID: 9590362}
-  swordAnimator: {fileID: 9578812}
+  weaponAnimator: {fileID: 9508492}
   forcaPulo: 8
   grounded: 0
+--- !u!212 &21208744
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139214}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1567289919
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 64350aa8340a23440b49a20d91b4e8a5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21237426
 SpriteRenderer:
   m_ObjectHideFlags: 1

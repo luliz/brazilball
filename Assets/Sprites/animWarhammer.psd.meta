@@ -1,13 +1,45 @@
 fileFormatVersion: 2
 guid: 64350aa8340a23440b49a20d91b4e8a5
-timeCreated: 1444879141
+timeCreated: 1445273965
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: animWarhammer_0
+    21300002: animWarhammer_1
+    21300004: animWarhammer_2
+    21300006: animWarhammer_3
+    21300008: animWarhammer_4
+    21300010: animWarhammer_5
+    21300012: animWarhammer_6
+    21300014: animWarhammer_7
+    21300016: animWarhammer_8
+    21300018: animWarhammer_9
+    21300020: animWarhammer_10
+    21300022: animWarhammer_11
+    21300024: animWarhammer_12
+    21300026: animWarhammer_13
+    21300028: animWarhammer_14
+    21300030: animWarhammer_15
+    21300032: animWarhammer_16
+    21300034: animWarhammer_17
+    21300036: animWarhammer_18
+    21300038: animWarhammer_19
+    21300040: animWarhammer_20
+    21300042: animWarhammer_21
+    21300044: animWarhammer_22
+    21300046: animWarhammer_23
+    21300048: animWarhammer_24
+    21300050: animWarhammer_25
+    21300052: animWarhammer_26
+    21300054: animWarhammer_27
+    21300056: animWarhammer_28
+    21300058: animWarhammer_29
+    21300060: animWarhammer_30
+    21300062: animWarhammer_31
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,11 +58,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +70,338 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 140
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: animWarhammer_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 155
+        width: 59
+        height: 84
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 156
+        width: 64
+        height: 82
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 156
+        width: 68
+        height: 77
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 158
+        width: 72
+        height: 73
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 160
+        width: 72
+        height: 73
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_5
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 158
+        width: 65
+        height: 84
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_6
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 158
+        width: 85
+        height: 69
+      alignment: 9
+      pivot: {x: .119999997, y: .0799999982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 155
+        width: 95
+        height: 50
+      alignment: 9
+      pivot: {x: .119999997, y: .300000012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_8
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 157
+        width: 97
+        height: 45
+      alignment: 9
+      pivot: {x: .119999997, y: .300000012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_9
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 157
+        width: 99
+        height: 35
+      alignment: 9
+      pivot: {x: .119999997, y: .389999986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_10
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 155
+        width: 99
+        height: 35
+      alignment: 9
+      pivot: {x: .119999997, y: .479999989}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_11
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 152
+        width: 96
+        height: 35
+      alignment: 9
+      pivot: {x: .119999997, y: .519999981}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_12
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 152
+        width: 95
+        height: 34
+      alignment: 9
+      pivot: {x: .129999995, y: .479999989}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_13
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 152
+        width: 95
+        height: 34
+      alignment: 9
+      pivot: {x: .129999995, y: .469999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_14
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 152
+        width: 95
+        height: 34
+      alignment: 9
+      pivot: {x: .109999999, y: .379999995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_15
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 160
+        width: 84
+        height: 59
+      alignment: 9
+      pivot: {x: .0900000036, y: .119999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_16
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 152
+        width: 34
+        height: 95
+      alignment: 9
+      pivot: {x: .600000024, y: .119999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_17
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 155
+        width: 59
+        height: 84
+      alignment: 9
+      pivot: {x: .870000005, y: .119999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_18
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 17
+        width: 59
+        height: 84
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_19
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 20
+        width: 64
+        height: 82
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 22
+        width: 68
+        height: 77
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_21
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 29
+        width: 72
+        height: 73
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_22
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 32
+        width: 72
+        height: 73
+      alignment: 9
+      pivot: {x: .879999995, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_23
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 31
+        width: 65
+        height: 84
+      alignment: 9
+      pivot: {x: .850000024, y: .119999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_24
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 30
+        width: 85
+        height: 69
+      alignment: 9
+      pivot: {x: .140000001, y: .109999999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_25
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 18
+        width: 95
+        height: 68
+      alignment: 9
+      pivot: {x: .119999997, y: .209999993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_26
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 13
+        width: 91
+        height: 93
+      alignment: 9
+      pivot: {x: .0900000036, y: .689999998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_27
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 10
+        width: 67
+        height: 86
+      alignment: 9
+      pivot: {x: .769999981, y: .899999976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_28
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 22
+        width: 95
+        height: 40
+      alignment: 9
+      pivot: {x: .870000005, y: .670000017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_29
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 25
+        width: 88
+        height: 51
+      alignment: 9
+      pivot: {x: .879999995, y: .119999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_30
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 25
+        width: 72
+        height: 73
+      alignment: 9
+      pivot: {x: .839999974, y: .119999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: animWarhammer_31
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 15
+        width: 59
+        height: 84
+      alignment: 9
+      pivot: {x: .850000024, y: .159999996}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
