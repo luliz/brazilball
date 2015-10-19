@@ -7,11 +7,11 @@ public class PlayerController : MonoBehaviour{
     public float velocidade = 1f;
     private bool right = true;
     public Animator animator;
-	public Animator swordAnimator;
+	public Animator weaponAnimator;
 	public float forcaPulo = 10;
 	public bool grounded;
 	private float attackCounter = 0;
-
+	private int weapon;
 	private GameManager gameManager;
 	private PlayerStatus status;
 
@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour{
     // Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
     void Update(){
 
-		print ("posiçao player -> " + transform.position.y + " | Camera -> " + Camera.main.ScreenToWorldPoint (new Vector3 (0, Camera.main.orthographicSize - 100f, 0)).y);
 		if (transform.position.y < Camera.main.ScreenToWorldPoint (new Vector3 (0, Camera.main.orthographicSize - 100f, 0)).y) {
 
 			gameManager.GameOver ();
@@ -60,7 +59,12 @@ public class PlayerController : MonoBehaviour{
 
 		if (Input.GetKeyDown (Controls.strongAttack) && attackCounter >= 0.5) {
 			attackCounter = 0;
-			swordAnimator.SetTrigger("attack");
+			weaponAnimator.SetTrigger("attack2");
+		}
+		if (Input.GetKeyDown (Controls.attack) && attackCounter >= 0.5) {
+
+			attackCounter = 0;
+			weaponAnimator.SetTrigger("attack1");
 		}
 
         
