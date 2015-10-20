@@ -55,7 +55,7 @@ public class Archer : MonoBehaviour {
     private float min = 4f;
     private float contador2;
     public AudioClip soundshoot;
-     AudioSource audioo;
+    
 
 
 
@@ -65,7 +65,7 @@ public class Archer : MonoBehaviour {
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         thisAnimator = GetComponent<Animator>();
-        audioo = GetComponent<AudioSource>();
+        
         thisCollider = GetComponentInChildren<Collider2D>();
         expression = GameObject.Find("Expressions").GetComponent<SpriteRenderer>();
         
@@ -199,7 +199,7 @@ public class Archer : MonoBehaviour {
                 Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
                 contador = Time.time + 1f;
                 contador2 = 0f;
-                audioo.PlayOneShot(soundshoot);
+                AudioSource.PlayClipAtPoint(soundshoot,transform.position);
         }
           }
 
