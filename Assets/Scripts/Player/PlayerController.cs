@@ -19,11 +19,16 @@ public class PlayerController : MonoBehaviour{
 	public bool onLadder;
 	public float lockedXPosition;
 	public float climbSpeed = 1f;
-	
+	public static Vector3 playerSpawnPosition = new Vector3 (-34f, -4f);
 	// Executado uma vez e logo no inicio.
 	void Awake(){
 		status = this.GetComponent<PlayerStatus> ();
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
+	}
+
+	void Start() {
+
+		transform.position = playerSpawnPosition;
 	}
 	// Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
 	void Update(){

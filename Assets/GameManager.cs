@@ -29,6 +29,10 @@ public class GameManager : MonoBehaviour {
 
 		status = GameObject.Find ("Player").GetComponent<PlayerStatus> ();
 		
+	}
+
+	void Start () {
+
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("enemy");
 		
 		for (int i = 0; i < GameManager.enemiesKilled.ToArray ().Length; i++) {
