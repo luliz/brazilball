@@ -5,10 +5,6 @@ public class Platform : MonoBehaviour {
 
 	private EdgeCollider2D thisCollider;
 
-	void Update () {
-
-		print (Physics2D.GetIgnoreCollision (GameObject.Find ("Player").GetComponent<Collider2D> (), thisCollider));
-	}
 	void Awake () {
 
 		thisCollider = GetComponentInParent<EdgeCollider2D> ();

@@ -103,6 +103,7 @@ public class Charger : BasicAI {
 		if (health > 0) {
 			health--;
 		} else {
+			GameManager.enemiesKilled.Add(this.enemyID);
 			Destroy(this.gameObject);
 		}
 	}

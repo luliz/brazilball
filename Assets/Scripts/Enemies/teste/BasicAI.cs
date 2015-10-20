@@ -30,6 +30,8 @@ public abstract class BasicAI : MonoBehaviour {
 	public abstract void Attack ();
 	public abstract void DoExtraStuff ();
 	public abstract void TakeDamage ();
+
+	public int enemyID;
 	void Awake() {
 		thisCollider = GetComponentInChildren<Collider2D>();
 	}

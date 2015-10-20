@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 
 	PlayerStatus status;
+	public static List<int> enemiesKilled = new List<int>();
+
 
 	public GameObject mainMenu;
 	public GameObject areYouSure;
@@ -23,8 +26,21 @@ public class GameManager : MonoBehaviour {
 
 	int next = 0;
 	void Awake () {
+
 		status = GameObject.Find ("Player").GetComponent<PlayerStatus> ();
+		
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("enemy");
+		
+		for (int i = 0; i < GameManager.enemiesKilled.ToArray ().Length; i++) {
+			
+			for (int j = 0; j < enemies.Length; j++) {
+				if (GameManager.enemiesKilled[i] == enemies[j].GetComponent<BasicAI> ().enemyID) {
+					Destroy (enemies[i]);
+				}
+			}
+		}
 	}
+
 
 	void OnGUI () {
 
@@ -69,12 +85,12 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 	void Update () {
-
 		if (gameOver) {
 			
 			if (Input.GetKeyDown (KeyCode.Return)) {
 				
 				Application.LoadLevel(0);
+
 				Pause ();
 			}
 		}

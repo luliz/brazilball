@@ -5102,6 +5102,10 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1312421231}
+    - target: {fileID: 11461756, guid: 7a1e610a8885c0445be94e2e1f2a65ad, type: 2}
+      propertyPath: enemyID
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a1e610a8885c0445be94e2e1f2a65ad, type: 2}
   m_IsPrefabParent: 0
@@ -5977,6 +5981,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1029180398}
   - 212: {fileID: 1029180397}
+  - 61: {fileID: 1029180400}
+  - 114: {fileID: 1029180399}
   m_Layer: 0
   m_Name: CasinhaBonitinhaLarga
   m_TagString: Untagged
@@ -6022,6 +6028,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1517170368}
   m_RootOrder: 1
+--- !u!114 &1029180399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029180396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b8e6c887e35cb4d982fce3fdc0b5ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToGo: 1
+--- !u!61 &1029180400
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1029180396}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: .373732567, y: -.247473329}
+  serializedVersion: 2
+  m_Size: {x: .515175819, y: .575054646}
 --- !u!1 &1031779550
 GameObject:
   m_ObjectHideFlags: 0
@@ -9204,13 +9235,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1048072015}
+  - {fileID: 692499691}
   - {fileID: 1753353232}
-  - {fileID: 258571711}
+  - {fileID: 1524637770}
   - {fileID: 23762827}
   - {fileID: 2135613298}
-  - {fileID: 1916297999}
-  - {fileID: 1704735826}
+  - {fileID: 2018016832}
+  - {fileID: 653552533}
   - {fileID: 1442035032}
   - {fileID: 266523668}
   - {fileID: 1069786550}
@@ -9225,13 +9256,13 @@ Transform:
   - {fileID: 1126068381}
   - {fileID: 2085375546}
   - {fileID: 2123864427}
-  - {fileID: 692499691}
+  - {fileID: 1048072015}
   - {fileID: 1974811863}
   - {fileID: 1880237228}
-  - {fileID: 1524637770}
+  - {fileID: 258571711}
+  - {fileID: 1916297999}
   - {fileID: 1986479463}
-  - {fileID: 653552533}
-  - {fileID: 2018016832}
+  - {fileID: 1704735826}
   m_Father: {fileID: 1016853053}
   m_RootOrder: 0
 --- !u!1001 &1548332319
@@ -11268,11 +11299,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 410036, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 232.052002
+      value: 4.15999985
       objectReference: {fileID: 0}
     - target: {fileID: 410036, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.12899995
+      value: -2.99000001
       objectReference: {fileID: 0}
     - target: {fileID: 410036, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
       propertyPath: m_LocalPosition.z
