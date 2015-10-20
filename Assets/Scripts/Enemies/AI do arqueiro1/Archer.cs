@@ -55,6 +55,7 @@ public class Archer : MonoBehaviour {
     private float min = 4f;
     private float contador2;
     public AudioClip soundshoot;
+     AudioSource audioo;
 
 
 
@@ -64,7 +65,7 @@ public class Archer : MonoBehaviour {
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         thisAnimator = GetComponent<Animator>();
-        
+        audioo = GetComponent<AudioSource>();
         thisCollider = GetComponentInChildren<Collider2D>();
         expression = GameObject.Find("Expressions").GetComponent<SpriteRenderer>();
         
@@ -98,11 +99,7 @@ public class Archer : MonoBehaviour {
         if (transform.position.x > 2)
         {
             speed = 2;
-        }
-
-       
-
-
+        }    
     }
 
     void Search()
@@ -176,10 +173,8 @@ public class Archer : MonoBehaviour {
             contador2 = Time.time + 0.1f;
 
             if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
-
                 estado = 2;
         }
-
         else
         {
             Walk();
@@ -204,8 +199,8 @@ public class Archer : MonoBehaviour {
                 Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
                 contador = Time.time + 1f;
                 contador2 = 0f;
-                AudioSource.PlayClipAtPoint(soundshoot, transform.position);
-               }
+                audioo.PlayOneShot(soundshoot);
+        }
           }
 
     bool Found()

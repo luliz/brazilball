@@ -21,12 +21,9 @@ public class Flechas : MonoBehaviour {
         Power = (1000 * absDistance) / 12;
 
         if (target.position.x > transform.position.x)
-        {
-                          
+        {                         
           
-                myRB.AddForce(new Vector2(Power, 100));
-            
-
+                myRB.AddForce(new Vector2(Power, 20));
         }
 
         else if (target.position.x < transform.position.x)
@@ -34,7 +31,7 @@ public class Flechas : MonoBehaviour {
                     
             
             
-                myRB.AddForce(new Vector2(-Power, 100));
+                myRB.AddForce(new Vector2(-Power, 20));
             
         }
         Destroy(gameObject, 3);

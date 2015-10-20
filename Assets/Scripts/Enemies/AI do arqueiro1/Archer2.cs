@@ -66,14 +66,10 @@ public class Archer2 : MonoBehaviour {
             estado = 0;
             expression.sprite = interrogation;
         }
-        Attack();
-           
-
-            
-
-      
-
-
+        if (contador2 > Time.time)
+            Attack();
+        else
+            contador2 = Time.time + 0.1f;
     }
     void Attack()
     {
@@ -87,7 +83,16 @@ public class Archer2 : MonoBehaviour {
     }
     bool Found()
     {       
-        if (target.position.x >= -30f)
+        if (target.position.x >= 78f  && target.position.x < 90f) 
+        {
+            timeAfterIsaw = 0;
+            if (estado == 0)
+                expression.sprite = exclamation;
+            return true;
+        }
+       
+
+        if (target.position.x >= 128f && target.position.x < 135f)
         {
             timeAfterIsaw = 0;
             if (estado == 0)
