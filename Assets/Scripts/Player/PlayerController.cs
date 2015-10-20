@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour{
 	}
 	// Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
 	void Update(){
-		print (myRigidBody2D.gravityScale);
 		
 		if (onLadder && !touchingLadder) {
 			
@@ -73,7 +72,7 @@ public class PlayerController : MonoBehaviour{
 			attackCounter = 0;
 			weaponAnimator.SetTrigger("attack2");
 		}
-		if (Input.GetKeyDown (Controls.attack) && attackCounter >= 0.5 && !onLadder) {
+		if (Input.GetKeyDown (Controls.attack) && attackCounter >= 0.5 && !onLadder &&grounded) {
 			
 			attackCounter = 0;
 			weaponAnimator.SetTrigger("attack1");
