@@ -13,9 +13,10 @@ GameObject:
   - 114: {fileID: 11431818}
   - 50: {fileID: 5091778}
   - 58: {fileID: 5824380}
+  - 58: {fileID: 5822162}
   m_Layer: 2
   m_Name: SwordAI
-  m_TagString: Untagged
+  m_TagString: enemyArcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +47,7 @@ GameObject:
   - 4: {fileID: 481390}
   - 212: {fileID: 21203940}
   - 95: {fileID: 9555944}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EspadaAI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.3289776, y: -3.76714802, z: 0}
+  m_LocalPosition: {x: 24.9799995, y: -4.03999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412766}
@@ -87,7 +88,7 @@ Transform:
   m_GameObject: {fileID: 164978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .342000008, y: .0399999991, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: .987499893, z: 1}
   m_Children: []
   m_Father: {fileID: 453920}
   m_RootOrder: 1
@@ -107,7 +108,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &5824380
+--- !u!58 &5822162
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -116,6 +117,19 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .0599999987, y: -.0599999987}
+  serializedVersion: 2
+  m_Radius: .189999998
+--- !u!58 &5824380
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138020}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: .0599999987, y: -.0599999987}
   serializedVersion: 2

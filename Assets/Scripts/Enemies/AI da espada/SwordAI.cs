@@ -26,6 +26,7 @@ public class SwordAI : MonoBehaviour {
     private int decision;
     private float counter;
     private float spriteCounter;
+    private float contador3;
 
     void Awake()
     {
@@ -137,19 +138,14 @@ public class SwordAI : MonoBehaviour {
 
 
         }
-    }
-
-       
+    }      
 
     void Attack()
-    {
-
-        
+    {       
         
         //TODO depois da animacao feita fazer o script de ataque
         //por enquanto ele simplesmente retorna ao estado 1
         
-
     }
 
     bool Found()
@@ -192,5 +188,15 @@ public class SwordAI : MonoBehaviour {
         transform.localScale = new Vector3(facingDirection, 1, 1);
         expression.transform.localScale = new Vector3(facingDirection, 1, 1);
 
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag=="limites")
+        {
+            Debug.Log("aaaaaaaaaaaaaaaaaaa");
+            facingDirection = facingDirection * -1;
+        }
+        
     }
 }

@@ -4,7 +4,7 @@ using System.Collections;
 public class Archer2 : MonoBehaviour {
 
     private int estado = 0;    
-    private Collider2D thisCollider;
+   
     private SpriteRenderer expression;
     public Sprite exclamation;
     public Sprite interrogation;
@@ -19,14 +19,14 @@ public class Archer2 : MonoBehaviour {
     private float contador;
     public Transform arrow;
     public Transform Ponta;
-    private float min = 4f;
+   
     private float contador2;
     public AudioClip soundshoot;
 
     void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        thisCollider = GetComponentInChildren<Collider2D>();
+        
         expression = GameObject.Find("Expressions4").GetComponent<SpriteRenderer>();
     }
     void Update()

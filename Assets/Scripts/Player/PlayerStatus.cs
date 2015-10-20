@@ -6,9 +6,7 @@ public class PlayerStatus : MonoBehaviour {
 	public int lives = 1;
 	public float maxImmuneTime = 2f;
 	public float counter;
-
-	private bool blink;
-	
+	private bool blink;	
 	public Color blinkColor;
 	private SpriteRenderer spriteRenderer;
 	private float timeBetweenBlinks = 0.5f;
@@ -50,7 +48,6 @@ public class PlayerStatus : MonoBehaviour {
 				this.GetComponent<Animator> ().SetFloat ("lives", 0);
 
 			} else {
-
 				gameManager.GameOver();
 			}
 		}

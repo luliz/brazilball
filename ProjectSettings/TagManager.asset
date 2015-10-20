@@ -9,6 +9,7 @@ TagManager:
   - enemyArcher
   - arrow
   - enemy
+  - limites
   layers:
   - Default
   - TransparentFX

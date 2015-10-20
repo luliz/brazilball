@@ -20,11 +20,13 @@ public class PlayerController : MonoBehaviour{
 	public float lockedXPosition;
 	public float climbSpeed = 1f;
 	public static Vector3 playerSpawnPosition = new Vector3 (-34f, -4f);
-	// Executado uma vez e logo no inicio.
-	void Awake(){
+    public AudioClip soundofgame;
+    // Executado uma vez e logo no inicio.
+    void Awake(){
 		status = this.GetComponent<PlayerStatus> ();
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
-	}
+        AudioSource.PlayClipAtPoint(soundofgame, transform.position);
+    }
 
 	void Start() {
 

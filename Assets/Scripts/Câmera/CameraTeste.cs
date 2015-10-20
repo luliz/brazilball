@@ -21,6 +21,7 @@ namespace UnitySampleAssets._2D
         private Vector3 currentVelocity;
         private Vector3 lookAheadPos;
         private float nextTimeToSearch = 0;
+      
 
         // Use this for initialization
         private void Start()
@@ -29,6 +30,7 @@ namespace UnitySampleAssets._2D
             offsetZ = (transform.position - target.position).z;
             transform.parent = null;
 			transform.position = new Vector3 (target.position.x, transform.position.y, transform.position.z);
+            
         }
 
         // Update is called once per frame
