@@ -150,7 +150,7 @@ public class SwordAI : MonoBehaviour {
 
     bool Found()
     {
-        saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.1f), Vector2.right * facingDirection, 10f, visaoJanissary);
+        saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.1f), Vector2.right * facingDirection, 5f, visaoJanissary);
         if (saw.transform == target)
         {
             
@@ -194,8 +194,9 @@ public class SwordAI : MonoBehaviour {
     {
         if (other.gameObject.tag=="limites")
         {
-            Debug.Log("aaaaaaaaaaaaaaaaaaa");
-            facingDirection = facingDirection * -1;
+            
+            thisAnimator.SetBool("walking", false);
+
         }
         
     }
