@@ -81,8 +81,7 @@ public class Archer : MonoBehaviour {
             Search();
         else if (estado == 1)
             Follow();
-        else
-            Attack();
+        
 
         timeAfterIsaw += Time.deltaTime;
         Flip();
@@ -96,10 +95,11 @@ public class Archer : MonoBehaviour {
                 expression.sprite = null;
             }
         }
-        if (transform.position.x > 2)
+        if (transform.position.x > -13)
         {
             speed = 2;
-        }    
+        }
+      
     }
 
     void Search()
@@ -158,20 +158,16 @@ public class Archer : MonoBehaviour {
             min = 2f;
             if (transform.position.x > target.position.x )
             {
-                facingDirection = -1;
-
-                
+                facingDirection = -1;                
             }
             else
             {
-             facingDirection = 1;
-                
+             facingDirection = 1;                
             }
             if(contador2 > Time.time)
             Attack();
             else
             contador2 = Time.time + 0.1f;
-
             if (Mathf.Abs(target.position.y - transform.position.y) < 0.5)
                 estado = 2;
         }
@@ -186,7 +182,6 @@ public class Archer : MonoBehaviour {
             }
             else
             {
-
                 facingDirection = -1;
             }
         }               
@@ -205,7 +200,7 @@ public class Archer : MonoBehaviour {
 
     bool Found()
     {
-        saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.1f), Vector2.right * facingDirection, 10f, visaoJanissary);
+        saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.1f), Vector2.right * facingDirection, 8f, visaoJanissary);
         
         if (saw.transform == target)
         {

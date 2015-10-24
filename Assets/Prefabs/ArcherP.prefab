@@ -112,8 +112,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142684}
-  m_LocalRotation: {x: 0, y: 0, z: -.71566236, w: .698446453}
-  m_LocalPosition: {x: .0799999982, y: -.257999986, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -.443746835, w: .896152198}
+  m_LocalPosition: {x: .174999997, y: -.158999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413126}
@@ -200,7 +200,7 @@ MonoBehaviour:
     m_Bits: 0
   arrow: {fileID: 417876, guid: f30db7cd1c662064a8b3367c6c066f85, type: 2}
   Ponta: {fileID: 413126}
-  soundshoot: {fileID: 0}
+  soundshoot: {fileID: 8300000, guid: 353cb49fb9b7c904b8ede21c4e86847a, type: 3}
 --- !u!212 &21207892
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -224,7 +224,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1567289919
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300102, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21264072
