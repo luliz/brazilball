@@ -48,6 +48,7 @@ public abstract class BasicAI : MonoBehaviour {
 			Follow ();
 
 		} else {
+            
 
 			Attack ();
 
