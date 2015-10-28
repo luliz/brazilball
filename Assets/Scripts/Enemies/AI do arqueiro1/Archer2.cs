@@ -20,7 +20,7 @@ public class Archer2 : MonoBehaviour {
     public Transform arrow;
     public Transform Ponta;
    
-    private float contador2;
+    private float contador2 =0f;
     public AudioClip soundshoot;
 
     void Awake()
@@ -66,10 +66,27 @@ public class Archer2 : MonoBehaviour {
             estado = 0;
             expression.sprite = interrogation;
         }
-        if (contador2 > Time.time)
-            Attack();
-        else
-            contador2 = Time.time + 0.1f;
+        if (target.position.x > transform.position.x)
+        {
+
+            
+            if (contador2 > Time.time)
+
+                Attack();
+            else
+                contador2 = Time.time + 0.1f;
+        }
+
+        if (target.position.x < transform.position.x)
+        {
+
+            
+            if (contador2 > Time.time)
+
+                Attack();
+            else
+                contador2 = Time.time + 2f;
+        }
     }
     void Attack()
     {
@@ -83,22 +100,15 @@ public class Archer2 : MonoBehaviour {
     }
     bool Found()
     {       
-        if (target.position.x >= 78f  && target.position.x < 90f) 
+        if (target.position.x >= 78f  && target.position.x < 85f) 
         {
             timeAfterIsaw = 0;
             if (estado == 0)
                 expression.sprite = exclamation;
             return true;
         }
-       
 
-        if (target.position.x >= 128f && target.position.x < 135f)
-        {
-            timeAfterIsaw = 0;
-            if (estado == 0)
-                expression.sprite = exclamation;
-            return true;
-        }
+
         return false;
     }
     void Flip()

@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour{
     void Awake(){
 		status = this.GetComponent<PlayerStatus> ();
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
-        AudioSource.PlayClipAtPoint(soundofgame, transform.position);
+       
     }
 
 	void Start() {
@@ -34,8 +34,8 @@ public class PlayerController : MonoBehaviour{
 	}
 	// Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
 	void Update(){
-		
-		if (onLadder && !touchingLadder) {
+       
+        if (onLadder && !touchingLadder) {
 			
 			onLadder = false;
 			myRigidBody2D.gravityScale = 3;

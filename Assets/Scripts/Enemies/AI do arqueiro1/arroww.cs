@@ -52,7 +52,6 @@ public class arroww : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D other)
     {
-       
         if (other.gameObject.tag == "Player")
         {
             
@@ -64,11 +63,16 @@ public class arroww : MonoBehaviour
 
 
         }
-        else if ((other.gameObject.tag != "enemyArcher" ))
+        else if ((other.gameObject.tag != "enemyArcher"))
         {
             Destroy(myRB);
             Destroy(myCL);
         }
+        if ((other.gameObject.tag == "enemy"))
+        {
+            Destroy(gameObject);
+        }
+
     }
     void Update()
     {

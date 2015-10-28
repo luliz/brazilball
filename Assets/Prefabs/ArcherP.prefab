@@ -63,7 +63,7 @@ GameObject:
   - 95: {fileID: 9528100}
   m_Layer: 0
   m_Name: Arco
-  m_TagString: Untagged
+  m_TagString: enemyArcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0847000033, y: .00139999995, z: -.00200000009}
+  m_LocalPosition: {x: .107000001, y: .0120000001, z: -.00200000009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 448794}
@@ -197,7 +197,7 @@ MonoBehaviour:
   interrogation: {fileID: 21300074, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
   visaoJanissary:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 51
   arrow: {fileID: 417876, guid: f30db7cd1c662064a8b3367c6c066f85, type: 2}
   Ponta: {fileID: 413126}
   soundshoot: {fileID: 8300000, guid: 353cb49fb9b7c904b8ede21c4e86847a, type: 3}

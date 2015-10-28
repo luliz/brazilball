@@ -22,8 +22,14 @@ public class arroww2 : MonoBehaviour
             myRB.AddForce(new Vector2(Power, 0));
             transform.Rotate(new Vector3(0, 0, 270));
         }
+        if (target.position.x == transform.position.x)
+        {
+            myRB.AddForce(new Vector2(0, 100));
+            transform.Rotate(new Vector3(0, 0, 270));
+        }
 
-        else if (target.position.x < transform.position.x)
+
+        if (target.position.x < transform.position.x)
         {
             myRB.AddForce(new Vector2(-Power, 0));
             transform.Rotate(new Vector3(0, 0, 270));
@@ -43,6 +49,11 @@ public class arroww2 : MonoBehaviour
         {
             Destroy(myRB);
             Destroy(myCL);
+        }
+
+        if ((other.gameObject.tag == "enemy"))
+        {
+            Destroy(gameObject);
         }
     }
     void Update()

@@ -57,13 +57,17 @@ public class Flechas : MonoBehaviour {
             Destroy(myRB);
             Destroy(myCL);
         }
+
+        if ((other.gameObject.tag == "enemy"))
+        {
+            Destroy(gameObject);
+        }
     }
 
-   
-           
-           
-    
-    void Update()
+
+
+
+void Update()
     {
         if (myRB != null)
         {
