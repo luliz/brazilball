@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 453920}
   - 212: {fileID: 21263652}
   - 95: {fileID: 9511970}
-  - 114: {fileID: 11431818}
   - 50: {fileID: 5091778}
   - 58: {fileID: 5824380}
   - 58: {fileID: 5832778}
+  - 114: {fileID: 11463030}
   m_Layer: 2
   m_Name: SwordAI
   m_TagString: enemyArcher
@@ -73,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.9799995, y: -4.03999996, z: 0}
+  m_LocalPosition: {x: -32.0299988, y: -4.03999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412766}
@@ -116,7 +116,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 138020}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: .0599999987, y: -.0599999987}
   serializedVersion: 2
@@ -168,7 +168,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11431818
+--- !u!114 &11463030
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -179,15 +179,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1c764ab8899dc418ac709038be8893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exclamation: {fileID: 21300072, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
-  interrogation: {fileID: 21300074, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
-  visaoJanissary:
+  target: {fileID: 0}
+  animator: {fileID: 9511970}
+  expressions: {fileID: 0}
+  interrogation: {fileID: 0}
+  exclamation: {fileID: 0}
+  visao:
     serializedVersion: 2
-    m_Bits: 51
+    m_Bits: 0
+  barreira:
+    serializedVersion: 2
+    m_Bits: 0
   speed: 2
-  barreiras:
-    serializedVersion: 2
-    m_Bits: 256
+  enemyID: 0
+  health: 5
+  chargePower: 10
+  spearCollider: {fileID: 0}
 --- !u!212 &21203940
 SpriteRenderer:
   m_ObjectHideFlags: 1
