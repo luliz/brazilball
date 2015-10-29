@@ -1,9 +1,33 @@
 fileFormatVersion: 2
 guid: 0325073c1ac53e4448516c710854b4c1
-timeCreated: 1445621625
+timeCreated: 1446116910
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: indio01_0
+    21300002: indio01_1
+    21300004: indio01_2
+    21300006: indio01_3
+    21300008: indio01_4
+    21300010: indio01_5
+    21300012: indio01_6
+    21300014: indio01_7
+    21300016: indio01_8
+    21300018: indio01_9
+    21300020: indio01_10
+    21300022: indio01_11
+    21300024: indio01_12
+    21300026: indio01_13
+    21300028: indio01_14
+    21300030: indio01_15
+    21300032: indio01_16
+    21300034: indio01_17
+    21300036: indio01_18
+    21300038: indio01_19
+    21300040: indio01_20
+    21300042: indio01_21
+    21300044: indio01_22
+    21300046: indio01_23
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +50,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +62,258 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: indio01_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 237
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 237
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 237
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_3
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 237
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_4
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 237
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_5
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 237
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_6
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 237
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_7
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 237
+        width: 79
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 136
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_9
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 136
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_10
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 136
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_11
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 136
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_12
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 136
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_13
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 136
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_14
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 136
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_15
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 136
+        width: 79
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 20
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_17
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 20
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_18
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 20
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_19
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 20
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_20
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 20
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_21
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 20
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_22
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 20
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: indio01_23
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 20
+        width: 79
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
