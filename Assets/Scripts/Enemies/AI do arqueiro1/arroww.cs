@@ -84,9 +84,4 @@ public class arroww : MonoBehaviour
         }
         
     }
-
-
-
-
-
 }

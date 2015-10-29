@@ -55,11 +55,6 @@ public class Archer : MonoBehaviour {
     private float min = 4f;
     private float contador2;
     public AudioClip soundshoot;
-    
-
-
-
-
 
     void Awake()
     {
