@@ -11,6 +11,7 @@ public class Charger : BasicAI {
 	private bool attacked = false;
 
 	void Start () {
+		speed = 2f;
 		health = 1;
 		memory = 3.5f;
 		minDistanceToAttack = 0f;
@@ -98,7 +99,6 @@ public class Charger : BasicAI {
 
 	public override void DoExtraStuff () {
 		counter += Time.deltaTime;
-		print (health);
 	}
 
 	public override void TakeDamage() {

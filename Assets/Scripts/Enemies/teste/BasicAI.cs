@@ -24,7 +24,7 @@ public abstract class BasicAI : MonoBehaviour {
 
 
 	//PUBLIC VARIABLES
-	public Transform target;
+	protected Transform target;
 	public Animator animator;
 	public Animator weaponAnimator;
 	public SpriteRenderer expressions;
@@ -32,7 +32,7 @@ public abstract class BasicAI : MonoBehaviour {
 	public Sprite exclamation;
 	public LayerMask visao;
 	public LayerMask barreira;
-	public float speed;
+	protected float speed;
 
 	//Metodos
 	public abstract void Follow ();
@@ -43,6 +43,7 @@ public abstract class BasicAI : MonoBehaviour {
 	public int enemyID;
 	void Awake() {
 		thisCollider = GetComponentInChildren<Collider2D>();
+		target = GameObject.Find ("Player").GetComponent<Transform> ();
 	}
 	void Update() {
 
@@ -130,6 +131,10 @@ public abstract class BasicAI : MonoBehaviour {
 	protected bool Found()
 	{
 		saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - raycastOffset), Vector2.right * facingDirection, 10f, visao);
+		if (target) {
+
+			print (saw.transform);
+		}
 		if (saw.transform == target)
 		{
 			

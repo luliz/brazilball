@@ -63,14 +63,10 @@ public class arroww : MonoBehaviour
 
 
         }
-        else if ((other.gameObject.tag != "enemyArcher"))
+        if ((other.gameObject.tag != "enemy"))
         {
-            Destroy(myRB);
-            Destroy(myCL);
-        }
-        if ((other.gameObject.tag == "enemy"))
-        {
-            Destroy(gameObject);
+			Destroy(myRB);
+			Destroy(myCL);
         }
 
     }

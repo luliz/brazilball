@@ -78,6 +78,6 @@ public class MaceAI : BasicAI {
 	}
 
 	public override void DoExtraStuff () {
-		print (saw.transform);
+		return;
 	}
 }
