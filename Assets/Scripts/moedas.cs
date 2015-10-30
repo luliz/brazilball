@@ -4,8 +4,9 @@ using System.Collections;
 public class moedas : MonoBehaviour {
 
     public Animator animator;
-	// Use this for initialization
-	void Start () {
+    public AudioClip soundshoot;
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -17,7 +18,8 @@ public class moedas : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
-        {           
+        {
+            AudioSource.PlayClipAtPoint(soundshoot, transform.position);
             Destroy(this.gameObject);            
         }
 

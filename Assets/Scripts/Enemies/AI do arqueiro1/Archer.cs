@@ -8,6 +8,7 @@ public class Archer : BasicAI {
     public Transform Ponta;
     private float contador2;
     public AudioClip soundshoot;
+    private float contador3 = 0f;
 
 	void Start () {
 		speed = 5;
@@ -21,9 +22,10 @@ public class Archer : BasicAI {
 	}
 
     public override void DoExtraStuff() {
-        if (transform.position.x > -13)
+        if (contador3 > 5)
         {
             speed = 2;
+            
         }
 
     }
@@ -40,6 +42,7 @@ public class Archer : BasicAI {
 		if (Mathf.Abs(target.position.x - transform.position.x) >= maxDistanceToAttack && Mathf.Abs(target.position.x - transform.position.x) < maxDistanceToFollow)
         {
             Walk();
+            weaponAnimator.SetBool("atirar", true);
 
             if (transform.position.x > target.position.x)
             {
@@ -91,11 +94,13 @@ public class Archer : BasicAI {
     public override void Attack() {
 
         if (contador <= Time.time) {
-			Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
-            contador = Time.time + 1f;
+            weaponAnimator.SetBool("atirar", true);
+            Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
+            contador = Time.time + 2f;
             contador2 = 0f;
             AudioSource.PlayClipAtPoint(soundshoot,transform.position);
 			estado = 1;
+            contador3 = contador3 + 1;
         }
 	}
 

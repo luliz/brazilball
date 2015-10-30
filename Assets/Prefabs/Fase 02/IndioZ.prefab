@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 463274}
   - 212: {fileID: 21280634}
   - 95: {fileID: 9548210}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zarabatana_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 485276}
   - 212: {fileID: 21292850}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Expressions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486350}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ponta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,9 +61,9 @@ GameObject:
   - 50: {fileID: 5044826}
   - 58: {fileID: 5897512}
   - 114: {fileID: 11480862}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: IndioZ
-  m_TagString: enemyArcher
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,17 +193,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa277db89c1a0804ea78dcd8006ee257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exclamation: {fileID: 21300072, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
+  estado: 0
+  animator: {fileID: 9581688}
+  weaponAnimator: {fileID: 9548210}
+  expressions: {fileID: 21292850}
   interrogation: {fileID: 21300074, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
-  visaoJanissary:
+  exclamation: {fileID: 21300072, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
+  visao:
     serializedVersion: 2
     m_Bits: 51
-  barreiras:
+  barreira:
     serializedVersion: 2
     m_Bits: 256
+  enemyID: 0
   arrow: {fileID: 423180, guid: 2541bbc2821757a498f41ed2ff308ee1, type: 2}
   Ponta: {fileID: 486350}
-  soundshoot: {fileID: 8300000, guid: 353cb49fb9b7c904b8ede21c4e86847a, type: 3}
+  soundshoot: {fileID: 8300000, guid: 3b4b2a8f31005214f9591e8147466573, type: 3}
 --- !u!212 &21271766
 SpriteRenderer:
   m_ObjectHideFlags: 1
