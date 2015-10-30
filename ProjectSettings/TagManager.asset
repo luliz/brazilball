@@ -10,6 +10,7 @@ TagManager:
   - arrow
   - enemy
   - limites
+  - Gun
   layers:
   - Default
   - TransparentFX

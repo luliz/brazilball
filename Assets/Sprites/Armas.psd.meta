@@ -1,9 +1,41 @@
 fileFormatVersion: 2
 guid: bcd02dcf09f20c648ada74bb51fb444e
-timeCreated: 1443903536
+timeCreated: 1446227539
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Armas_0
+    21300002: Armas_1
+    21300004: Armas_2
+    21300006: Armas_3
+    21300008: Armas_4
+    21300010: Armas_5
+    21300012: Armas_6
+    21300014: Armas_7
+    21300016: Armas_8
+    21300018: Armas_9
+    21300020: Armas_10
+    21300022: Armas_11
+    21300024: Armas_12
+    21300026: Armas_13
+    21300028: Armas_14
+    21300030: Armas_15
+    21300032: Armas_16
+    21300034: Armas_17
+    21300036: Armas_18
+    21300038: Armas_19
+    21300040: Armas_20
+    21300042: Armas_21
+    21300044: Armas_22
+    21300046: Armas_23
+    21300048: Armas_24
+    21300050: Armas_25
+    21300052: Armas_27
+    21300054: Armas_29
+    21300056: Armas_40
+    21300058: Armas_41
+    21300060: Armas_43
+    21300062: Armas_48
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,8 +58,8 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -38,7 +70,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +81,327 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Armas_0
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 117
+        width: 31
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 126
+        width: 35
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 126
+        width: 35
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 203
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_4
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 203
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_5
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 202
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_6
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 202
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 130
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_8
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 130
+        width: 69
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_9
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 126
+        width: 58
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_10
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 126
+        width: 61
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_11
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 197
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_12
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 193
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 154
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 154
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_15
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 126
+        width: 93
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_16
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 181
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_17
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 129
+        width: 79
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 157
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_19
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 161
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_20
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 142
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_21
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 142
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 151
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_23
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 56
+        width: 93
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_24
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 111
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_25
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 56
+        width: 192
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_27
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 95
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 56
+        width: 161
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_40
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 56
+        width: 161
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_41
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 56
+        width: 209
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_43
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 54
+        width: 211
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_48
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 31
+        width: 93
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

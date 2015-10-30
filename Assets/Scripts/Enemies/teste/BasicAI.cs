@@ -131,10 +131,10 @@ public abstract class BasicAI : MonoBehaviour {
 	protected bool Found()
 	{
 		saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - raycastOffset), Vector2.right * facingDirection, 10f, visao);
-		if (target) {
+		//if (target) {
 
-			print (saw.transform);
-		}
+			//print (saw.transform);
+		//}
 		if (saw.transform == target)
 		{
 			

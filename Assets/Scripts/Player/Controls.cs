@@ -13,5 +13,6 @@ public static class Controls : object
 	public static KeyCode pause = KeyCode.Escape;
 	public static KeyCode climbLadderUp = KeyCode.W;
 	public static KeyCode climbLadderDown = KeyCode.S;
-	
+    
+
 }
