@@ -12,7 +12,6 @@ public class Lance : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D col) {
 		
 		if (col.gameObject.tag == "Player") {
-			print ("yo");
 			col.GetComponent<PlayerStatus>().TakeDamage(parentFacingDirection);
 		}
 	}

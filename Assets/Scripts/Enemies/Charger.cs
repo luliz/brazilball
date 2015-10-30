@@ -3,13 +3,6 @@ using System.Collections;
 
 public class Charger : BasicAI {
 
-	public int health = 5;
-
-	private float memory = 3.5f;
-	private float minDistanceToAttack = 0f;
-	private float maxDistanceToAttack = 2f;
-	private float maxDistanceToFollow = 40f;
-	private float maxVerticalDistanceToAttack = 0.5f;
 	private float attackCounter;
 	private float timeToAttack = 0.3f;
 	public float chargePower = 10;
@@ -17,6 +10,15 @@ public class Charger : BasicAI {
 	private float counter;
 	private bool attacked = false;
 
+	void Start () {
+		health = 1;
+		memory = 3.5f;
+		minDistanceToAttack = 0f;
+		maxDistanceToAttack = 2f;
+		maxDistanceToFollow = 40f;
+		raycastOffset = 0.5f;
+		maxVerticalDistanceToAttack = 0.5f;
+	}
 	// Update is called once per frame
 	public override void Follow () {
 		
@@ -96,6 +98,7 @@ public class Charger : BasicAI {
 
 	public override void DoExtraStuff () {
 		counter += Time.deltaTime;
+		print (health);
 	}
 
 	public override void TakeDamage() {

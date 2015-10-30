@@ -1,13 +1,33 @@
 fileFormatVersion: 2
 guid: 2bbdec6700ee8d8409611d0ceba4e4cb
-timeCreated: 1444172282
+timeCreated: 1446208171
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: mace_0
+    21300002: mace_1
+    21300004: mace_2
+    21300006: mace_3
+    21300008: mace_4
+    21300010: mace_5
+    21300012: mace_6
+    21300014: mace_7
+    21300016: mace_8
+    21300018: mace_9
+    21300020: mace_10
+    21300022: mace_11
+    21300024: mace_12
+    21300026: mace_13
+    21300028: mace_14
+    21300030: mace_15
+    21300032: mace_16
+    21300034: mace_17
+    21300036: mace_18
+    21300038: mace_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,8 +46,8 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -38,7 +58,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +69,207 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: mace_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 275
+        width: 61
+        height: 93
+      alignment: 9
+      pivot: {x: .86025703, y: .10842108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 275
+        width: 67
+        height: 89
+      alignment: 9
+      pivot: {x: .884222686, y: .104931779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 275
+        width: 73
+        height: 86
+      alignment: 9
+      pivot: {x: .887046695, y: .113053076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_3
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 275
+        width: 78
+        height: 80
+      alignment: 9
+      pivot: {x: .894434988, y: .11542549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 275
+        width: 78
+        height: 80
+      alignment: 9
+      pivot: {x: .894434988, y: .11542549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_5
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 275
+        width: 78
+        height: 89
+      alignment: 9
+      pivot: {x: .894434988, y: .0978770703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_6
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 275
+        width: 95
+        height: 90
+      alignment: 9
+      pivot: {x: .268677413, y: .102344766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 197
+        width: 102
+        height: 71
+      alignment: 9
+      pivot: {x: .0998826846, y: .199326858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 198
+        width: 102
+        height: 61
+      alignment: 9
+      pivot: {x: .0998825356, y: .191208392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_9
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 198
+        width: 102
+        height: 29
+      alignment: 9
+      pivot: {x: .0998825356, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_10
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 196
+        width: 102
+        height: 30
+      alignment: 9
+      pivot: {x: .0998828337, y: .604645789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_11
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 196
+        width: 102
+        height: 29
+      alignment: 9
+      pivot: {x: .0937269628, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 136
+        width: 102
+        height: 29
+      alignment: 9
+      pivot: {x: .0998826846, y: .543301821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_13
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 136
+        width: 102
+        height: 29
+      alignment: 9
+      pivot: {x: .0998825356, y: .521651149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_14
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 136
+        width: 102
+        height: 29
+      alignment: 9
+      pivot: {x: .0875710845, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_15
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 136
+        width: 102
+        height: 29
+      alignment: 9
+      pivot: {x: .08757139, y: .543301821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_16
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 136
+        width: 102
+        height: 29
+      alignment: 9
+      pivot: {x: .08757139, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_17
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 30
+        width: 78
+        height: 80
+      alignment: 9
+      pivot: {x: .105564825, y: .123274088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_18
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 10
+        width: 29
+        height: 102
+      alignment: 9
+      pivot: {x: .478348821, y: .0998828933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mace_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 10
+        width: 61
+        height: 93
+      alignment: 9
+      pivot: {x: .880842865, y: .11517252}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

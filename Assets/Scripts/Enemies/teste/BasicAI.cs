@@ -4,7 +4,9 @@ using System.Collections;
 public abstract class BasicAI : MonoBehaviour {
 
 	//PRIVATE VARIABLES
-	protected int estado = 0;
+	protected int health;
+	protected float memory;
+	public int estado = 0;
 	protected RaycastHit2D saw;
 	protected float timeAfterISaw;
 	protected int facingDirection = 1;
@@ -13,11 +15,18 @@ public abstract class BasicAI : MonoBehaviour {
 	private Collider2D thisCollider;
 	private float decisionCounter;
 	protected bool canFlip = true;
+	protected float raycastOffset;
+	
+	protected float minDistanceToAttack;
+	protected float maxDistanceToAttack;
+	protected float maxDistanceToFollow;
+	protected float maxVerticalDistanceToAttack;
 
 
 	//PUBLIC VARIABLES
 	public Transform target;
 	public Animator animator;
+	public Animator weaponAnimator;
 	public SpriteRenderer expressions;
 	public Sprite interrogation;
 	public Sprite exclamation;
@@ -120,7 +129,7 @@ public abstract class BasicAI : MonoBehaviour {
 
 	protected bool Found()
 	{
-		saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.5f), Vector2.right * facingDirection, 10f, visao);
+		saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - raycastOffset), Vector2.right * facingDirection, 10f, visao);
 		if (saw.transform == target)
 		{
 			
