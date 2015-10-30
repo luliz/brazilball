@@ -27,7 +27,6 @@ public class Archer : BasicAI {
             speed = 2;
             
         }
-
     }
 
     public override void Follow()
@@ -95,7 +94,7 @@ public class Archer : BasicAI {
 
         if (contador <= Time.time) {
             weaponAnimator.SetBool("atirar", true);
-            Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
+			Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
             contador = Time.time + 2f;
             contador2 = 0f;
             AudioSource.PlayClipAtPoint(soundshoot,transform.position);

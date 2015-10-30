@@ -1678,6 +1678,10 @@ Prefab:
       propertyPath: m_TagString
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 11480862, guid: 5084f658a3b1f0647966446357dd6137, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1942611152}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5084f658a3b1f0647966446357dd6137, type: 2}
   m_IsPrefabParent: 0
@@ -2133,6 +2137,7 @@ GameObject:
   - 212: {fileID: 1942611151}
   - 95: {fileID: 1942611150}
   - 114: {fileID: 1942611155}
+  - 61: {fileID: 1942611153}
   m_Layer: 0
   m_Name: cavalinho_0
   m_TagString: Untagged
@@ -2195,6 +2200,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!61 &1942611153
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942611149}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.26666665, y: .899999976}
 --- !u!114 &1942611155
 MonoBehaviour:
   m_ObjectHideFlags: 0
