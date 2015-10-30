@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5a2a02b87207b094ea4a389f12b8480c
-timeCreated: 1445621746
+timeCreated: 1446238821
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,7 @@ TextureImporter:
     21300002: BackgroundFase02_1
     21300004: BackgroundFase02_2
     21300006: BackgroundFase02_3
+    21300008: BackgroundFase02_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -31,7 +32,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -59,18 +60,18 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 839
-        width: 2314
-        height: 667
+        width: 2313
+        height: 669
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: BackgroundFase02_1
       rect:
         serializedVersion: 2
-        x: 2383
-        y: 861
-        width: 2311
-        height: 622
+        x: 2385
+        y: 863
+        width: 2310
+        height: 621
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -79,17 +80,27 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 157
-        width: 2312
-        height: 616
+        width: 2313
+        height: 618
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: BackgroundFase02_3
       rect:
         serializedVersion: 2
-        x: 2383
+        x: 2378
+        y: 665
+        width: 2322
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BackgroundFase02_4
+      rect:
+        serializedVersion: 2
+        x: 2385
         y: 157
-        width: 2313
+        width: 2312
         height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
