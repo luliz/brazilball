@@ -11,6 +11,7 @@ TagManager:
   - enemy
   - limites
   - Gun
+  - Ponta
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - 
   - 
   - barreiras
-  - 
+  - Ponta
   - 
   - 
   - 

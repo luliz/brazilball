@@ -48,8 +48,8 @@ GameObject:
   - 4: {fileID: 402730}
   - 212: {fileID: 21279006}
   - 95: {fileID: 9569058}
-  - 114: {fileID: 11477410}
   - 114: {fileID: 11482602}
+  - 114: {fileID: 11404730}
   m_Layer: 0
   m_Name: Arma
   m_TagString: Gun
@@ -114,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .159999996, y: -.0769999996, z: 0}
+  m_LocalPosition: {x: .212989807, y: -.142000198, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 419414}
@@ -142,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .74000001, y: .0540000014, z: 0}
+  m_LocalPosition: {x: .834999979, y: .0540000014, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 402730}
@@ -295,6 +295,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11404730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e3cef7d7cc6fd4ab0353766d2c84ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationOffset: 90
 --- !u!114 &11418976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -332,18 +344,6 @@ MonoBehaviour:
   maxImmuneTime: 2
   counter: 0
   blinkColor: {r: .970588207, g: .549524188, b: .549524188, a: 1}
---- !u!114 &11477410
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9e3cef7d7cc6fd4ab0353766d2c84ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationOffset: 90
 --- !u!114 &11482602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -359,7 +359,7 @@ MonoBehaviour:
   Damage: 10
   whatTohit:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 51
   soundshoot: {fileID: 8300000, guid: 6887bcf6a4ca8f94bae0444ae1b80ec3, type: 3}
   bullet: {fileID: 447588, guid: be76eeaeed2c81444a3db779ba64d193, type: 2}
 --- !u!114 &11489508
