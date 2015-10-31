@@ -11,6 +11,7 @@ public class Charger : BasicAI {
 	private bool attacked = false;
 
 	void Start () {
+		target = GameObject.Find ("Player").transform;
 		speed = 2f;
 		health = 1;
 		memory = 3.5f;

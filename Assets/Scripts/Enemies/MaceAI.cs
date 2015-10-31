@@ -6,6 +6,7 @@ public class MaceAI : BasicAI {
 	public bool attacking;
 
 	void Start () {
+		speed = 2f;
 		health = 3;
 		memory = 10f;
 		minDistanceToAttack = 0f;
