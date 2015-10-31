@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase 1.unity
   - enabled: 1
-    path: Assets/Scenes/Fase teste.unity
+    path: Assets/Scenes/casas/CasaLarga01.unity
   - enabled: 1
     path: Assets/Scenes/Menu.unity
