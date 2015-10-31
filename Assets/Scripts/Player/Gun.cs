@@ -35,10 +35,31 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        //Vector3 rotacion = new Vector3(0,0,180);
 
-        AudioSource.PlayClipAtPoint(soundshoot, transform.position);
-        Instantiate(bullet, Ponta.transform.position, Ponta.rotation);
-        contador = Time.time + 2;
+        if(GameObject.Find("Player").GetComponent<PlayerController>().right == true)
+        {
+            AudioSource.PlayClipAtPoint(soundshoot, transform.position);
+            Instantiate(bullet, Ponta.transform.position, Ponta.rotation);
+        }
+
+        if (GameObject.Find("Player").GetComponent<PlayerController>().right == false)
+        {
+            
+                Ponta.Rotate(0, 0, 180);
+             
+            
+            AudioSource.PlayClipAtPoint(soundshoot, transform.position);
+            Instantiate(bullet, Ponta.transform.position, Ponta.rotation);
+            Ponta.Rotate(0, 0, 180);
+        }
+        
+        
+
+         contador = Time.time + 2;
+     
+
+        
 
 
     }

@@ -6,21 +6,38 @@ public class Mosquete : MonoBehaviour {
 
 
     public int rotationOffset;
+    public Transform target;
+    private bool right = true;
+
+  
+        void Update ()
+    {
    
 
 
-    void Update ()
-    {
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position  ; //subtracting the position of the player from the mouse position
+        Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
 
-        difference.Normalize(); //normalizing the vector.Meaning that all the sum of the vector will be equal to 1
+        float rotZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
-        float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg; //Find the angle in dregrees
+        if (dir.x >= 0)
+        {
+            right = true;
 
-        
-        transform.rotation=Quaternion.Euler(0f,0f,rotZ);
+            print(" right? ");
+            transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
 
-       
+             float x = transform.localScale.x ;
+            Vector3 ls = transform.localScale;
+        }
+        else
+        {
+            right = false;
+            transform.rotation = Quaternion.Euler(0f, 0f, rotZ + 180);
+            
+
+            float x = -transform.localScale.x;
+            Vector3 ls = -transform.localScale;
+        }
 
     }
 

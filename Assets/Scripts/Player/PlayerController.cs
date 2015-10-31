@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour{
 	
 	public Rigidbody2D myRigidBody2D;
 	public float velocidade = 1f;
-	private bool right = true;
+	public bool right = true;
 	public Animator animator;
 	public Animator weaponAnimator;
 	public float forcaPulo = 10;
