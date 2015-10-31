@@ -100,7 +100,7 @@ public class Archer2 : MonoBehaviour {
     }
     bool Found()
     {       
-        if (target.position.x >= 78f  && target.position.x < 85f) 
+        if (Mathf.Abs(target.position.x - transform.position.x) >= 2 && Mathf.Abs(target.position.x - transform.position.x) <= 6) 
         {
             timeAfterIsaw = 0;
             if (estado == 0)

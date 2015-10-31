@@ -17,13 +17,14 @@ public class Flechas : MonoBehaviour {
         myCL = GetComponent<Collider2D>();
         target = GameObject.FindWithTag("Player").transform;
 
-        absDistance = Mathf.Abs(transform.position.x - target.position.x);
-        Power = (1000 * absDistance) / 12;
+        float x = Random.Range(200f, 300f);
+
+        float y = Random.Range(20f, 50f);
 
         if (target.position.x > transform.position.x)
         {                         
           
-                myRB.AddForce(new Vector2(Power, 20));
+                myRB.AddForce(new Vector2(x, y));
         }
 
         else if (target.position.x < transform.position.x)
@@ -31,7 +32,7 @@ public class Flechas : MonoBehaviour {
                     
             
             
-                myRB.AddForce(new Vector2(-Power, 20));
+                myRB.AddForce(new Vector2(-x, y));
             
         }
         Destroy(gameObject, 3);

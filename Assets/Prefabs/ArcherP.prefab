@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .107000001, y: .0120000001, z: -.00200000009}
+  m_LocalPosition: {x: .128999993, y: .0170000009, z: -.00200000009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 448794}
@@ -87,8 +87,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 82.0986176, y: -1.63355482, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 79.3600006, y: -1.78999996, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 436856}
   - {fileID: 448794}
@@ -102,7 +102,7 @@ Transform:
   m_GameObject: {fileID: 108526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0689999983, y: .805999994, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 423578}
   m_RootOrder: 0
@@ -112,8 +112,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142684}
-  m_LocalRotation: {x: 0, y: 0, z: -.443746835, w: .896152198}
-  m_LocalPosition: {x: .174999997, y: -.158999994, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -.363458037, w: .931610644}
+  m_LocalPosition: {x: .175003052, y: -.159000039, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413126}
@@ -200,7 +200,7 @@ MonoBehaviour:
     m_Bits: 51
   arrow: {fileID: 417876, guid: f30db7cd1c662064a8b3367c6c066f85, type: 2}
   Ponta: {fileID: 413126}
-  soundshoot: {fileID: 8300000, guid: 353cb49fb9b7c904b8ede21c4e86847a, type: 3}
+  soundshoot: {fileID: 8300000, guid: e960646c975219e44b1dfaa250808689, type: 3}
 --- !u!212 &21207892
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -224,7 +224,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1567289919
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300102, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21264072
