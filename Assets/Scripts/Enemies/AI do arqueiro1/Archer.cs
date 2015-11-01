@@ -2,6 +2,8 @@
 
 public class Archer : BasicAI {
 
+	public AudioSource audioSource;
+
     private float counter;
     private float contador;
     public Transform arrow;
@@ -105,6 +107,9 @@ public class Archer : BasicAI {
 	}
 
 	public override void TakeDamage() {
+
+		audioSource.Play ();
+
 		if (health > 0) {
 
 			health--;

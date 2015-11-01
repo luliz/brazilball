@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerStatus : MonoBehaviour {
 
+	public AudioSource audioSource;
+
 	public int lives = 1;
 	public float maxImmuneTime = 2f;
 	public float counter;
@@ -40,6 +42,7 @@ public class PlayerStatus : MonoBehaviour {
 	public void TakeDamage (int direction) {
 
 		if (counter > maxImmuneTime) {
+			audioSource.Play();
 			blink = true;
 			counter = 0;
 			this.GetComponent<Rigidbody2D>().AddForce(new Vector2 (direction * 10, 0), ForceMode2D.Impulse);

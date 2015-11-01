@@ -10,7 +10,7 @@ public class Door : MonoBehaviour {
 
 		if (col.CompareTag ("Player")) {
 
-			if (Input.GetKeyDown(KeyCode.W)) {
+			if (Input.GetKeyDown(Controls.enterHouse)) {
 				Application.LoadLevel (levelToGo);
 				PlayerController.playerSpawnPosition = spawnPosition;
 			}

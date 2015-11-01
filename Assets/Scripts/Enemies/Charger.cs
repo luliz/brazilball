@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Charger : BasicAI {
 
+	public AudioSource audioSource;
+
 	private float attackCounter;
 	private float timeToAttack = 0.3f;
 	public float chargePower = 10;
@@ -103,6 +105,8 @@ public class Charger : BasicAI {
 	}
 
 	public override void TakeDamage() {
+
+		audioSource.Play ();
 
 		if (health > 0) {
 			health--;

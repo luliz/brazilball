@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MaceAI : BasicAI {
 
+	public AudioSource audioSource;
 	public bool attacking;
 
 	void Start () {
@@ -69,6 +70,7 @@ public class MaceAI : BasicAI {
 
 	public override void TakeDamage () {
 
+		audioSource.Play ();
 		if (health > 0) {
 
 			health--;
