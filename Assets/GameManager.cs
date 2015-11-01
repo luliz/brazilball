@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour {
 	PlayerStatus status;
 	public static List<int> enemiesKilled = new List<int>();
 	public static List<int> coinsPicked = new List<int> ();
-
+    public int index;
 
 	public GameObject mainMenu;
 	public GameObject areYouSure;
@@ -117,8 +117,10 @@ public class GameManager : MonoBehaviour {
 			else {
 				CreateMenu ();
 			}
-		} 
-	}
+		}
+
+        index = GameManager.enemiesKilled.ToArray().Length;
+    }
 	public void Pause () {
 		if (Time.timeScale == 1) {
 			GameObject.Find("Player").GetComponent<PlayerController>().enabled = false;
