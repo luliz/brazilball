@@ -57,7 +57,7 @@ public abstract class BasicAI : MonoBehaviour {
 
 			Follow ();
 
-		} else {
+		} else if (estado == 2){
             
 
 			Attack ();
@@ -83,7 +83,7 @@ public abstract class BasicAI : MonoBehaviour {
 		}
 	}
 
-	protected void Search () {
+	protected virtual void Search () {
 		if (Found ()) {
 			estado = 1;
 		}
@@ -148,7 +148,8 @@ public abstract class BasicAI : MonoBehaviour {
 	protected void Flip()
 	{
 
-		transform.localScale = new Vector3(facingDirection, 1, 1);
+		transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * facingDirection, transform.localScale.y, 1);
+		//transform.localScale = new Vector3(facingDirection, 1, 1);
 		if (expressions)
 			expressions.transform.localScale = new Vector3(facingDirection, 1, 1);
 		
