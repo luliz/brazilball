@@ -14,7 +14,8 @@ public class MaceAI : BasicAI {
 		maxDistanceToFollow = 20f;
 		raycastOffset = 0f;
 		maxVerticalDistanceToAttack = 1f;
-	}
+        target = GameObject.Find("Player").transform;
+    }
 	public override void Follow () {
 
 		if (timeAfterISaw > memory)
@@ -24,7 +25,7 @@ public class MaceAI : BasicAI {
 				expressions.sprite = interrogation;
 		}
 		
-		if (Mathf.Abs(target.position.x - transform.position.x) > maxDistanceToAttack && Mathf.Abs(target.position.x - transform.position.x) < maxDistanceToFollow)
+		if (Mathf.Abs(target.position.x - transform.position.x) >= maxDistanceToAttack && Mathf.Abs(target.position.x - transform.position.x) < maxDistanceToFollow)
 		{
 			Walk();
 			

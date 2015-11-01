@@ -16,11 +16,11 @@ public abstract class BasicAI : MonoBehaviour {
 	private float decisionCounter;
 	protected bool canFlip = true;
 	protected float raycastOffset;
-	
-	protected float minDistanceToAttack;
-	protected float maxDistanceToAttack;
-	protected float maxDistanceToFollow;
-	protected float maxVerticalDistanceToAttack;
+
+    protected float minDistanceToAttack;
+    protected float maxDistanceToAttack;
+    protected float maxDistanceToFollow;
+    protected float maxVerticalDistanceToAttack;
 
 
 	//PUBLIC VARIABLES

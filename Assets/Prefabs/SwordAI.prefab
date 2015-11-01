@@ -73,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.5400009, y: -4.03999996, z: 0}
+  m_LocalPosition: {x: -28.8099995, y: -4.04234362, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412766}
@@ -179,8 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1c764ab8899dc418ac709038be8893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  estado: 0
   animator: {fileID: 9511970}
+  weaponAnimator: {fileID: 9555944}
   expressions: {fileID: 0}
   interrogation: {fileID: 0}
   exclamation: {fileID: 0}
@@ -190,11 +191,8 @@ MonoBehaviour:
   barreira:
     serializedVersion: 2
     m_Bits: 0
-  speed: 2
-  enemyID: 1
-  health: 5
-  chargePower: 10
-  spearCollider: {fileID: 0}
+  enemyID: 0
+  attacking: 0
 --- !u!212 &21203940
 SpriteRenderer:
   m_ObjectHideFlags: 1

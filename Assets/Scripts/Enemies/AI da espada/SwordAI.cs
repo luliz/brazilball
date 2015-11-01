@@ -1,29 +1,21 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class SwordAI : BasicAI
 {
 
-    public int health = 5;
+    public bool attacking;
 
-    private float memory = 3.5f;
-    private float minDistanceToAttack = 0f;
-    private float maxDistanceToAttack = 2f;
-    private float maxDistanceToFollow = 40f;
-    private float maxVerticalDistanceToAttack = 0.5f;
-    private float attackCounter;
-    private float timeToAttack = 0.3f;
-    public float chargePower = 10;
-    public BoxCollider2D spearCollider;
-    private float counter;
-    private bool attacked = false;
-
-    private Animator SwordAnimator;
-
-    // Update is called once per frame
-    void Awake()
+    void Start()
     {
-          SwordAnimator = GameObject.Find("EspadaAI").GetComponent<Animator>();
+        speed = 2f;
+        health = 3;
+        memory = 10f;
+        minDistanceToAttack = 0f;
+        maxDistanceToAttack = 1f;
+        maxDistanceToFollow = 20f;
+        raycastOffset = 0f;
+        maxVerticalDistanceToAttack = 1f;
+        target = GameObject.Find("Player").transform;
     }
     public override void Follow()
     {
@@ -35,7 +27,7 @@ public class SwordAI : BasicAI
                 expressions.sprite = interrogation;
         }
 
-        if (Mathf.Abs(target.position.x - transform.position.x) > maxDistanceToAttack && Mathf.Abs(target.position.x - transform.position.x) < maxDistanceToFollow)
+        if (Mathf.Abs(target.position.x - transform.position.x) >= maxDistanceToAttack && Mathf.Abs(target.position.x - transform.position.x) < maxDistanceToFollow)
         {
             Walk();
 
@@ -52,7 +44,6 @@ public class SwordAI : BasicAI
         {
 
             animator.SetBool("walk", false);
-            SwordAnimator.SetBool("atacar", true);
             if (transform.position.x > target.position.x)
             {
                 facingDirection = -1;
@@ -67,52 +58,18 @@ public class SwordAI : BasicAI
 
             if (Mathf.Abs(target.position.y - transform.position.y) < maxVerticalDistanceToAttack)
             {
-
-                if (counter >= 1.5)
-                {
-                    animator.SetInteger("status", 1);
-                    attackCounter = 0;
-                    estado = 2;
-                    canFlip = false;
-                }
-
+                estado = 2;
             }
         }
     }
 
     public override void Attack()
     {
-
-        attackCounter += Time.deltaTime;
-        if (attackCounter >= timeToAttack)
+        if (!attacking)
         {
-            if (!attacked)
-            {
-                this.GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * chargePower, ForceMode2D.Impulse);
-                SwordAnimator.SetBool("atacar", true);
-                spearCollider.enabled = true;
-                attacked = true;
-            }
-            else
-            {
-
-                if (Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.x) <= 4)
-                {
-
-                    spearCollider.enabled = false;
-                    canFlip = true;
-                    attacked = false;
-                    animator.SetInteger("status", 0);
-                    estado = 1;
-                    counter = 0;
-                }
-            }
+            weaponAnimator.SetBool("atacar",true);
+            attacking = true;
         }
-    }
-
-    public override void DoExtraStuff()
-    {
-        counter += Time.deltaTime;
     }
 
     public override void TakeDamage()
@@ -120,22 +77,19 @@ public class SwordAI : BasicAI
 
         if (health > 0)
         {
+
             health--;
         }
         else
         {
+
             GameManager.enemiesKilled.Add(this.enemyID);
             Destroy(this.gameObject);
         }
     }
+
+    public override void DoExtraStuff()
+    {
+        return;
+    }
 }
-
-
-
-
-
-
-
-
-
-    
