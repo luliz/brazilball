@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour{
 	}
 	// Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
 	void Update(){
-       
+		print (touchingLadder);
         if (onLadder && !touchingLadder) {
 			
 			onLadder = false;
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour{
 		
 		
 		if (Input.GetKey (Controls.climbLadderUp) && touchingLadder && !onLadder) {
-			
+			print ("you da boss");
 			onLadder = true;
 			transform.position = new Vector2 (lockedXPosition, transform.position.y);
 			myRigidBody2D.velocity = new Vector2 (0, 0);
