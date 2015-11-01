@@ -33,6 +33,9 @@ public class PlayerController : MonoBehaviour{
 		if (playerSpawnPosition != new Vector3 (-34f, -4f)) {
 			transform.position = playerSpawnPosition;
 		}
+		
+		Camera.main.GetComponent<CameraTeste> ().UpdateCameraPosition ();
+		Camera.main.GetComponent<Parallaxing> ().enabled = true;
 	}
 	// Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
 	void Update(){

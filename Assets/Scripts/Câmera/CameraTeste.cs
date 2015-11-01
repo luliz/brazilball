@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-namespace UnitySampleAssets._2D
-{
 
     public class CameraTeste: MonoBehaviour
     {
@@ -24,14 +22,17 @@ namespace UnitySampleAssets._2D
 
 
 
+		public void UpdateCameraPosition () {
 
+			transform.position = new Vector3 (target.position.x, transform.position.y, transform.position.z);
+		}
+		
         // Use this for initialization
         private void Start()
         {
             lastTargetPosition = target.position;
             offsetZ = (transform.position - target.position).z;
             transform.parent = null;
-			transform.position = new Vector3 (target.position.x, transform.position.y, transform.position.z);
             
 
         }
@@ -81,4 +82,3 @@ namespace UnitySampleAssets._2D
             }
         }
     }
-}
