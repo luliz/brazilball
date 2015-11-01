@@ -35,7 +35,8 @@ public class PlayerController : MonoBehaviour{
 		}
 		
 		Camera.main.GetComponent<CameraTeste> ().UpdateCameraPosition ();
-		Camera.main.GetComponent<Parallaxing> ().enabled = true;
+		if (Camera.main.GetComponent<Parallaxing>())
+			Camera.main.GetComponent<Parallaxing> ().enabled = true;
 	}
 	// Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
 	void Update(){

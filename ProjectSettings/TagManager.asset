@@ -12,6 +12,7 @@ TagManager:
   - limites
   - Gun
   - Ponta
+  - coin
   layers:
   - Default
   - TransparentFX

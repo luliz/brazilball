@@ -683,7 +683,7 @@ GameObject:
   - 58: {fileID: 38005811}
   m_Layer: 0
   m_Name: Coins (1)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,9 +724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 13
   animator: {fileID: 38005813}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &38005813
 Animator:
   serializedVersion: 3
@@ -2376,7 +2376,7 @@ GameObject:
   - 58: {fileID: 208439260}
   m_Layer: 0
   m_Name: Coins (2)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2417,9 +2417,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 3
   animator: {fileID: 208439262}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &208439262
 Animator:
   serializedVersion: 3
@@ -6358,7 +6358,7 @@ GameObject:
   - 58: {fileID: 669262339}
   m_Layer: 0
   m_Name: Coins
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6399,9 +6399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 15
   animator: {fileID: 669262341}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &669262341
 Animator:
   serializedVersion: 3
@@ -6555,7 +6555,7 @@ GameObject:
   - 58: {fileID: 686369197}
   m_Layer: 0
   m_Name: Coins (4)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6596,9 +6596,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 18
   animator: {fileID: 686369199}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &686369199
 Animator:
   serializedVersion: 3
@@ -6802,7 +6802,7 @@ GameObject:
   - 58: {fileID: 716794142}
   m_Layer: 0
   m_Name: Coins (5)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6843,9 +6843,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 6
   animator: {fileID: 716794144}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &716794144
 Animator:
   serializedVersion: 3
@@ -7832,7 +7832,7 @@ GameObject:
   - 58: {fileID: 815596250}
   m_Layer: 0
   m_Name: Coins (3)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7873,9 +7873,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 4
   animator: {fileID: 815596252}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &815596252
 Animator:
   serializedVersion: 3
@@ -8349,7 +8349,7 @@ GameObject:
   - 58: {fileID: 891765933}
   m_Layer: 0
   m_Name: Coins (6)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8390,9 +8390,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 14
   animator: {fileID: 891765935}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &891765935
 Animator:
   serializedVersion: 3
@@ -9558,7 +9558,7 @@ GameObject:
   - 58: {fileID: 993294935}
   m_Layer: 0
   m_Name: Coins (4)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9599,9 +9599,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 5
   animator: {fileID: 993294937}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &993294937
 Animator:
   serializedVersion: 3
@@ -12593,7 +12593,7 @@ GameObject:
   - 58: {fileID: 1234288347}
   m_Layer: 0
   m_Name: Coins (6)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12634,9 +12634,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 2
   animator: {fileID: 1234288349}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1234288349
 Animator:
   serializedVersion: 3
@@ -13315,7 +13315,7 @@ GameObject:
   - 58: {fileID: 1317935625}
   m_Layer: 0
   m_Name: Coins (1)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13356,9 +13356,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 1
   animator: {fileID: 1317935627}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1317935627
 Animator:
   serializedVersion: 3
@@ -13420,7 +13420,7 @@ GameObject:
   - 58: {fileID: 1328994421}
   m_Layer: 0
   m_Name: Coins
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13461,9 +13461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 7
   animator: {fileID: 1328994423}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1328994423
 Animator:
   serializedVersion: 3
@@ -13590,7 +13590,7 @@ GameObject:
   - 58: {fileID: 1340307728}
   m_Layer: 0
   m_Name: Coins (3)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13631,9 +13631,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 11
   animator: {fileID: 1340307730}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1340307730
 Animator:
   serializedVersion: 3
@@ -14429,7 +14429,7 @@ GameObject:
   - 58: {fileID: 1423208810}
   m_Layer: 0
   m_Name: Coins (5)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14470,9 +14470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 19
   animator: {fileID: 1423208812}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1423208812
 Animator:
   serializedVersion: 3
@@ -15071,7 +15071,7 @@ GameObject:
   - 58: {fileID: 1485609295}
   m_Layer: 0
   m_Name: Coins (6)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15112,9 +15112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 8
   animator: {fileID: 1485609297}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1485609297
 Animator:
   serializedVersion: 3
@@ -15295,7 +15295,7 @@ GameObject:
   - 58: {fileID: 1506859405}
   m_Layer: 0
   m_Name: Coins (3)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15336,9 +15336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 17
   animator: {fileID: 1506859407}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1506859407
 Animator:
   serializedVersion: 3
@@ -15523,7 +15523,7 @@ GameObject:
   - 58: {fileID: 1511707911}
   m_Layer: 0
   m_Name: Coins (4)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15552,9 +15552,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 12
   animator: {fileID: 1511707913}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1511707913
 Animator:
   serializedVersion: 3
@@ -16052,7 +16052,7 @@ GameObject:
   - 58: {fileID: 1543191312}
   m_Layer: 0
   m_Name: Coins (2)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16093,9 +16093,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 10
   animator: {fileID: 1543191314}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1543191314
 Animator:
   serializedVersion: 3
@@ -16305,7 +16305,7 @@ GameObject:
   - 58: {fileID: 1560312477}
   m_Layer: 0
   m_Name: Coins (1)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16346,9 +16346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 9
   animator: {fileID: 1560312479}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1560312479
 Animator:
   serializedVersion: 3
@@ -16960,8 +16960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d475520922af54fb44e63a53f43feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moedas: 0
-  pontos: 0
   moedasT: {fileID: 1517878320}
   pontosT: {fileID: 514580491}
 --- !u!4 &1584013244
@@ -17731,7 +17729,7 @@ GameObject:
   - 58: {fileID: 1676092459}
   m_Layer: 0
   m_Name: Coins (2)
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17772,9 +17770,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 16
   animator: {fileID: 1676092461}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &1676092461
 Animator:
   serializedVersion: 3
@@ -20652,7 +20650,7 @@ GameObject:
   - 58: {fileID: 2021939768}
   m_Layer: 0
   m_Name: Coins
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20668,9 +20666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f78738fd6be5c4469747e80b52b3fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinID: 0
   animator: {fileID: 2021939765}
   soundshoot: {fileID: 8300000, guid: c7f8bae204cad234b8ad65a9fb9db926, type: 3}
-  pontuacao: {fileID: 1584013242}
 --- !u!95 &2021939765
 Animator:
   serializedVersion: 3

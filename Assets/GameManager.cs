@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
 
 	PlayerStatus status;
 	public static List<int> enemiesKilled = new List<int>();
+	public static List<int> coinsPicked = new List<int> ();
 
 
 	public GameObject mainMenu;
@@ -28,7 +29,6 @@ public class GameManager : MonoBehaviour {
 	void Awake () {
 
 		status = GameObject.Find ("Player").GetComponent<PlayerStatus> ();
-		
 	}
 
 	void Start () {
@@ -36,10 +36,21 @@ public class GameManager : MonoBehaviour {
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("enemy");
 		
 		for (int i = 0; i < GameManager.enemiesKilled.ToArray ().Length; i++) {
-			
+
 			for (int j = 0; j < enemies.Length; j++) {
 				if (GameManager.enemiesKilled[i] == enemies[j].GetComponent<BasicAI> ().enemyID) {
-					Destroy (enemies[i]);
+					Destroy (enemies[j]);
+				}
+			}
+		}
+
+		GameObject[] coins = GameObject.FindGameObjectsWithTag ("coin");
+		
+		for (int i = 0; i < GameManager.coinsPicked.ToArray ().Length; i++) {
+			
+			for (int j = 0; j < coins.Length; j++) {
+				if (GameManager.coinsPicked[i] == coins[j].GetComponent<moedas> ().coinID) {
+					Destroy (coins[j]);
 				}
 			}
 		}

@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class pontuacao : MonoBehaviour {
 
-    public int moedas;
-    public int pontos;
+    public static int moedas;
+    public static int pontos;
 
     public Text moedasT;
     public Text pontosT;

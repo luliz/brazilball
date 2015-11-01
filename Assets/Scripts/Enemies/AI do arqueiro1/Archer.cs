@@ -114,7 +114,7 @@ public class Archer : BasicAI {
 
 			health--;
 		} else {
-
+			GameManager.enemiesKilled.Add (this.enemyID);
 			Destroy (this.gameObject);
 		}
 	}
