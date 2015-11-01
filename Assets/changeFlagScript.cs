@@ -27,6 +27,10 @@ public class changeFlagScript : MonoBehaviour {
 					Destroy (createdMessage);
 				}
 				this.GetComponent<Animator> ().SetTrigger ("change");
+				if (PlayerPrefs.GetInt("highscore") < pontuacao.pontos) {
+
+					PlayerPrefs.SetInt("highscore", pontuacao.pontos);
+				}
 			}
 		}
 	}

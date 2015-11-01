@@ -10,15 +10,12 @@ public class pontuacao : MonoBehaviour {
     public Text moedasT;
     public Text pontosT;
     
-	void Start () {
-	
-	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
         moedasT.text = moedas.ToString();
         pontosT.text = pontos.ToString();
-
+		print (PlayerPrefs.GetInt ("highscore"));
     }
 }

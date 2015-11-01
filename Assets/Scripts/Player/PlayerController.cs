@@ -40,7 +40,6 @@ public class PlayerController : MonoBehaviour{
 	}
 	// Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
 	void Update(){
-		print (touchingLadder);
         if (onLadder && !touchingLadder) {
 			
 			onLadder = false;
