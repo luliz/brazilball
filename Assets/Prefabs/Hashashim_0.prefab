@@ -48,7 +48,6 @@ GameObject:
   - 58: {fileID: 5876802}
   - 95: {fileID: 9592462}
   - 114: {fileID: 11414026}
-  - 82: {fileID: 8248256}
   m_Layer: 2
   m_Name: Hashashim_0
   m_TagString: enemy
@@ -149,76 +148,6 @@ BoxCollider2D:
   m_Offset: {x: -.276688874, y: .565031528}
   serializedVersion: 2
   m_Size: {x: .330714792, y: .404347479}
---- !u!82 &8248256
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156942}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6f34d9740f8d34b44bc40ba85fb04eb1, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!95 &9581276
 Animator:
   serializedVersion: 3
@@ -277,7 +206,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   enemyID: 0
-  audioSource: {fileID: 8248256}
+  audioSource: {fileID: 0}
   attacking: 0
 --- !u!114 &11495934
 MonoBehaviour:
