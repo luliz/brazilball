@@ -30,8 +30,9 @@ public class PlayerController : MonoBehaviour{
     }
 
 	void Start() {
-
-		transform.position = playerSpawnPosition;
+		if (playerSpawnPosition != new Vector3 (-34f, -4f)) {
+			transform.position = playerSpawnPosition;
+		}
 	}
 	// Chamado a cada frame do jogo.(Uma grande quantidade de linhas no update pode gerar em alguns jogos um frame ruim)
 	void Update(){
