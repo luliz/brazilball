@@ -2,16 +2,13 @@
 
 public class SwordAI : BasicAI
 {
-
-    public bool attacking;
-
     void Start()
     {
         speed = 2f;
-        health = 3;
+        health = 1;
         memory = 10f;
         minDistanceToAttack = 0f;
-        maxDistanceToAttack = 1f;
+        maxDistanceToAttack = 0.7f;
         maxDistanceToFollow = 20f;
         raycastOffset = 0f;
         maxVerticalDistanceToAttack = 1f;
@@ -65,11 +62,10 @@ public class SwordAI : BasicAI
 
     public override void Attack()
     {
-        if (!attacking)
-        {
-            weaponAnimator.SetBool("atacar",true);
-            attacking = true;
-        }
+		if (!attacking) {
+			weaponAnimator.SetBool ("atacar", true);
+			attacking = true;
+		}
     }
 
     public override void TakeDamage()

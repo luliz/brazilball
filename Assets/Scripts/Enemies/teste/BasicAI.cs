@@ -3,6 +3,7 @@ using System.Collections;
 
 public abstract class BasicAI : MonoBehaviour {
 
+	public bool attacking = false;
 	//PRIVATE VARIABLES
 	protected int health;
 	protected float memory;

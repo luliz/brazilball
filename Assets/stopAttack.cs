@@ -17,7 +17,7 @@ public class stopAttack : StateMachineBehaviour {
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 
 		animator.gameObject.GetComponentInParent<BasicAI> ().estado = 1;
-		animator.gameObject.GetComponentInParent<MaceAI> ().attacking = false;
+		animator.gameObject.GetComponentInParent<BasicAI> ().attacking = false;
 	}
 
 	// OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here

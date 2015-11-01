@@ -4,7 +4,6 @@ using System.Collections;
 public class MaceAI : BasicAI {
 
 	public AudioSource audioSource;
-	public bool attacking;
 
 	void Start () {
 		speed = 2f;
