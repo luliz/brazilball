@@ -13,6 +13,7 @@ TagManager:
   - Gun
   - Ponta
   - coin
+  - Bullet
   layers:
   - Default
   - TransparentFX

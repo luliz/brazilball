@@ -15,34 +15,18 @@ public class Dardo : MonoBehaviour {
         myRB = GetComponent<Rigidbody2D>();
         myCL = GetComponent<Collider2D>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        Power = 500;
+        Power = 100;
 
         if (target.position.x > transform.position.x)
         {
-            if (Mathf.Abs(target.position.x - transform.position.x) < 4)
-            {
-                myRB.AddForce(new Vector2(600, 100));
-            }
-            else
-            {
-                myRB.AddForce(new Vector2(Power, 100));
-            }
-
-
+            myRB.AddForce(new Vector2(Power, 0));
         }
 
         else if (target.position.x < transform.position.x)
         {
-
-            if (Mathf.Abs(target.position.x - transform.position.x) < 4)
-            {
-                myRB.AddForce(new Vector2(-600, 100));
-            }
-            else
-            {
-                myRB.AddForce(new Vector2(-Power, 100));
-            }
+            myRB.AddForce(new Vector2(-Power, 0));
         }
+
         Destroy(gameObject, 3);
 
     }
@@ -51,19 +35,20 @@ public class Dardo : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-
             transform.parent = other.transform;
             Destroy(myRB);
             Destroy(myCL);
-            other.gameObject.GetComponent<PlayerStatus>().TakeDamage(1);
-
-
-
         }
+
         if ((other.gameObject.tag != "enemy"))
         {
             Destroy(myRB);
             Destroy(myCL);
+        }
+
+        if ((other.gameObject.tag == "Bullet"))
+        {
+            Destroy(gameObject);
         }
 
     }

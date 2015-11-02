@@ -1,73 +1,45 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
-public class AIzarabatana : BasicAI
+public class AIzarabatana : MonoBehaviour
 {
 
-    public AudioSource audioSource;
-    private float counter;
     private float contador;
     public Transform arrow;
     public Transform Ponta;
-    private float contador2;
     public AudioClip soundshoot;
-    private float contador3 = 0f;
+    public Transform target;
 
     void Start()
     {
-        speed = 5;
-        health = 1;
-        memory = 10f;
-        minDistanceToAttack = 4f;
-        maxDistanceToAttack = 5f;
-        maxDistanceToFollow = 20f;
-        raycastOffset = 0.1f;
-        maxVerticalDistanceToAttack = 0.5f;
         target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    public override void DoExtraStuff()
+    void Update()
     {
-        if (contador3 > 5)
-        {
-            speed = 2;
+        contador += Time.deltaTime;
 
+        if (target.transform.position.x >  transform.position.x)
+        {
+            transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
         }
-    }
 
-    public override void Follow()
-    {
-
-    }
-
-    public override void Attack()
-    {
-
-        if (contador <= Time.time)
+        if (target.transform.position.x < transform.position.x)
         {
-            weaponAnimator.SetBool("atirar", true);
-            Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
-            contador = Time.time + 2f;
-            contador2 = 0f;
+            transform.localScale = new Vector3(-1.25f, 1.25f, 1.25f);
+        }
+
+        if (contador >= 2)
+        {
+            Instantiate(arrow, Ponta.transform.position, Ponta.rotation);
             AudioSource.PlayClipAtPoint(soundshoot, transform.position);
-            estado = 1;
-            contador3 = contador3 + 1;
+            contador = 0;
         }
     }
 
-    public override void TakeDamage()
+    protected void Flip()
     {
-
-        audioSource.Play();
-
-        if (health > 0)
-        {
-
-            health--;
-        }
-        else
-        {
-            GameManager.enemiesKilled.Add(this.enemyID);
-            Destroy(this.gameObject);
-        }
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * 1, transform.localScale.y, 1);
     }
 }
