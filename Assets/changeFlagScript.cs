@@ -31,7 +31,9 @@ public class changeFlagScript : MonoBehaviour {
 
 					PlayerPrefs.SetInt("highscore", pontuacao.pontos);
 				}
-			}
+
+                Application.LoadLevel(7);
+            }
 		}
 	}
 

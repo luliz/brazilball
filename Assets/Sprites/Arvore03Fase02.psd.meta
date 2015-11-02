@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 3419828fe2fe42949a4da7d6b5b8c888
-timeCreated: 1446440874
+guid: 7a23a8c9741c8ac49a28a19cd0186bc9
+timeCreated: 1446424753
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: HPbar_0
-    21300002: HPbar_1
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -31,7 +29,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -40,7 +38,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,27 +49,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: HPbar_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 7
-        width: 53
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: HPbar_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 47
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

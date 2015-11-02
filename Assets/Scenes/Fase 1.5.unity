@@ -234,7 +234,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1176738289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -4894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1247638541}
@@ -242,7 +242,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 7.62939453e-06, y: -8}
-  m_SizeDelta: {x: 364, y: 313}
+  m_SizeDelta: {x: 370, y: 313}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1176738291
 MonoBehaviour:
@@ -275,19 +275,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Nos encontramos no come\xE7o do s\xE9culo 15 em Portugal. O rei Dom Jo\xE3o
-    1 tem o desejo de armar seus dois filhos cavaleiros, o clero deseja expandir a
-    f\xE9 crist\xE3 a outros lugares, a nascente burguesia Portuguesa cobi\xE7a os
-    produtos vindos do rico oriente, No ano de 1415 todos esses interesses convergiam
-    em um \xFAnico objetivo, conquistar a cidade de Ceuta, cidade no norte da \xC1frica
-    e banhada pelo Mediterr\xE2neo. Caso a vit\xF3ria fosse alcan\xE7ada o rei teria
-    motivo para dar o t\xEDtulo de cavaleiro a seus filhos, o clero ganharia uma base
-    de evangeliza\xE7\xE3o no oriente e a burguesia passaria a ter acesso as rotas
-    de caravaneiras orientais. A expedi\xE7\xE3o em dire\xE7\xE3o a cidade zarpou
-    no dia 25 de Julho de 1415, 20.000 cavaleiros e soldados portugueses, ingleses,
-    galegos e biscainhos partiram para a guerra. \nNo dia 22 de Agosto de 1415 esses
-    homens invadiram a cidade, a guarni\xE7\xE3o tentou fechar os port\xF5es a tempo
-    embora sem exito. \n(Enter para continuar)"
+  m_Text: "Sete horas e meia depois do meio dia, a cidade est\xE1 em m\xE3os Portuguesas,
+    nos pr\xF3ximos anos Portugal iria passar de um pequeno reino no canto da Europa,
+    para um dos maiores imp\xE9rios da hist\xF3ria, tomando os oceanos de assalto,
+    chegando ao final do oriente em 1542 e ao final do Ocidente em 1500 ao esbarrar
+    em uma \u201Cilha\u201D rica em Pau-Brasil chamada de Terra de Vera Cruz.\r\n\n\u201CCessem
+    do s\xE1bio Grego e do Troiano\r\nAs navega\xE7\xF5es grandes que fizeram;\r\nCale-se
+    de Alexandro e de Trajano\r\nA fama das vit\xF3rias que tiveram;\r\nQue eu canto
+    o peito ilustre Lusitano,\r\nA quem Netuno e Marte obedeceram.\u201D\r\nLuis de
+    Cam\xF5es - Os Lus\xEDadas\r\n\n(Enter para continuar)"
 --- !u!222 &1176738292
 CanvasRenderer:
   m_ObjectHideFlags: 0
