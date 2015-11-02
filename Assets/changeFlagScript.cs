@@ -7,8 +7,14 @@ public class changeFlagScript : MonoBehaviour {
 	public GameObject message;
 	GameObject createdMessage;
 	bool interactable = true;
+    private int prosseguir;
 
-	void OnTriggerEnter2D (Collider2D col) {
+    void update()
+    {
+        prosseguir = GameObject.Find("GameManager").GetComponent<GameManager>().index;
+    }
+
+    void OnTriggerEnter2D (Collider2D col) {
 		
 		if (col.CompareTag ("Player")) {
 			if (!createdMessage && interactable) {
@@ -32,7 +38,11 @@ public class changeFlagScript : MonoBehaviour {
 					PlayerPrefs.SetInt("highscore", pontuacao.pontos);
 				}
 
-                Application.LoadLevel(7);
+                if (prosseguir == 14)
+                {
+                    Application.LoadLevel(7);
+                }
+                
             }
 		}
 	}
