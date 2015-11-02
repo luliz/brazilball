@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: 60fc12d61f4b1714ab782068b0761703
-timeCreated: 1446467679
+guid: 91b8fae1ad17c13408828b65f1b269a5
+timeCreated: 1446466781
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Oca_0
-    21300002: Oca_1
-    21300004: Oca_2
+    21300000: ArvoresFase02_0
+    21300002: ArvoresFase02_1
+    21300004: ArvoresFase02_2
+    21300006: ArvoresFase02_3
+    21300008: ArvoresFase02_4
+    21300010: ArvoresFase02_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,33 +56,63 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Oca_0
+    - name: ArvoresFase02_0
       rect:
         serializedVersion: 2
-        x: 171
-        y: 33
-        width: 820
-        height: 401
+        x: 0
+        y: 974
+        width: 215
+        height: 684
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Oca_1
+    - name: ArvoresFase02_1
       rect:
         serializedVersion: 2
-        x: 1099
-        y: 30
-        width: 820
-        height: 402
+        x: 277
+        y: 948
+        width: 195
+        height: 710
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Oca_2
+    - name: ArvoresFase02_2
       rect:
         serializedVersion: 2
-        x: 1988
-        y: 31
-        width: 820
-        height: 403
+        x: 537
+        y: 948
+        width: 364
+        height: 703
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArvoresFase02_3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 173
+        width: 215
+        height: 684
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArvoresFase02_4
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 148
+        width: 364
+        height: 703
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ArvoresFase02_5
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 148
+        width: 195
+        height: 710
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
