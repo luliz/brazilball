@@ -15,7 +15,7 @@ public class openPortao : MonoBehaviour {
 	void Update () {
         prosseguir = GameObject.Find("GameManager").GetComponent<GameManager>().index;
 
-        if (prosseguir >= 13)
+        if (prosseguir >= 1)
         {
             if(GameObject.Find("Player").transform.position.x <= 212.4 && transform.position.y < -3.15)
             {
