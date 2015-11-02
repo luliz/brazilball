@@ -864,7 +864,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 497336, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.18611956
+      value: -3.81299996
       objectReference: {fileID: 0}
     - target: {fileID: 497336, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -907,6 +907,42 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 645e3dd55af86b14fb3c042d29f10596,
         type: 3}
+    - target: {fileID: 5812268, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_Radius
+      value: .327537537
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812268, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_Offset.x
+      value: .0199999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812268, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_Offset.y
+      value: -.209999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189504, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189504, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_Size.x
+      value: .159999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189504, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_Offset.y
+      value: -.519999981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189504, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_Offset.x
+      value: .0199999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 448770, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.407000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 448770, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .241999999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63aae76e34c86a74bbcab061b789e3d5, type: 2}
   m_IsPrefabParent: 0
@@ -4157,8 +4193,8 @@ EdgeCollider2D:
   m_Points:
   - {x: -33.7296486, y: 6.38890648}
   - {x: -33.6647911, y: -.499158382}
-  - {x: 80.3396301, y: -.438652515}
-  - {x: 80.2792358, y: 6.23045969}
+  - {x: 103.53743, y: -.373202801}
+  - {x: 103.547966, y: 6.29326344}
   - {x: -33.7129288, y: 6.32444}
 --- !u!4 &1441435346
 Transform:
@@ -5207,7 +5243,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1942611149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.5400009, y: -4.21999979, z: 0}
+  m_LocalPosition: {x: -31.4260006, y: -4.16800022, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5222,9 +5258,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -.01197052, y: .00573253632}
   serializedVersion: 2
-  m_Size: {x: 1.26666665, y: .899999976}
+  m_Size: {x: 1.51484835, y: 1.08507109}
 --- !u!114 &1942611155
 MonoBehaviour:
   m_ObjectHideFlags: 0

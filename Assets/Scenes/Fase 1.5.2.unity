@@ -248,14 +248,14 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1176738289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -4894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1247638541}
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -7.62939453e-06, y: 5.45696821e-12}
+  m_AnchoredPosition: {x: 7.62939453e-06, y: -8}
   m_SizeDelta: {x: 550, y: 460}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1176738291
@@ -289,19 +289,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Nos encontramos no come\xE7o do s\xE9culo 15 em Portugal. O rei Dom Jo\xE3o
-    1 tem o desejo de armar seus dois filhos cavaleiros, o clero deseja expandir a
-    f\xE9 crist\xE3 a outros lugares, a nascente burguesia Portuguesa cobi\xE7a os
-    produtos vindos do rico oriente, No ano de 1415 todos esses interesses convergiam
-    em um \xFAnico objetivo, conquistar a cidade de Ceuta, cidade no norte da \xC1frica
-    e banhada pelo Mediterr\xE2neo. Caso a vit\xF3ria fosse alcan\xE7ada o rei teria
-    motivo para dar o t\xEDtulo de cavaleiro a seus filhos, o clero ganharia uma base
-    de evangeliza\xE7\xE3o no oriente e a burguesia passaria a ter acesso as rotas
-    de caravaneiras orientais. A expedi\xE7\xE3o em dire\xE7\xE3o a cidade zarpou
-    no dia 25 de Julho de 1415, 20.000 cavaleiros e soldados portugueses, ingleses,
-    galegos e biscainhos partiram para a guerra. \nNo dia 22 de Agosto de 1415 esses
-    homens invadiram a cidade, a guarni\xE7\xE3o tentou fechar os port\xF5es a tempo
-    embora sem exito. \n\n(Enter para continuar)"
+  m_Text: "O ano \xE9 1580, At\xE9 alguns anos atr\xE1s a col\xF4nia foi praticamente
+    abandonada aos piratas franceses e ingleses, entretanto com o advento da cana
+    de a\xE7\xFAcar a coroa portuguesa passou a olhar o Brasil como uma importante
+    fonte de renda e como um lugar a ser colonizado, com isto vieram a ordem dos jesu\xEDtas
+    que chegaram no Brasil em 1549, sua miss\xE3o hoje \xE9 levar um carregamento
+    de suprimentos a uma aldeia ind\xEDgena com uma miss\xE3o jesu\xEDta, entretanto
+    para chegar at\xE9 l\xE1 ser\xE1 preciso passar por tribos n\xE3o t\xE3o amig\xE1veis,
+    boa sorte.\n\n(Enter para continuar)"
 --- !u!222 &1176738292
 CanvasRenderer:
   m_ObjectHideFlags: 0

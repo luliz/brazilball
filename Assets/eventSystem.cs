@@ -10,10 +10,16 @@ public class eventSystem : MonoBehaviour {
 			Application.LoadLevel(0);
 		}
 
-        if (Application.loadedLevel == 7 && Input.GetKeyDown(KeyCode.Return))
+        if (Application.loadedLevelName == "Fase 1.5" && Input.GetKeyDown(KeyCode.Return))
         {
 
             Application.LoadLevel(8);
+        }
+
+        if (Application.loadedLevelName == "Fase 1.5.2" && Input.GetKeyDown(KeyCode.Return))
+        {
+
+            Application.LoadLevel(9);
         }
     }
 }

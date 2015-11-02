@@ -7,11 +7,9 @@ public class MainMenu : MonoBehaviour {
 	public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("adsa");
     }
     public void StartGame()
     {
-        Application.LoadLevel(0);
-        Debug.Log("adsa");
+        Application.LoadLevel(6);
     }
 }

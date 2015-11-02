@@ -27,7 +27,7 @@ public class changeFlagScript : MonoBehaviour {
 
 		if (col.CompareTag ("Player")) {
 
-			if (Input.GetKeyDown(Controls.enterHouse)) {
+			if (Input.GetKeyDown(Controls.enterHouse) && prosseguir == 0) {
 				interactable = false;
 				if (createdMessage) {
 					Destroy (createdMessage);
@@ -38,10 +38,9 @@ public class changeFlagScript : MonoBehaviour {
 					PlayerPrefs.SetInt("highscore", pontuacao.pontos);
 				}
 
-                if (prosseguir == 14)
-                {
-                    Application.LoadLevel(7);
-                }
+                StartCoroutine(MyCoroutine());
+                
+                
                 
             }
 		}
@@ -55,4 +54,11 @@ public class changeFlagScript : MonoBehaviour {
 			}
 		}
 	}
+
+    IEnumerator MyCoroutine()
+    {
+        float fadeTime = GameObject.Find("GameManager").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);    //Espera 3 frames
+        Application.LoadLevel(7);
+    }
 }

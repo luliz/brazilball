@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473054}
   - 114: {fileID: 11447376}
+  - 114: {fileID: 11489106}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -23,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.5960007, y: -3.65012503, z: 0}
+  m_LocalPosition: {x: 4.85400009, y: -.240124941, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,11 +40,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0028246cba6332345a91f58723335dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   mainMenu: {fileID: 139872, guid: 8feac5f55ad0cc646abf273f4bd1894c, type: 2}
   areYouSure: {fileID: 115040, guid: 33a74a772eb500c438621cf29a10b5f2, type: 2}
   changeKeyGUI: {fileID: 161194, guid: 961ab648e75cb224e9a8d802006821fe, type: 2}
   pressKeyNowGUI: {fileID: 139560, guid: 31b14375aa8d0514cb8377a7247f35b5, type: 2}
   gameOverScreen: {fileID: 124674, guid: a8ddaa4a05b1a814180e327e08f746ac, type: 2}
+--- !u!114 &11489106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1ba95c489e3ad40af8060059088a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 581293491fdc72149b26c203b990111e, type: 3}
+  fadeSpeed: .800000012
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
