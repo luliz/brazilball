@@ -21,7 +21,7 @@ public class Archer : BasicAI {
 		maxDistanceToFollow = 20f;
 		raycastOffset = 0.1f;
 		maxVerticalDistanceToAttack = 0.5f;
-		target = GameObject.Find ("Player").transform;
+		target = GameObject.FindGameObjectWithTag ("Player").transform;
 	}
 
     public override void DoExtraStuff() {

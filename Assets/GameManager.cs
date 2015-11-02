@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 	int next = 0;
 	void Awake () {
 
-		status = GameObject.Find ("Player").GetComponent<PlayerStatus> ();
+		status = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerStatus> ();
 	}
 
 	void Start () {

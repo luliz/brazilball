@@ -8,8 +8,8 @@ public class CheckGround : MonoBehaviour {
 
 	void Awake () {
 
-		playerController = GameObject.Find ("Player").GetComponent<PlayerController>();
-		playerAnimator = GameObject.Find ("Player").GetComponent<Animator> ();
+		playerController = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController>();
+		playerAnimator = GameObject.FindGameObjectWithTag ("Player").GetComponent<Animator> ();
 	}
 	void OnTriggerStay2D (Collider2D col){
 		if(col.gameObject.tag == "Jumpable" || col.gameObject.tag == "enemyArcher")

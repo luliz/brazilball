@@ -1,9 +1,25 @@
 fileFormatVersion: 2
 guid: 645e3dd55af86b14fb3c042d29f10596
-timeCreated: 1443903536
+timeCreated: 1446476885
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: PortugalBall1500_0
+    21300002: PortugalBall1500_1
+    21300004: PortugalBall1500_2
+    21300006: PortugalBall1500_3
+    21300008: PortugalBall1500_4
+    21300010: PortugalBall1500_5
+    21300012: PortugalBall1500_6
+    21300014: PortugalBall1500_7
+    21300016: PortugalBall1500_8
+    21300018: PortugalBall1500_9
+    21300020: PortugalBall1500_10
+    21300022: PortugalBall1500_11
+    21300024: PortugalBall1500_12
+    21300026: PortugalBall1500_13
+    21300028: PortugalBall1500_14
+    21300030: PortugalBall1500_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,7 +54,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +65,167 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: PortugalBall1500_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 152
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 152
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_2
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 152
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 152
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_4
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 152
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_5
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 152
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_6
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 152
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_7
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 152
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 34
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 26
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_10
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 26
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 28
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_12
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 23
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_13
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 24
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_14
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 23
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PortugalBall1500_15
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 28
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -37,13 +37,13 @@ public class Gun : MonoBehaviour
     {
         //Vector3 rotacion = new Vector3(0,0,180);
 
-        if(GameObject.Find("Player").GetComponent<PlayerController>().right == true)
+        if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().right == true)
         {
             AudioSource.PlayClipAtPoint(soundshoot, transform.position);
             Instantiate(bullet, Ponta.transform.position, Ponta.rotation);
         }
 
-        if (GameObject.Find("Player").GetComponent<PlayerController>().right == false)
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().right == false)
         {
             
                 Ponta.Rotate(0, 0, 180);
