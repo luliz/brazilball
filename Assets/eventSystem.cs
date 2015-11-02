@@ -7,7 +7,7 @@ public class eventSystem : MonoBehaviour {
 	
 		if (Application.loadedLevel == 6 && Input.GetKeyDown (KeyCode.Return)) {
 
-			Application.LoadLevel(0);
+			Application.LoadLevel(5);
 		}
 
         if (Application.loadedLevelName == "Fase 1.5" && Input.GetKeyDown(KeyCode.Return))

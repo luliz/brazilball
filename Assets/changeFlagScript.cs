@@ -27,7 +27,7 @@ public class changeFlagScript : MonoBehaviour {
 
 		if (col.CompareTag ("Player")) {
 
-			if (Input.GetKeyDown(Controls.enterHouse) && prosseguir == 0) {
+			if (Input.GetKeyDown(Controls.enterHouse) && prosseguir == 14) {
 				interactable = false;
 				if (createdMessage) {
 					Destroy (createdMessage);

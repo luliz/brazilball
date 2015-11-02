@@ -385,7 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   automatic: 1
   spawnPosition: {x: 85.3000031, y: -3, z: 0}
-  levelToGo: 0
+  levelToGo: 5
 --- !u!1001 &1392121608
 Prefab:
   m_ObjectHideFlags: 0
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   automatic: 0
   spawnPosition: {x: 86.4000015, y: -4.0999999, z: 0}
-  levelToGo: 0
+  levelToGo: 5
 --- !u!61 &1458874119
 BoxCollider2D:
   m_ObjectHideFlags: 0

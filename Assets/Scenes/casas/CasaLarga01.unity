@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   automatic: 1
   spawnPosition: {x: 233, y: -1, z: 0}
-  levelToGo: 0
+  levelToGo: 5
 --- !u!1 &647894644
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   automatic: 0
   spawnPosition: {x: -19.2299995, y: -4.01000023, z: 0}
-  levelToGo: 0
+  levelToGo: 5
 --- !u!61 &845517982
 BoxCollider2D:
   m_ObjectHideFlags: 0
