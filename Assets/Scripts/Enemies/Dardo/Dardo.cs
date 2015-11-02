@@ -14,9 +14,8 @@ public class Dardo : MonoBehaviour {
     {
         myRB = GetComponent<Rigidbody2D>();
         myCL = GetComponent<Collider2D>();
-		target = GameObject.Find ("cavalinho_0").transform;
-        absDistance = Mathf.Abs(transform.position.x - target.position.x);
-        Power = (1000 * absDistance) / 5;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        Power = 500;
 
         if (target.position.x > transform.position.x)
         {
