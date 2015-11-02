@@ -1,14 +1,13 @@
 fileFormatVersion: 2
 guid: 5745afc022b69894691f505b3c89dfac
-timeCreated: 1446419088
+timeCreated: 1444785247
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: cercaquartel_0
     21300002: cercaquartel_1
     21300004: cercaquartel_2
-    21300006: cercaquartel_4
-    21300008: cercaquartel_3
+    21300006: cercaquartel_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,7 +62,7 @@ TextureImporter:
         width: 3501
         height: 141
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: cercaquartel_1
       rect:
@@ -73,7 +72,7 @@ TextureImporter:
         width: 90
         height: 219
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: cercaquartel_2
       rect:
@@ -83,17 +82,7 @@ TextureImporter:
         width: 62
         height: 86
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: cercaquartel_4
-      rect:
-        serializedVersion: 2
-        x: 3297
-        y: 270
-        width: 69
-        height: 141
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: cercaquartel_3
       rect:
@@ -103,7 +92,7 @@ TextureImporter:
         width: 3638
         height: 192
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
