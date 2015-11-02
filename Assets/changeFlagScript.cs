@@ -8,6 +8,7 @@ public class changeFlagScript : MonoBehaviour {
 	GameObject createdMessage;
 	bool interactable = true;
     private int prosseguir;
+    public int quantEnemyToProceed = 0;
 
     void update()
     {
@@ -27,7 +28,7 @@ public class changeFlagScript : MonoBehaviour {
 
 		if (col.CompareTag ("Player")) {
 
-			if (Input.GetKeyDown(Controls.enterHouse) && prosseguir == 14) {
+			if (Input.GetKeyDown(Controls.enterHouse) && prosseguir == quantEnemyToProceed) {
 				interactable = false;
 				if (createdMessage) {
 					Destroy (createdMessage);
@@ -57,6 +58,7 @@ public class changeFlagScript : MonoBehaviour {
 
     IEnumerator MyCoroutine()
     {
+        yield return new WaitForSeconds(2);
         float fadeTime = GameObject.Find("GameManager").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);    //Espera 3 frames
         Application.LoadLevel(7);
