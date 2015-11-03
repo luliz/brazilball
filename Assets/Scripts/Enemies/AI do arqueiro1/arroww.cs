@@ -17,18 +17,18 @@ public class arroww : MonoBehaviour
         myCL = GetComponent<Collider2D>();
 		target = GameObject.Find ("Player").transform;
         absDistance = Mathf.Abs(transform.position.x - target.position.x);
-        Power = (1000 * absDistance) / 13;
+        Power = (1000 * absDistance) / 30;
 		target = GameObject.Find ("Player").transform;
 
         if (target.position.x > transform.position.x)
         {
             if (Mathf.Abs(target.position.x - transform.position.x) < 4)
             {
-                myRB.AddForce(new Vector2(600, 50));
+                myRB.AddForce(new Vector2(280, 80));
             }
             else
             {
-                myRB.AddForce(new Vector2(Power, 155));
+                myRB.AddForce(new Vector2(Power, 200));
             }
 
 
@@ -39,11 +39,11 @@ public class arroww : MonoBehaviour
 
             if (Mathf.Abs(target.position.x - transform.position.x) < 4)
             {
-                myRB.AddForce(new Vector2(-600, 80));
+                myRB.AddForce(new Vector2(-280, 80));
             }
             else
             {
-                myRB.AddForce(new Vector2(-Power, 155));
+                myRB.AddForce(new Vector2(-Power, 200));
             }
         }
         Destroy(gameObject, 3);

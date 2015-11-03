@@ -71,7 +71,7 @@ public class Archer : BasicAI {
         {
 
             animator.SetBool("walk", false);
-            minDistanceToAttack = 2f;
+            minDistanceToAttack = 0f;
             if (transform.position.x > target.position.x )
             {
                 facingDirection = -1;                
@@ -97,7 +97,7 @@ public class Archer : BasicAI {
             {
                 facingDirection = 1;
             }
-            else
+            else 
             {
                 facingDirection = -1;
             }

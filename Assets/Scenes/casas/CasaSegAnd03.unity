@@ -329,8 +329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b8e6c887e35cb4d982fce3fdc0b5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 0}
   automatic: 1
-  spawnPosition: {x: 82, y: -1.89999998, z: 0}
+  spawnPosition: {x: 82, y: -1.79999995, z: 0}
   levelToGo: 5
 --- !u!1001 &1392121608
 Prefab:
@@ -402,6 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b8e6c887e35cb4d982fce3fdc0b5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 0}
   automatic: 0
   spawnPosition: {x: 83.1299973, y: -4.0999999, z: 0}
   levelToGo: 5
