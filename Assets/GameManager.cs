@@ -33,10 +33,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Start () {
-		if (faseAtual == 0) {
 
-			faseAtual = 5;
-		}
+		faseAtual = Application.loadedLevel;
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("enemy");
 		
 		for (int i = 0; i < GameManager.enemiesKilled.ToArray ().Length; i++) {

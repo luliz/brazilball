@@ -62,6 +62,5 @@ public class changeFlagScript : MonoBehaviour {
         float fadeTime = GameObject.Find("GameManager").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);    //Espera 3 frames
         Application.LoadLevel(7);
-		GameManager.faseAtual = 9;
     }
 }
