@@ -12,7 +12,7 @@ public class Door : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D col) {
 		
 		if (col.CompareTag ("Player")) {
-			if (!createdMessage) {
+			if (!createdMessage && message) {
 				createdMessage = Instantiate (message);
 			}
 		}

@@ -113,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34, y: -4.13999987, z: 0}
+  m_LocalPosition: {x: -33.6800003, y: -4.01000023, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402010}
@@ -341,9 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  lives: 1
   maxImmuneTime: 2
-  counter: 0
   blinkColor: {r: .970588207, g: .549524188, b: .549524188, a: 1}
 --- !u!114 &11489508
 MonoBehaviour:
@@ -367,6 +365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6f8f4cf8615994ca5af9bd5779cb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  warhammer: {fileID: 0}
+  gun: {fileID: 0}
   myRigidBody2D: {fileID: 5056712}
   velocidade: 3
   right: 1

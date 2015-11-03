@@ -9,9 +9,18 @@ public class Burrinho : MonoBehaviour {
 	public float health;
 	public GameManager gameManager;
 	public Image filledHPImage;
+	float finalCounter = 0;
 
 	void Update () {
+		if (arrived) {
 
+			finalCounter += Time.deltaTime;
+		}
+
+		if (finalCounter >= 3f) {
+
+			Application.LoadLevel(0);
+		}
 		if (!arrived)
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
 

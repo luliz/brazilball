@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	PlayerStatus status;
 	public static List<int> enemiesKilled = new List<int>();
 	public static List<int> coinsPicked = new List<int> ();
+	public static List<int> hatsPicked = new List<int> ();
 	public static int faseAtual;
     public int index;
 
@@ -53,6 +54,17 @@ public class GameManager : MonoBehaviour {
 			for (int j = 0; j < coins.Length; j++) {
 				if (GameManager.coinsPicked[i] == coins[j].GetComponent<moedas> ().coinID) {
 					Destroy (coins[j]);
+				}
+			}
+		}
+
+		GameObject[] hats = GameObject.FindGameObjectsWithTag ("hat");
+		
+		for (int i = 0; i < GameManager.hatsPicked.ToArray ().Length; i++) {
+			
+			for (int j = 0; j < hats.Length; j++) {
+				if (GameManager.hatsPicked[i] == hats[j].GetComponent<Capacete> ().hatID) {
+					Destroy (hats[j]);
 				}
 			}
 		}
