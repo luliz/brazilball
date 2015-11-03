@@ -7,7 +7,7 @@ public class Boss : BasicAI {
 	public float areaBossSize;
 	public float areaBossCenter;
 	float callArrowsCounter = 0;
-	public float timeBetweenCalls = 6f;
+	float timeBetweenCalls = 12f;
 
 	void Start () {
 
@@ -40,25 +40,29 @@ public class Boss : BasicAI {
 
 	public override void DoExtraStuff ()
 	{
+		if (estado == 3) {
+			
+			CallArrows ();
+		}
 
 		callArrowsCounter += Time.deltaTime;
 		if (callArrowsCounter >= timeBetweenCalls) {
 
 			estado = 3;
 			animator.SetBool ("walk", false);
+			facingDirection = 1;
 		}
 
-		if (estado == 3) {
-
-			CallArrows ();
-		}
 	}
 
 	public void CallArrows () {
 
-
+		if (callArrowsCounter >= timeBetweenCalls + 3.5f) {
+			animator.SetBool ("callArrows", false);
+		} else {
+			animator.SetBool ("callArrows", true);
+		}
 		if (callArrowsCounter >= timeBetweenCalls + 4f) {
-			
 			for (int i = 0; i < pontosF.Length; i++) {
 
 				pontosF[i].GetComponent<PontoF> ().Arrows ();

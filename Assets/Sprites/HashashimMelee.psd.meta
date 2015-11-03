@@ -1,13 +1,28 @@
 fileFormatVersion: 2
 guid: 97a81da210def3645b18f17f1f89e36f
-timeCreated: 1445123835
+timeCreated: 1446576142
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: HashashimMelee_0
+    21300002: HashashimMelee_1
+    21300004: HashashimMelee_2
+    21300006: HashashimMelee_3
+    21300008: HashashimMelee_4
+    21300010: HashashimMelee_5
+    21300012: HashashimMelee_6
+    21300014: HashashimMelee_7
+    21300016: HashashimMelee_8
+    21300018: HashashimMelee_10
+    21300020: HashashimMelee_11
+    21300022: HashashimMelee_12
+    21300024: HashashimMelee_13
+    21300026: HashashimMelee_15
+    21300028: HashashimMelee_16
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,11 +41,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +53,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +64,157 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: HashashimMelee_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 205
+        width: 176
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 205
+        width: 184
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_2
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 205
+        width: 175
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_3
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 205
+        width: 176
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_4
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 205
+        width: 175
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_5
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 205
+        width: 178
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_6
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 205
+        width: 180
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_7
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 207
+        width: 177
+        height: 77
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_8
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 207
+        width: 212
+        height: 156
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 32
+        width: 177
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_11
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 32
+        width: 165
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_12
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 32
+        width: 165
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_13
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 15
+        width: 177
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_15
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 14
+        width: 207
+        height: 97
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HashashimMelee_16
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 32
+        width: 177
+        height: 79
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

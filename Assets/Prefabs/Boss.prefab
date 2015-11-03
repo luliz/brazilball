@@ -12,7 +12,7 @@ GameObject:
   - 58: {fileID: 5884042}
   - 50: {fileID: 5090766}
   - 95: {fileID: 9591358}
-  - 114: {fileID: 11491720}
+  - 114: {fileID: 11449158}
   m_Layer: 2
   m_Name: Boss
   m_TagString: enemy
@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.6299992, y: -3.96000004, z: 0}
+  m_LocalPosition: {x: 228.129074, y: -3.29387164, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 428316}
@@ -150,6 +150,34 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11449158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58c18cdc5f03a1449cbf8f2ed789a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacking: 0
+  estado: 0
+  animator: {fileID: 9591358}
+  weaponAnimator: {fileID: 0}
+  expressions: {fileID: 0}
+  interrogation: {fileID: 0}
+  exclamation: {fileID: 0}
+  visao:
+    serializedVersion: 2
+    m_Bits: 4294967035
+  barreira:
+    serializedVersion: 2
+    m_Bits: 256
+  enemyID: 0
+  pontosF: []
+  areaBossSize: 10
+  areaBossCenter: 222
 --- !u!114 &11477618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,33 +190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentTransform: {fileID: 445004}
---- !u!114 &11491720
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 033d1b0f7e47d5c42ad249254f5e05c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  animator: {fileID: 9591358}
-  expressions: {fileID: 0}
-  interrogation: {fileID: 0}
-  exclamation: {fileID: 0}
-  visao:
-    serializedVersion: 2
-    m_Bits: 0
-  barreira:
-    serializedVersion: 2
-    m_Bits: 256
-  speed: 1
-  enemyID: 1
-  health: 1
-  chargePower: 700
-  spearCollider: {fileID: 6156094}
 --- !u!212 &21249290
 SpriteRenderer:
   m_ObjectHideFlags: 1
