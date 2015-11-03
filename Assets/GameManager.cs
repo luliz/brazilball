@@ -206,6 +206,7 @@ public class GameManager : MonoBehaviour {
 
 		enemiesKilled.Clear ();
 		coinsPicked.Clear ();
+		hatsPicked.Clear ();
 		pontuacao.moedas = 0;
 		pontuacao.pontos = 0;
 		PlayerStatus.lives = 1;
