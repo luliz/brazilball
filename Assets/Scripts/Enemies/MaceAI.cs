@@ -7,7 +7,7 @@ public class MaceAI : BasicAI {
 
 	void Start () {
 		speed = 2f;
-		health = 3;
+		health = 2;
 		memory = 10f;
 		minDistanceToAttack = 0f;
 		maxDistanceToAttack = 1f;
