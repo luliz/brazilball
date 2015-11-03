@@ -3,7 +3,10 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour{
-	
+
+	public GameObject warhammer;
+	public GameObject gun;
+
 	public Rigidbody2D myRigidBody2D;
 	public float velocidade = 1f;
 	public bool right = true;
@@ -109,7 +112,18 @@ public class PlayerController : MonoBehaviour{
 			
 			transform.Translate (new Vector3 (0, climbSpeed * Time.deltaTime * -1, 0));
 		}
-		
+
+		if (Input.GetKeyDown (KeyCode.Alpha1) && GameManager.faseAtual == 9) {
+
+			gun.SetActive (false);
+			warhammer.SetActive (true);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Alpha2) && GameManager.faseAtual == 9) {
+			
+			gun.SetActive (true);
+			warhammer.SetActive (false);
+		}
 	}
 	private void Flip(){
 		// Troca pra onde o player ta olhando.
