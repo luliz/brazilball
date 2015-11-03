@@ -116,16 +116,16 @@ public abstract class BasicAI : MonoBehaviour {
 	protected void Walk()
     {
 
-        ////if (thisCollider.IsTouchingLayers (barreira)) {
-        ////	if (animator)
-        ////		animator.SetBool ("walk", false);
-        ////}
-        //else
-        //{
+        if (thisCollider.IsTouchingLayers (barreira)) {
+        	if (animator)
+        		animator.SetBool ("walk", false);
+        }
+        else
+        {
             if (animator)
 				animator.SetBool("walk", true);
 			transform.Translate(new Vector2(speed * facingDirection * Time.deltaTime, 0));
-		////}
+		}
 	}
 
 	protected bool Found()

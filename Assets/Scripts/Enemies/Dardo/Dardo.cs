@@ -14,7 +14,7 @@ public class Dardo : MonoBehaviour {
     {
         myRB = GetComponent<Rigidbody2D>();
         myCL = GetComponent<Collider2D>();
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        target = GameObject.Find("cavalinho_0").transform;
         Power = 100;
 
         if (target.position.x > transform.position.x)
@@ -38,6 +38,8 @@ public class Dardo : MonoBehaviour {
             transform.parent = other.transform;
             Destroy(myRB);
             Destroy(myCL);
+			int parentFacingDirection = (int) transform.parent.localScale.x;
+			GameObject.Find("Player").GetComponent<PlayerStatus>().TakeDamage(parentFacingDirection);
         }
 
         if ((other.gameObject.tag != "enemy"))
@@ -50,7 +52,7 @@ public class Dardo : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-
+		
     }
     void Update()
     {

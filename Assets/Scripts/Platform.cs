@@ -3,18 +3,19 @@ using System.Collections;
 
 public class Platform : MonoBehaviour {
 
-	private EdgeCollider2D thisCollider;
+	private EdgeCollider2D[] thisCollider;
 
 	void Awake () {
 
-		thisCollider = GetComponentInParent<EdgeCollider2D> ();
+		thisCollider = GetComponentsInParent<EdgeCollider2D> ();
 	}
 	
 	void OnTriggerEnter2D (Collider2D col) {
 
 		if (col.CompareTag ("Player")) {
-
-			Physics2D.IgnoreCollision (col, thisCollider, true);
+			for (int i = 0; i < thisCollider.Length; i++) {
+				Physics2D.IgnoreCollision (col, thisCollider[i], true);
+			}
 		}
 	}
 
@@ -22,7 +23,9 @@ public class Platform : MonoBehaviour {
 
 		if (col.CompareTag ("Player")) {
 
-			Physics2D.IgnoreCollision(col, thisCollider, false);
+			for (int i = 0; i < thisCollider.Length; i++) {
+				Physics2D.IgnoreCollision (col, thisCollider[i], false);
+			}
 		}
 	}
 }

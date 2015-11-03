@@ -4,26 +4,45 @@ using UnityEngine.UI;
 
 public class Burrinho : MonoBehaviour {
 
+	bool arrived = false;
 	public float speed = 5f;
 	public float health;
-
+	public GameManager gameManager;
 	public Image filledHPImage;
 
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.Return)) {
-			
-			health -= 10f;
-		}
-
-		transform.Translate (Vector3.right * speed * Time.deltaTime);
+		if (!arrived)
+			transform.Translate (Vector3.right * speed * Time.deltaTime);
 
 		filledHPImage.rectTransform.sizeDelta = new Vector2 (health, filledHPImage.rectTransform.rect.size.y);
-		filledHPImage.rectTransform.anchoredPosition = new Vector2 (-505f - (100f - health) / 2f, filledHPImage.rectTransform.anchoredPosition.y);
+		filledHPImage.rectTransform.anchoredPosition = new Vector2 (-337f - (100f - health) / 2f, filledHPImage.rectTransform.anchoredPosition.y);
 
 		if (health == 0){
 
 			Destroy (gameObject);
+			gameManager.GameOver ();
+		}
+		if (transform.position.x >= 85f) {
+			Destroy (GameObject.Find("MasterRespawn"));
+			if (transform.position.x >= 92f) {
+
+				GetComponent<Animator> ().SetTrigger ("chegou");
+				arrived = true;
+				print ("Tu as gagne");
+			}
+		}
+	}
+	void TakeDamage () {
+
+		health -= 10f;
+	}
+	void OnTriggerEnter2D (Collider2D col) {
+
+		print (col.transform);
+		if (col.gameObject.name == "Dardo(Clone)") {
+			Destroy(col.gameObject);
+			TakeDamage();
 		}
 	}
 }

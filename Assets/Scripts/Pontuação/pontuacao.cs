@@ -16,6 +16,5 @@ public class pontuacao : MonoBehaviour {
 
         moedasT.text = moedas.ToString();
         pontosT.text = pontos.ToString();
-		print (PlayerPrefs.GetInt ("highscore"));
     }
 }

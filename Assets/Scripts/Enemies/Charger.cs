@@ -87,7 +87,7 @@ public class Charger : BasicAI {
 			}
 			else {
 
-				if (Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.x) <= 4) {
+				if (Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.x) <= 2) {
 
 					spearCollider.enabled = false;
 					canFlip = true;
@@ -111,6 +111,7 @@ public class Charger : BasicAI {
 		if (health > 0) {
 			health--;
 		} else {
+			pontuacao.pontos += 30;
 			GameManager.enemiesKilled.Add(this.enemyID);
 			Destroy(this.gameObject);
 		}

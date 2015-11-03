@@ -14,14 +14,18 @@ public class Archer : BasicAI {
 
 	void Start () {
 		speed = 5;
-		health = 1;
+		health = 0;
 		memory = 10f;
 		minDistanceToAttack = 4f;
 		maxDistanceToAttack = 5f;
 		maxDistanceToFollow = 20f;
 		raycastOffset = 0.1f;
 		maxVerticalDistanceToAttack = 0.5f;
-		target = GameObject.FindGameObjectWithTag ("Player").transform;
+		if (gameObject.name == "Archer")
+			target = GameObject.FindGameObjectWithTag ("Player").transform;
+		else
+			target = GameObject.Find ("cavalinho_0").transform;
+		audioSource = Camera.main.GetComponent<AudioSource> ();
 	}
 
     public override void DoExtraStuff() {
@@ -30,6 +34,11 @@ public class Archer : BasicAI {
             speed = 2;
             
         }
+
+		if (gameObject.name == "IndioZ(clone)") {
+
+			estado = 1;
+		}
     }
 
     public override void Follow()
@@ -44,7 +53,9 @@ public class Archer : BasicAI {
 		if (Mathf.Abs(target.position.x - transform.position.x) >= maxDistanceToAttack && Mathf.Abs(target.position.x - transform.position.x) < maxDistanceToFollow)
         {
             Walk();
-            weaponAnimator.SetBool("atirar", true);
+			if (gameObject.name == "Archer") {
+            	weaponAnimator.SetBool("atirar", true);
+			}
 
             if (transform.position.x > target.position.x)
             {
@@ -96,7 +107,9 @@ public class Archer : BasicAI {
     public override void Attack() {
 
         if (contador <= Time.time) {
-            weaponAnimator.SetBool("atirar", true);
+			if (gameObject.name == "Archer") {
+            	weaponAnimator.SetBool("atirar", true);
+			}
 			Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
             contador = Time.time + 2f;
             contador2 = 0f;
@@ -114,6 +127,7 @@ public class Archer : BasicAI {
 
 			health--;
 		} else {
+			pontuacao.pontos += 30;
 			GameManager.enemiesKilled.Add (this.enemyID);
 			Destroy (this.gameObject);
 		}

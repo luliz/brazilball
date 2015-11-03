@@ -13,9 +13,10 @@ public class bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if ((other.gameObject.tag == "arrow"))
+        if ((other.gameObject.tag == "enemy"))
         {
-            Destroy(gameObject);
+			other.gameObject.GetComponent<BasicAI> ().TakeDamage ();
+			Destroy (gameObject);
         }
     }
 }

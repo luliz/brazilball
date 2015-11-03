@@ -18,7 +18,7 @@ public class changeFlagScript : MonoBehaviour {
     void OnTriggerEnter2D (Collider2D col) {
 		
 		if (col.CompareTag ("Player")) {
-			if (!createdMessage && interactable) {
+			if (!createdMessage && interactable && prosseguir == quantEnemyToProceed) {
 				createdMessage = Instantiate (message);
 			}
 		}
@@ -62,5 +62,6 @@ public class changeFlagScript : MonoBehaviour {
         float fadeTime = GameObject.Find("GameManager").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);    //Espera 3 frames
         Application.LoadLevel(7);
+		GameManager.faseAtual = 9;
     }
 }

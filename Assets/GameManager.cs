@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	PlayerStatus status;
 	public static List<int> enemiesKilled = new List<int>();
 	public static List<int> coinsPicked = new List<int> ();
+	public static int faseAtual;
     public int index;
 
 	public GameObject mainMenu;
@@ -32,7 +33,10 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Start () {
+		if (faseAtual == 0) {
 
+			faseAtual = 5;
+		}
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("enemy");
 		
 		for (int i = 0; i < GameManager.enemiesKilled.ToArray ().Length; i++) {
@@ -103,8 +107,9 @@ public class GameManager : MonoBehaviour {
 		if (gameOver) {
 			
 			if (Input.GetKeyDown (KeyCode.Return)) {
-				
-				Application.LoadLevel(0);
+
+				PlayerController.playerSpawnPosition = new Vector3 (-34f, -4f);
+				Application.LoadLevel(faseAtual);
 
 				Pause ();
 			}
@@ -189,6 +194,11 @@ public class GameManager : MonoBehaviour {
 
 	public void GameOver () {
 
+		enemiesKilled.Clear ();
+		coinsPicked.Clear ();
+		pontuacao.moedas = 0;
+		pontuacao.pontos = 0;
+		PlayerStatus.lives = 1;
 		Pause ();
 		Instantiate (gameOverScreen);
 		gameOver = true;

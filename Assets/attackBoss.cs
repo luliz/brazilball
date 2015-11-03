@@ -24,7 +24,7 @@ public class attackBoss : StateMachineBehaviour {
 			animator.gameObject.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
 			animator.gameObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.right * animator.transform.localScale.x * chargePower, ForceMode2D.Impulse);
 			animator.SetInteger ("status", 2);
-			spearCollider.enabled = true;
+			//spearCollider.enabled = true;
 			counter = 0;
 		}
 	}

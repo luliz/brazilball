@@ -12,13 +12,12 @@ public class Door : MonoBehaviour {
 		if (col.CompareTag ("Player")) {
 			if (automatic) {
 
-				
 				Application.LoadLevel (levelToGo);
 				PlayerController.playerSpawnPosition = spawnPosition;
 			}
 			else {
 				if (Input.GetKeyDown(Controls.enterHouse)) {
-					
+
 					Application.LoadLevel (levelToGo);
 					PlayerController.playerSpawnPosition = spawnPosition;
 				}

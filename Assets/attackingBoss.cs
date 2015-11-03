@@ -22,7 +22,7 @@ public class attackingBoss : StateMachineBehaviour {
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 
-		spearCollider.enabled = false;
+		//spearCollider.enabled = false;
 		animator.SetInteger ("status", 0);
 		animator.gameObject.GetComponent<Boss> ().attacking = false;
 		animator.gameObject.GetComponent<Boss> ().estado = 1;

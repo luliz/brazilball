@@ -5,9 +5,10 @@ public class PlayerStatus : MonoBehaviour {
 
 	public AudioSource audioSource;
 
-	public int lives = 1;
+	public static int lives;
+	static bool gameBegins = false;
 	public float maxImmuneTime = 2f;
-	public float counter;
+	private float counter = 2f;
 	private bool blink;	
 	public Color blinkColor;
 	private SpriteRenderer spriteRenderer;
@@ -19,8 +20,18 @@ public class PlayerStatus : MonoBehaviour {
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
 		spriteRenderer = this.GetComponent<SpriteRenderer> ();
 	}
+
+	void Start () {
+
+		if (!gameBegins) {
+
+			gameBegins = true;
+			lives = 1;
+		}
+	}
 	void Update () {
 		counter += Time.deltaTime;
+		this.GetComponent<Animator> ().SetFloat ("lives", lives);
 		if (blink) {
 			if (Mathf.Round (counter * 100f) / 100f % timeBetweenBlinks < 0.1) {
 
@@ -40,15 +51,13 @@ public class PlayerStatus : MonoBehaviour {
 		
 	}
 	public void TakeDamage (int direction) {
-
 		if (counter > maxImmuneTime) {
 			audioSource.Play();
 			blink = true;
 			counter = 0;
-			this.GetComponent<Rigidbody2D>().AddForce(new Vector2 (direction * 10, 0), ForceMode2D.Impulse);
+			this.GetComponent<Rigidbody2D>().AddForce(new Vector2 (direction * 3, 0), ForceMode2D.Impulse);
 			if (lives == 1) {
 				lives = 0;
-				this.GetComponent<Animator> ().SetFloat ("lives", 0);
 
 			} else {
 				gameManager.GameOver();

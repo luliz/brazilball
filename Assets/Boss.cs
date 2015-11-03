@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Boss : BasicAI {
 
+	public GameObject[] pontosF;
 	public float areaBossSize;
 	public float areaBossCenter;
 	float callArrowsCounter = 0;
@@ -14,7 +15,7 @@ public class Boss : BasicAI {
 		health = 2;
 		memory = 100f;
 		minDistanceToAttack = 0f;
-		maxDistanceToAttack = 1.5f;
+		maxDistanceToAttack = 3f;
 		maxDistanceToFollow = 20f;
 		raycastOffset = 0f;
 		maxVerticalDistanceToAttack = 1.5f;
@@ -43,7 +44,6 @@ public class Boss : BasicAI {
 		callArrowsCounter += Time.deltaTime;
 		if (callArrowsCounter >= timeBetweenCalls) {
 
-			print ("calling");
 			estado = 3;
 			animator.SetBool ("walk", false);
 		}
@@ -59,7 +59,10 @@ public class Boss : BasicAI {
 
 		if (callArrowsCounter >= timeBetweenCalls + 4f) {
 			
-			//faz tua magica aqui samuel
+			for (int i = 0; i < pontosF.Length; i++) {
+
+				pontosF[i].GetComponent<PontoF> ().Arrows ();
+			}
 			estado = 1;
 			callArrowsCounter = 0;
 		}
@@ -118,7 +121,8 @@ public class Boss : BasicAI {
 					health--;
 				}
 				else {
-
+					
+					pontuacao.pontos += 100;
 					Destroy(this.gameObject);
 				}
 		}

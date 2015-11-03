@@ -5,6 +5,7 @@ public class Archer2 : MonoBehaviour {
 
     private int estado = 0;    
    
+	public int enemyID;
     private SpriteRenderer expression;
     public Sprite exclamation;
     public Sprite interrogation;
@@ -116,4 +117,10 @@ public class Archer2 : MonoBehaviour {
         transform.localScale = new Vector3(facingDirection, 1, 1);
         expression.transform.localScale = new Vector3(facingDirection, 1, 1);
     }
+
+	public void TakeDamage () {
+
+		GameManager.enemiesKilled.Add (this.enemyID);
+		Destroy (this.gameObject);
+	}
 }

@@ -10,5 +10,9 @@ public class Sword : MonoBehaviour {
 
 			col.gameObject.GetComponent<BasicAI> ().TakeDamage();
 		}
+		if (col.gameObject.CompareTag ("enemyArcher")) {
+
+			col.gameObject.GetComponent<Archer2> ().TakeDamage();
+		}
 	}
 }
