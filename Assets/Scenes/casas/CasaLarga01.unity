@@ -164,7 +164,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 418642777}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.529999971, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 270317455}
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b8e6c887e35cb4d982fce3fdc0b5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 0}
   automatic: 1
   spawnPosition: {x: -19.4599991, y: -2.9000001, z: 0}
   levelToGo: 5
@@ -299,8 +300,8 @@ MonoBehaviour:
   lookAheadFactor: 3
   lookAheadReturnSpeed: .5
   lookAheadMoveThreshold: .100000001
-  yPosRestriction: -5.30000019
-  yPosRestrictionUp: -5.30000019
+  yPosRestriction: -4.4000001
+  yPosRestrictionUp: -4.4000001
   xPlusRestrict: -31.7999992
   xMinusRestrict: -33.2999992
 --- !u!1 &784519642
@@ -372,6 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b8e6c887e35cb4d982fce3fdc0b5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 0}
   automatic: 0
   spawnPosition: {x: -19.2299995, y: -4.01000023, z: 0}
   levelToGo: 5
@@ -409,6 +411,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1719944745}
   - 212: {fileID: 1719944744}
+  - 68: {fileID: 1719944746}
   m_Layer: 0
   m_Name: interiorCasinhaBonitinhaLarga
   m_TagString: Untagged
@@ -454,6 +457,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!68 &1719944746
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1719944743}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+  - {x: -4.90702438, y: 1.57584882}
+  - {x: -4.96815491, y: -1.09251595}
+  - {x: 4.95440102, y: -1.0853467}
+  - {x: 4.96385765, y: 1.55585384}
+  - {x: -4.96352005, y: 1.60450077}
 --- !u!4 &1801161664 stripped
 Transform:
   m_PrefabParentObject: {fileID: 410036, guid: 3e556eed3c071ef44ae9ff9813a1274f, type: 2}
