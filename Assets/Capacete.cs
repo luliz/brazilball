@@ -9,8 +9,10 @@ public class Capacete : MonoBehaviour {
 
 		if (col.tag == "Player") {
 
+            Vidas.capacetes++;     
+            
 			GameManager.hatsPicked.Add (hatID);
-			PlayerStatus.lives = 1;
+			PlayerStatus.lives =+ 1;
 			Destroy (gameObject);
 		}
 	}

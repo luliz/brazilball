@@ -55,6 +55,7 @@ public class PlayerStatus : MonoBehaviour {
 			audioSource.Play();
 			blink = true;
 			counter = 0;
+            Vidas.capacetes--;
 			this.GetComponent<Rigidbody2D>().AddForce(new Vector2 (direction * 3, 0), ForceMode2D.Impulse);
 			if (lives == 1) {
 				lives = 0;

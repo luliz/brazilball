@@ -209,6 +209,7 @@ public class GameManager : MonoBehaviour {
 		hatsPicked.Clear ();
 		pontuacao.moedas = 0;
 		pontuacao.pontos = 0;
+        Vidas.capacetes = 0;
 		PlayerStatus.lives = 1;
 		Pause ();
 		Instantiate (gameOverScreen);
