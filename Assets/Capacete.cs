@@ -12,7 +12,7 @@ public class Capacete : MonoBehaviour {
             Vidas.capacetes++;     
             
 			GameManager.hatsPicked.Add (hatID);
-			PlayerStatus.lives =+ 1;
+			PlayerStatus.lives++;
 			Destroy (gameObject);
 		}
 	}
