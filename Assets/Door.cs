@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Door : MonoBehaviour {
 
+	int teste = 0;
 	public GameObject message;
 	GameObject createdMessage;
 	public bool automatic;
@@ -20,6 +21,8 @@ public class Door : MonoBehaviour {
 	void OnTriggerStay2D (Collider2D col) {
 
 		if (col.CompareTag ("Player")) {
+			print ("teste"+teste);
+			teste++;
 			if (automatic) {
 
 				Application.LoadLevel (levelToGo);
