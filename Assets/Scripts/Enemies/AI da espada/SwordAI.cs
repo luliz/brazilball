@@ -79,6 +79,7 @@ public class SwordAI : BasicAI
         else
         {
 			pontuacao.pontos += 15;
+            Objetivo.inimigos++; 
             GameManager.enemiesKilled.Add(this.enemyID);
             Destroy(this.gameObject);
         }

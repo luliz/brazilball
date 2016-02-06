@@ -76,6 +76,7 @@ public class MaceAI : BasicAI {
 		} else {
 			
 			pontuacao.pontos += 50;
+            Objetivo.inimigos++; 
 			GameManager.enemiesKilled.Add(this.enemyID);
 			Destroy(this.gameObject);
 		}

@@ -128,6 +128,7 @@ public class Archer : BasicAI {
 			health--;
 		} else {
 			pontuacao.pontos += 30;
+            Objetivo.inimigos++; 
 			GameManager.enemiesKilled.Add (this.enemyID);
 			Destroy (this.gameObject);
 		}
