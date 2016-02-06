@@ -18051,6 +18051,7 @@ RectTransform:
   - {fileID: 2102064213}
   - {fileID: 1735745804}
   - {fileID: 1189853379}
+  - {fileID: 2001831356}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_AnchorMin: {x: 0, y: 0}
@@ -19068,8 +19069,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 115.599998, y: -3.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 141, y: -3.5}
+  m_SizeDelta: {x: 211, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1140644228
 MonoBehaviour:
@@ -20174,7 +20175,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -185.600006, y: 125.900002}
+  m_AnchoredPosition: {x: -201, y: 125.919998}
   m_SizeDelta: {x: 38, y: 55.7000008}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1189853380
@@ -33501,6 +33502,78 @@ Transform:
   - {fileID: 822626994}
   m_Father: {fileID: 2131319647}
   m_RootOrder: 3
+--- !u!1 &2001831355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 2001831356}
+  - 222: {fileID: 2001831358}
+  - 114: {fileID: 2001831357}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2001831356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001831355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1106119596}
+  m_RootOrder: 3
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 285, y: 127.120003}
+  m_SizeDelta: {x: 160, y: 53.2999992}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &2001831357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001831355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Dica:Derrote 4 inimigos para que o barco fique mais perto.
+--- !u!222 &2001831358
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001831355}
 --- !u!4 &2009031980 stripped
 Transform:
   m_PrefabParentObject: {fileID: 423578, guid: 780c19a657b496e4c84aaa9bd84ecdea, type: 2}

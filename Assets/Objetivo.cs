@@ -14,7 +14,7 @@ public class Objetivo : MonoBehaviour
     void Update()
     {
 
-        inimigosT.text = inimigos.ToString() + ("/4");
+        inimigosT.text = inimigos.ToString() + ("/15") + ("  Inimigos derrotados");
         
     }
 }

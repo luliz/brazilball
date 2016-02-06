@@ -121,6 +121,8 @@ public class Archer2 : MonoBehaviour {
 	public void TakeDamage () {
 
 		GameManager.enemiesKilled.Add (this.enemyID);
+        pontuacao.pontos += 30;
+        Objetivo.inimigos++; 
 		Destroy (this.gameObject);
 	}
 }
