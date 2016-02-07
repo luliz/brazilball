@@ -211,6 +211,7 @@ public class GameManager : MonoBehaviour {
 		pontuacao.pontos = 0;
         Vidas.capacetes = 0;
 		PlayerStatus.lives = 1;
+        Objetivo.inimigos = 0;
 		Pause ();
 		Instantiate (gameOverScreen);
 		gameOver = true;
