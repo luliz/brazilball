@@ -33548,7 +33548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: .0206894875, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -33567,7 +33567,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Derrote os inimigos para avan\xE7ar no jogo."
+  m_Text: Dica:Derrote 4 inimigos para que o barco fique mais perto.
 --- !u!222 &2001831358
 CanvasRenderer:
   m_ObjectHideFlags: 0
