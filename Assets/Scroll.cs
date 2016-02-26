@@ -24,7 +24,6 @@ public class Scroll : MonoBehaviour {
 				GameObject createdScroll = Instantiate (scroll);
 				Text text = createdScroll.GetComponentInChildren<Text> ();
 				text.text = texto;
-				Destroy (gameObject);
 				Destroy (createdMessage);
 			}
 		}
