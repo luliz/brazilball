@@ -5,6 +5,8 @@ public abstract class BasicAI : MonoBehaviour {
 
 	public bool attacking = false;
 	//PRIVATE VARIABLES
+
+	private PlayerStatus status;
 	protected int health;
 	protected float memory;
 	public int estado = 0;
@@ -44,6 +46,7 @@ public abstract class BasicAI : MonoBehaviour {
 	public int enemyID;
 	void Awake() {
 		thisCollider = GetComponentInChildren<Collider2D>();
+		status = GameObject.Find ("Player").GetComponent<PlayerStatus> ();
 	}
 	void Update() {
 
@@ -132,7 +135,7 @@ public abstract class BasicAI : MonoBehaviour {
 	{
 		saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - raycastOffset), Vector2.right * facingDirection, 10f, visao);
 
-		if (saw.transform == target)
+		if (saw.transform == target  && status.invisible)
 		{
 			
 			timeAfterISaw = 0;

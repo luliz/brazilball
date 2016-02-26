@@ -11,6 +11,8 @@ public class PlayerStatus : MonoBehaviour {
 	private float counter = 2f;
 	private bool blink;	
 	public Color blinkColor;
+	public Color invisibilityColor;
+	public bool invisible = false;
 	private SpriteRenderer spriteRenderer;
 	private float timeBetweenBlinks = 0.5f;
 	GameManager gameManager;
@@ -49,6 +51,18 @@ public class PlayerStatus : MonoBehaviour {
 			
 		}
 		
+	}
+
+	public void TurnInvisibilityOn () {
+
+		spriteRenderer.color = invisibilityColor;
+		invisible = true;
+	}
+
+	public void TurnInvisibilityOff () {
+		
+		spriteRenderer.color = Color.white;
+		invisible = false;
 	}
 	public void TakeDamage (int direction) {
 		if (counter > maxImmuneTime) {
