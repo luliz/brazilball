@@ -32,7 +32,7 @@ public class Burrinho : MonoBehaviour {
 			Destroy (gameObject);
 			gameManager.GameOver ();
 		}
-		if (transform.position.x >= 85f) {
+		if (transform.position.x >= 313f) {
 			Destroy (GameObject.Find("MasterRespawn"));
 			if (transform.position.x >= 92f) {
 

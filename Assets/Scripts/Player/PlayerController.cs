@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour{
 
 	void Start() {
 		if (playerSpawnPosition != new Vector3 (-34f, -4f)) {
+			print("damn");
 			transform.position = playerSpawnPosition;
 		}
 		
