@@ -11,23 +11,29 @@ public class AIzarabatana : MonoBehaviour
     public Transform Ponta;
     public AudioClip soundshoot;
     public Transform target;
-
+    protected int facingDirection = 1;
     public int enemyID;
 
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("cavalinho").transform;
+
+
+    }
     void Update()
     {
         contador += Time.deltaTime;
 
-        if (target.transform.position.x >  transform.position.x)
+        if (transform.position.x > target.position.x)
         {
-            transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+            facingDirection = -1;
+            Flip() ;
         }
-
-        if (target.transform.position.x < transform.position.x)
+        else
         {
-            transform.localScale = new Vector3(-1.25f, 1.25f, 1.25f);
+            facingDirection = 1;
+            Flip();
         }
-
         if (contador >= 2)
         {
             Instantiate(arrow, Ponta.transform.position, Ponta.rotation);
@@ -38,7 +44,7 @@ public class AIzarabatana : MonoBehaviour
 
     protected void Flip()
     {
-        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * 1, transform.localScale.y, 1);
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * facingDirection, transform.localScale.y, 1);
     }
 
 

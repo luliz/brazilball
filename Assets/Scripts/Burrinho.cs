@@ -44,11 +44,11 @@ public class Burrinho : MonoBehaviour {
 	}
 	void TakeDamage () {
 
-		health -= 10f;
+		health -= 20f;
 	}
 	void OnTriggerEnter2D (Collider2D col) {
 
-		print (col.transform);
+		
 		if (col.gameObject.name == "Dardo(Clone)") {
 			Destroy(col.gameObject);
 			TakeDamage();

@@ -197,7 +197,7 @@ MonoBehaviour:
   arrow: {fileID: 423180, guid: 2541bbc2821757a498f41ed2ff308ee1, type: 2}
   Ponta: {fileID: 486350}
   soundshoot: {fileID: 8300000, guid: 3b4b2a8f31005214f9591e8147466573, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 439168, guid: 290e060ad39de3e4f919b30cea411744, type: 2}
   enemyID: 0
 --- !u!212 &21271766
 SpriteRenderer:
@@ -288,6 +288,10 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 439168, guid: 290e060ad39de3e4f919b30cea411744, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 194804}

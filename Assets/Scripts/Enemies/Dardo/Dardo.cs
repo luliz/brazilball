@@ -14,12 +14,17 @@ public class Dardo : MonoBehaviour {
     {
         myRB = GetComponent<Rigidbody2D>();
         myCL = GetComponent<Collider2D>();
-        target = GameObject.Find("cavalinho_0").transform;
+    
+        target = GameObject.FindGameObjectWithTag("cavalinho").transform;
+
+
+   
+        
         Power = 100;
 
         if (target.position.x > transform.position.x)
         {
-            myRB.AddForce(new Vector2(-Power, 0));
+            myRB.AddForce(new Vector2(Power, 0));
         }
 
         else if (target.position.x < transform.position.x)
@@ -27,7 +32,7 @@ public class Dardo : MonoBehaviour {
             myRB.AddForce(new Vector2(-Power, 0));
         }
 
-        Destroy(gameObject, 3);
+        
 
     }
 
