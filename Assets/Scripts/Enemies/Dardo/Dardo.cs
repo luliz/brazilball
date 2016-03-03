@@ -19,7 +19,7 @@ public class Dardo : MonoBehaviour {
 
         if (target.position.x > transform.position.x)
         {
-            myRB.AddForce(new Vector2(Power, 0));
+            myRB.AddForce(new Vector2(-Power, 0));
         }
 
         else if (target.position.x < transform.position.x)
@@ -54,14 +54,5 @@ public class Dardo : MonoBehaviour {
         }
 		
     }
-    void Update()
-    {
-        if (myRB != null)
-        {
-            Vector3 dir = myRB.velocity;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        }
-
-    }
+    
 }

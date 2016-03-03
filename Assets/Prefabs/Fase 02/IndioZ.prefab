@@ -60,7 +60,7 @@ GameObject:
   - 95: {fileID: 9581688}
   - 50: {fileID: 5044826}
   - 58: {fileID: 5897512}
-  - 114: {fileID: 11480862}
+  - 114: {fileID: 11465002}
   m_Layer: 2
   m_Name: IndioZ
   m_TagString: enemy
@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.3600006, y: -4.21000004, z: 0}
+  m_LocalPosition: {x: 170.665894, y: 13.9497662, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463274}
@@ -182,7 +182,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11480862
+--- !u!114 &11465002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -190,27 +190,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 194804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa277db89c1a0804ea78dcd8006ee257, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c8a9f91adcee35429164bc97c419422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attacking: 0
-  estado: 0
-  animator: {fileID: 9581688}
-  weaponAnimator: {fileID: 9548210}
-  expressions: {fileID: 21292850}
-  interrogation: {fileID: 21300074, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
-  exclamation: {fileID: 21300072, guid: 93ef16605fa9534429b84f50e8fcd9bc, type: 3}
-  visao:
-    serializedVersion: 2
-    m_Bits: 51
-  barreira:
-    serializedVersion: 2
-    m_Bits: 256
-  enemyID: 0
-  audioSource: {fileID: 0}
+  health: 2
   arrow: {fileID: 423180, guid: 2541bbc2821757a498f41ed2ff308ee1, type: 2}
   Ponta: {fileID: 486350}
   soundshoot: {fileID: 8300000, guid: 3b4b2a8f31005214f9591e8147466573, type: 3}
+  target: {fileID: 0}
+  enemyID: 0
 --- !u!212 &21271766
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -7,7 +7,7 @@ public abstract class BasicAI : MonoBehaviour {
 	//PRIVATE VARIABLES
 
 	private PlayerStatus status;
-	protected int health;
+	static public int health ;
 	protected float memory;
 	public int estado = 0;
 	protected RaycastHit2D saw;

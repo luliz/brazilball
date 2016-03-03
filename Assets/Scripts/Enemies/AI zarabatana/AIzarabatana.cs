@@ -6,15 +6,13 @@ public class AIzarabatana : MonoBehaviour
 {
 
     private float contador;
+    public int health = 2;
     public Transform arrow;
     public Transform Ponta;
     public AudioClip soundshoot;
     public Transform target;
 
-    void Start()
-    {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-    }
+    public int enemyID;
 
     void Update()
     {
@@ -42,4 +40,26 @@ public class AIzarabatana : MonoBehaviour
     {
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * 1, transform.localScale.y, 1);
     }
+
+
+    public void Take()
+    {
+        
+        if (BasicAI.health > 0)
+        {
+
+            BasicAI.health--;
+        }
+        else
+        {
+            pontuacao.pontos += 30;
+            Objetivo.inimigos++;
+            GameManager.enemiesKilled.Add(this.enemyID);
+            Destroy(this.gameObject);
+        }
+    }
+
+
+
+
 }
