@@ -12,7 +12,7 @@ public class SwordAI : BasicAI
         maxDistanceToFollow = 20f;
         raycastOffset = 0f;
         maxVerticalDistanceToAttack = 1f;
-        target = GameObject.Find("Player").transform;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
     public override void Follow()
     {

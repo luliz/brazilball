@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18b5506ada0248e4e97d880029c733f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 439168, guid: 290e060ad39de3e4f919b30cea411744, type: 2}
 --- !u!212 &21246504
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -145,6 +145,10 @@ Prefab:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 439168, guid: 290e060ad39de3e4f919b30cea411744, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192572}

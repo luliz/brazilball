@@ -14,7 +14,12 @@ public class Dardo : MonoBehaviour {
     {
         myRB = GetComponent<Rigidbody2D>();
         myCL = GetComponent<Collider2D>();
-        target = GameObject.Find("cavalinho_0").transform;
+    
+        target = GameObject.FindGameObjectWithTag("cavalinho").transform;
+
+
+   
+        
         Power = 100;
 
         if (target.position.x > transform.position.x)
@@ -27,8 +32,8 @@ public class Dardo : MonoBehaviour {
             myRB.AddForce(new Vector2(-Power, 0));
         }
 
-        Destroy(gameObject, 3);
 
+        Destroy(gameObject, 7);
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -54,14 +59,5 @@ public class Dardo : MonoBehaviour {
         }
 		
     }
-    void Update()
-    {
-        if (myRB != null)
-        {
-            Vector3 dir = myRB.velocity;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        }
-
-    }
+    
 }
