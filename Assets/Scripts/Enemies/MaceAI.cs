@@ -6,6 +6,8 @@ public class MaceAI : BasicAI {
 	public AudioSource audioSource;
 
 	void Start () {
+
+		audioSource = Camera.main.GetComponent<AudioSource> ();
 		speed = 2f;
 		health = 2;
 		memory = 10f;
