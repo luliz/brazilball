@@ -25,7 +25,7 @@ public class Burrinho : MonoBehaviour {
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
 
 		filledHPImage.rectTransform.sizeDelta = new Vector2 (health, filledHPImage.rectTransform.rect.size.y);
-		filledHPImage.rectTransform.anchoredPosition = new Vector2 (-337f - (100f - health) / 2f, filledHPImage.rectTransform.anchoredPosition.y);
+		filledHPImage.rectTransform.anchoredPosition = new Vector2 (-265f - (100f - health) / 2f, filledHPImage.rectTransform.anchoredPosition.y);
 
 		if (health < 1){
 

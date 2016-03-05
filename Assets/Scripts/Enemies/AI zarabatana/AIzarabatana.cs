@@ -52,11 +52,7 @@ public class AIzarabatana : MonoBehaviour
 
             }
 
-            if (transform.position.y > 13)
-            {
-
-                speed = 10;
-            }
+           
           
 
 
