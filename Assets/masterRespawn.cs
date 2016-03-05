@@ -20,7 +20,7 @@ public class masterRespawn : MonoBehaviour {
 
 				threeClosestSpawnPoints[i] = dummy;
 			}
-			if (GameObject.FindGameObjectsWithTag ("enemy").Length < 2) {
+			if (GameObject.FindGameObjectsWithTag ("enemy").Length < 6) {
 				for (int i = 0; i < spawnPoints.Length; i++) {
 
 					for (int j = 0; j < threeClosestSpawnPoints.Length; j++) {

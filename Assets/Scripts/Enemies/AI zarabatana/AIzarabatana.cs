@@ -14,10 +14,14 @@ public class AIzarabatana : MonoBehaviour
     protected int facingDirection = 1;
     public int enemyID;
 
+    private float speed = 2 ;
+    public Animator animator;
+    public Collider2D thisCollider;
+    public LayerMask barreira;
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("cavalinho").transform;
-
+        thisCollider = GetComponentInChildren<Collider2D>();
 
     }
     void Update()
@@ -28,18 +32,63 @@ public class AIzarabatana : MonoBehaviour
         {
             facingDirection = -1;
             Flip() ;
+
+            if (Mathf.Abs(target.position.x - transform.position.x) > 10 || Mathf.Abs(target.position.x - transform.position.x) > 12)
+            {
+                facingDirection = -1;
+                Walk();
+            }
+
+            else
+            {
+                if (contador >= 5)
+                {
+                    Instantiate(arrow, Ponta.transform.position, Ponta.rotation);
+                    AudioSource.PlayClipAtPoint(soundshoot, transform.position);
+                    contador = 0;
+                }
+                animator.SetBool("walk", false);
+
+
+            }
+
+            if (transform.position.y > 13)
+            {
+
+                speed = 10;
+            }
+          
+
+
+
         }
         else
         {
             facingDirection = 1;
             Flip();
+            if (Mathf.Abs(target.position.x - transform.position.x) > 10 || Mathf.Abs(target.position.x - transform.position.x) > 12)
+            {
+                facingDirection = 1;
+                Walk();
+            }
+
+            else
+            {
+                if (contador >= 2)
+                {
+                    Instantiate(arrow, Ponta.transform.position, Ponta.rotation);
+                    AudioSource.PlayClipAtPoint(soundshoot, transform.position);
+                    contador = 0;
+                }
+                animator.SetBool("walk", false);
+
+
+            }
         }
-        if (contador >= 2)
-        {
-            Instantiate(arrow, Ponta.transform.position, Ponta.rotation);
-            AudioSource.PlayClipAtPoint(soundshoot, transform.position);
-            contador = 0;
-        }
+        
+
+        
+
     }
 
     protected void Flip()
@@ -65,7 +114,14 @@ public class AIzarabatana : MonoBehaviour
         }
     }
 
+     void Walk()
+        {      
+           
+		    animator.SetBool("walk", true);
+			transform.Translate(new Vector2(speed * facingDirection * Time.deltaTime, 0));
+		}
+	}
 
 
 
-}
+

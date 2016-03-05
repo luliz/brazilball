@@ -27,7 +27,7 @@ public class Burrinho : MonoBehaviour {
 		filledHPImage.rectTransform.sizeDelta = new Vector2 (health, filledHPImage.rectTransform.rect.size.y);
 		filledHPImage.rectTransform.anchoredPosition = new Vector2 (-337f - (100f - health) / 2f, filledHPImage.rectTransform.anchoredPosition.y);
 
-		if (health == 0){
+		if (health < 1){
 
 			Destroy (gameObject);
 			gameManager.GameOver ();
@@ -44,7 +44,7 @@ public class Burrinho : MonoBehaviour {
 	}
 	void TakeDamage () {
 
-		health -= 20f;
+		health -= 15f;
 	}
 	void OnTriggerEnter2D (Collider2D col) {
 

@@ -32,8 +32,8 @@ public class Dardo : MonoBehaviour {
             myRB.AddForce(new Vector2(-Power, 0));
         }
 
-        
 
+        Destroy(gameObject, 7);
     }
 
     void OnCollisionEnter2D(Collision2D other)

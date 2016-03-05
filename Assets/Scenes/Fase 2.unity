@@ -3085,6 +3085,10 @@ Prefab:
       propertyPath: m_TagString
       value: cavalinho
       objectReference: {fileID: 0}
+    - target: {fileID: 11489156, guid: 290e060ad39de3e4f919b30cea411744, type: 2}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 290e060ad39de3e4f919b30cea411744, type: 2}
   m_IsPrefabParent: 0
