@@ -13,6 +13,7 @@ public class Charger : BasicAI {
 	private bool attacked = false;
 
 	void Start () {
+		audioSource = Camera.main.GetComponent<AudioSource> (); 
 		target = GameObject.Find ("Player").transform;
 		speed = 2f;
 		health = 1;
