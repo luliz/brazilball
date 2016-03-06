@@ -16,7 +16,6 @@ TagManager:
   - Bullet
   - hat
   - cavalinho
-  - enemy2
   layers:
   - Default
   - TransparentFX

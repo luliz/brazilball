@@ -47,7 +47,7 @@ public class Dardo : MonoBehaviour {
 			GameObject.Find("Player").GetComponent<PlayerStatus>().TakeDamage(parentFacingDirection);
         }
 
-        if ((other.gameObject.tag != "enemy2"))
+        if ((other.gameObject.tag != "enemy"))
         {
             Destroy(myRB);
             Destroy(myCL);
