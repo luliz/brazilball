@@ -15029,7 +15029,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: {fileID: 138358, guid: d0a517d80082b314088acc3ddb3d5bbb, type: 2}
   scroll: {fileID: 148342, guid: 5e44b0939507848f3a86b48fbee9425a, type: 2}
-  texto: "texto loc\xE3o"
+  texto: "\u201CJ\xE1 passavam de sete horas e meia depois do meio dia, quando a cidade
+    foi de todo livre dos mouros\u2026.E as ruas n\xE3o menos jaziam cheias delas
+    (...) "
 --- !u!1 &968839200
 GameObject:
   m_ObjectHideFlags: 0
@@ -33533,8 +33535,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 285, y: 127.120003}
-  m_SizeDelta: {x: 160, y: 53.2999992}
+  m_AnchoredPosition: {x: 302.5, y: 132.800003}
+  m_SizeDelta: {x: 195, y: 42.2999992}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2001831357
 MonoBehaviour:
@@ -33567,7 +33569,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dica:Derrote 4 inimigos para que o barco fique mais perto.
+  m_Text: "Dica:Derrote 4 inimigos para que o barco fique mais perto.Derrote todos
+    os inimigos para avan\xE7ar no jogo."
 --- !u!222 &2001831358
 CanvasRenderer:
   m_ObjectHideFlags: 0
