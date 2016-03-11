@@ -4380,7 +4380,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
 --- !u!1 &297209225
 GameObject:
   m_ObjectHideFlags: 0
@@ -11151,6 +11151,91 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 422506, guid: 42e411fac1685f64c9a6ada2c7532e1c, type: 2}
   m_PrefabInternal: {fileID: 1665528628}
+--- !u!1 &690946045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 690946046}
+  - 212: {fileID: 690946049}
+  - 114: {fileID: 690946048}
+  - 61: {fileID: 690946047}
+  m_Layer: 0
+  m_Name: MiniScroll (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &690946046
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690946045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 256.140015, y: -1.20000005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1979786095}
+  m_RootOrder: 3
+--- !u!61 &690946047
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690946045}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .360000014, y: .360000014}
+--- !u!114 &690946048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690946045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc329080ef3ce4c499d3900725ac3ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: {fileID: 138358, guid: d0a517d80082b314088acc3ddb3d5bbb, type: 2}
+  scroll: {fileID: 148342, guid: 5e44b0939507848f3a86b48fbee9425a, type: 2}
+  texto: "\u201CJ\xE1 passavam de sete horas e meia depois do meio dia, quando a cidade
+    foi de todo livre dos mouros\u2026.E as ruas n\xE3o menos jaziam cheias delas
+    (...) "
+--- !u!212 &690946049
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690946045}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1172909055
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 881759d56271e44b9a79b7ce4df5aee7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &692499691 stripped
 Transform:
   m_PrefabParentObject: {fileID: 422506, guid: 42e411fac1685f64c9a6ada2c7532e1c, type: 2}
@@ -11887,6 +11972,90 @@ Transform:
   - {fileID: 1641983484}
   m_Father: {fileID: 1347584366}
   m_RootOrder: 1
+--- !u!1 &745749742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 745749743}
+  - 212: {fileID: 745749746}
+  - 114: {fileID: 745749745}
+  - 61: {fileID: 745749744}
+  m_Layer: 0
+  m_Name: MiniScroll (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &745749743
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745749742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.5100021, y: -.920000017, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1979786095}
+  m_RootOrder: 2
+--- !u!61 &745749744
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745749742}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .360000014, y: .360000014}
+--- !u!114 &745749745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745749742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc329080ef3ce4c499d3900725ac3ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: {fileID: 138358, guid: d0a517d80082b314088acc3ddb3d5bbb, type: 2}
+  scroll: {fileID: 148342, guid: 5e44b0939507848f3a86b48fbee9425a, type: 2}
+  texto: "\u201CJ\xE1 disseram eles\u2026 Que os crist\xE3os s\xE3o j\xE1 dentro da
+    cidade e sobre muito mouros mais, e matam os nossos, como se fossem c\xE3os\u201D "
+--- !u!212 &745749746
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745749742}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1172909055
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 881759d56271e44b9a79b7ce4df5aee7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &748388061
 GameObject:
   m_ObjectHideFlags: 0
@@ -12672,7 +12841,7 @@ Transform:
   - {fileID: 1930231421}
   - {fileID: 68630104}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
 --- !u!1 &806094596
 GameObject:
   m_ObjectHideFlags: 0
@@ -15011,11 +15180,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 958900131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.4599991, y: -4.03999996, z: 0}
+  m_LocalPosition: {x: -6.26000023, y: -1.29306579, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 1979786095}
+  m_RootOrder: 0
 --- !u!114 &958900135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15029,7 +15198,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: {fileID: 138358, guid: d0a517d80082b314088acc3ddb3d5bbb, type: 2}
   scroll: {fileID: 148342, guid: 5e44b0939507848f3a86b48fbee9425a, type: 2}
-  texto: "texto loc\xE3o"
+  texto: "Sa\xEDda da frota :\u201CO  vento frio nas velas come\xE7ou a lan\xE7ar
+    a frota pela boca da foz, a qual coisa era t\xE3o bela de se ver, que aqueles
+    que viam n\xE3o podiam pensar qual coisa era mais bela de se ver\u201D  "
 --- !u!1 &968839200
 GameObject:
   m_ObjectHideFlags: 0
@@ -19864,6 +20035,92 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 417052, guid: 8137f3f6fea313a419441fe556e9cd1a, type: 2}
   m_PrefabInternal: {fileID: 1172813860}
+--- !u!1 &1175926609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1175926610}
+  - 212: {fileID: 1175926613}
+  - 114: {fileID: 1175926612}
+  - 61: {fileID: 1175926611}
+  m_Layer: 0
+  m_Name: MiniScroll (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1175926610
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175926609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.2799988, y: -.550000012, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1979786095}
+  m_RootOrder: 1
+--- !u!61 &1175926611
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175926609}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .360000014, y: .360000014}
+--- !u!114 &1175926612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175926609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc329080ef3ce4c499d3900725ac3ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: {fileID: 138358, guid: d0a517d80082b314088acc3ddb3d5bbb, type: 2}
+  scroll: {fileID: 148342, guid: 5e44b0939507848f3a86b48fbee9425a, type: 2}
+  texto: "Primeira vista da cidade de ceuta : \u201CE os mouros da cidade, tanto que
+    viram a frota acerca de seus muros, encheram todas suas janelas e frestas por
+    mostrarem que eram muito mais do que os crist\xE3os presumiam, e assim pela grandeza
+    da cidade, que era por toda as partes muito iluminada era muito bela de se ver\u201D"
+--- !u!212 &1175926613
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175926609}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1172909055
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 881759d56271e44b9a79b7ce4df5aee7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1177419721
 GameObject:
   m_ObjectHideFlags: 0
@@ -32973,6 +33230,37 @@ SpriteRenderer:
 Transform:
   m_PrefabParentObject: {fileID: 471090, guid: 300e6ecf2f35e5d4080202a0faa90ef9, type: 2}
   m_PrefabInternal: {fileID: 1519327981}
+--- !u!1 &1979786094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1979786095}
+  m_Layer: 0
+  m_Name: Pergaminhos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1979786095
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1979786094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.9020023, y: -2.74693418, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 958900134}
+  - {fileID: 1175926610}
+  - {fileID: 745749743}
+  - {fileID: 690946046}
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
 --- !u!1 &1984387981
 GameObject:
   m_ObjectHideFlags: 0
