@@ -33,7 +33,8 @@ public class PlayerStatus : MonoBehaviour {
 	}
 	void Update () {
 		counter += Time.deltaTime;
-		this.GetComponent<Animator> ().SetFloat ("lives", lives);
+		if (this.GetComponent<Animator> ())
+			this.GetComponent<Animator> ().SetFloat ("lives", lives);
 		if (blink) {
 			if (Mathf.Round (counter * 100f) / 100f % timeBetweenBlinks < 0.1) {
 
