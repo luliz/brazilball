@@ -5,6 +5,9 @@ public class PlayerFase5 : MonoBehaviour {
 
 	public Transform playerAndHorse;
 
+	public GameObject bala;
+	public Transform bicoDaArma;
+
 	private int posicaoMirando;
 	private int posicaoAtual;
 	public float[] possiveisPosicoes;
@@ -40,6 +43,10 @@ public class PlayerFase5 : MonoBehaviour {
 
 			posicaoMirando = -1;
 			UpdatePositions ();
+		} else if (Input.GetKeyDown (KeyCode.Space)) {
+
+			GameObject balaInstanciada = (GameObject) Instantiate (bala, bicoDaArma.position, Quaternion.identity);
+			balaInstanciada.GetComponent<bullet> ().moveSpeed *= posicaoMirando;
 		}
 	}
 
