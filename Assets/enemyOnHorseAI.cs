@@ -3,10 +3,13 @@ using System.Collections;
 
 public class enemyOnHorseAI : MonoBehaviour {
 
-	public Transform target;
+	private GameManager gameManager;
+
+	private Transform target;
 	public Transform enemy;
 	public GameObject bala;
 	public Transform bicoDaArma;
+	public AudioClip somTiro;
 
 	public float tempoEntreTiros;
 	public float[] possiveisPosicoes;
@@ -16,6 +19,8 @@ public class enemyOnHorseAI : MonoBehaviour {
 	public float velocidadeMax;
 	public float posicaoInicial;
 
+	public float minDistanceToGameOver;
+
 	private float ContagemRegressivaParaAtirar;
 	private float ladoQueNasce;
 	private float posicaoVerticalQueNasce;
@@ -23,7 +28,9 @@ public class enemyOnHorseAI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
 
+		target = GameObject.Find("PlayerAndHorse").transform;
 		ContagemRegressivaParaAtirar = tempoEntreTiros;
 
 		ladoQueNasce = Random.value;
@@ -50,15 +57,20 @@ public class enemyOnHorseAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		ContagemRegressivaParaAtirar -= Time.deltaTime;
 
-		transform.Translate (Vector2.right * velocidade * -ladoQueNasce);
+		transform.Translate (Vector2.right * velocidade * -ladoQueNasce * Time.deltaTime);
 		if ((transform.position.y == target.position.y) && ContagemRegressivaParaAtirar <= 0) {
 
 			GameObject balaInstanciada = (GameObject) Instantiate (bala, bicoDaArma.position, Quaternion.identity);
 			balaInstanciada.GetComponent<bullet> ().moveSpeed *= (int) -ladoQueNasce;
 			ContagemRegressivaParaAtirar = tempoEntreTiros;
+			AudioSource.PlayClipAtPoint (somTiro, Vector2.zero);
+		}
+
+		if (Mathf.Abs (transform.position.x - target.position.x) <= minDistanceToGameOver) {
+			gameManager.GameOver ();
+			Destroy (gameObject);
 		}
 	}
 }

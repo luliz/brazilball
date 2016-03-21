@@ -80,4 +80,18 @@ public class PlayerStatus : MonoBehaviour {
 		}
 	}
 
+	public void TakeDamage () {
+		if (counter > maxImmuneTime) {
+			audioSource.Play();
+			blink = true;
+			counter = 0;
+			Vidas.capacetes--;
+			lives--;
+			if (lives < 0) {
+				gameManager.GameOver();
+
+			} 
+		}
+	}
+
 }

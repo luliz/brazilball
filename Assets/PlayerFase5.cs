@@ -7,11 +7,15 @@ public class PlayerFase5 : MonoBehaviour {
 
 	public GameObject bala;
 	public Transform bicoDaArma;
+	public AudioClip somTiro;
 
 	private int posicaoMirando;
 	private int posicaoAtual;
 	public float[] possiveisPosicoes;
 	public float[] tamanhosPorPosicao;
+
+	public float tempoEntreTiros;
+	private float timer;
 
 	// Use this for initialization
 	void Start () {
@@ -19,10 +23,13 @@ public class PlayerFase5 : MonoBehaviour {
 		posicaoAtual = 1;
 		posicaoMirando = 1;
 		UpdatePositions ();
+		timer = tempoEntreTiros;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		timer -= Time.deltaTime;
 
 		if (Input.GetKeyDown (Controls.climbLadderUp) && posicaoAtual != 0) {
 
@@ -43,8 +50,10 @@ public class PlayerFase5 : MonoBehaviour {
 
 			posicaoMirando = -1;
 			UpdatePositions ();
-		} else if (Input.GetKeyDown (KeyCode.Space)) {
+		} else if (Input.GetKeyDown (KeyCode.Space) && timer <= 0f) {
 
+			timer = tempoEntreTiros;
+			AudioSource.PlayClipAtPoint (somTiro, Vector3.zero);
 			GameObject balaInstanciada = (GameObject) Instantiate (bala, bicoDaArma.position, Quaternion.identity);
 			balaInstanciada.GetComponent<bullet> ().moveSpeed *= posicaoMirando;
 		}

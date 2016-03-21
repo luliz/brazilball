@@ -8,15 +8,23 @@ public class bullet : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.right * Time.deltaTime * moveSpeed);
-        Destroy(gameObject, 1);
+        Destroy(gameObject, 1.5f);
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if ((other.gameObject.tag == "enemy"))
-        {
-			other.gameObject.GetComponent<BasicAI> ().TakeDamage ();
+        {	
+			if (other.gameObject.GetComponent<BasicAI> ())
+				other.gameObject.GetComponent<BasicAI> ().TakeDamage ();
+			if (other.gameObject.GetComponent<enemyOnHorseAI> ())
+				Destroy (other.gameObject);
 			Destroy (gameObject);
         }
+
+		if (other.gameObject.tag == "Player") {
+			other.gameObject.GetComponent<PlayerStatus> ().TakeDamage ();
+			Destroy (gameObject);
+		}
     }
 }
