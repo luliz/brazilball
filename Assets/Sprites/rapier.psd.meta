@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: 3ae7ac4f73c269e4a8f3a5b76fed710d
-timeCreated: 1455039722
+timeCreated: 1458850163
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: rapier_0
+    21300002: rapier_1
+    21300004: rapier_2
+    21300006: rapier_3
+    21300008: rapier_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,9 +32,9 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 8192
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -38,18 +43,68 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: rapier_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 27
+        height: 106
+      alignment: 9
+      pivot: {x: .513695717, y: .11975196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rapier_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 25
+        width: 76
+        height: 75
+      alignment: 9
+      pivot: {x: .139948592, y: .130217597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rapier_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 28
+        width: 103
+        height: 36
+      alignment: 9
+      pivot: {x: .12303739, y: .304836899}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rapier_3
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 46
+        width: 138
+        height: 41
+      alignment: 9
+      pivot: {x: .309749424, y: .472942621}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rapier_4
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 14
+        width: 106
+        height: 27
+      alignment: 9
+      pivot: {x: .116263337, y: .486304104}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

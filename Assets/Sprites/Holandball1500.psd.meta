@@ -1,9 +1,18 @@
 fileFormatVersion: 2
 guid: 4987972a11312d04e8195b7014b20ae0
-timeCreated: 1454773979
+timeCreated: 1458849828
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Holandball1500_0
+    21300002: Holandball1500_1
+    21300004: Holandball1500_2
+    21300006: Holandball1500_3
+    21300008: Holandball1500_4
+    21300010: Holandball1500_5
+    21300012: Holandball1500_6
+    21300014: Holandball1500_7
+    21300016: Holandball1500_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,10 +36,10 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +47,108 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Holandball1500_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 176
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Holandball1500_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 176
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Holandball1500_2
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 176
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Holandball1500_3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 176
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Holandball1500_4
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 176
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Holandball1500_5
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 177
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Holandball1500_6
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 177
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Holandball1500_7
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 177
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Holandball1500_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 39
+        width: 79
+        height: 112
+      alignment: 9
+      pivot: {x: .400000006, y: .400000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
