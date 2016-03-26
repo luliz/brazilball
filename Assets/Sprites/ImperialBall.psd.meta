@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: b7ec3efed1222394483fa5f58f1d35c2
-timeCreated: 1457734361
+timeCreated: 1459009854
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ImperialBall_0
+    21300002: ImperialBall_1
+    21300004: ImperialBall_2
+    21300006: ImperialBall_3
+    21300008: ImperialBall_4
+    21300010: ImperialBall_5
+    21300012: ImperialBall_6
+    21300014: ImperialBall_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +46,98 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: ImperialBall_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 29
+        width: 67
+        height: 102
+      alignment: 9
+      pivot: {x: .514179528, y: .33234784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImperialBall_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 29
+        width: 67
+        height: 102
+      alignment: 9
+      pivot: {x: .492910117, y: .33700487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImperialBall_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 29
+        width: 67
+        height: 102
+      alignment: 9
+      pivot: {x: .485820264, y: .346318871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImperialBall_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 29
+        width: 67
+        height: 102
+      alignment: 9
+      pivot: {x: .485820264, y: .346318871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImperialBall_4
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 29
+        width: 67
+        height: 102
+      alignment: 9
+      pivot: {x: .514179289, y: .346318871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImperialBall_5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 29
+        width: 67
+        height: 102
+      alignment: 9
+      pivot: {x: .492908984, y: .355632871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImperialBall_6
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 29
+        width: 67
+        height: 102
+      alignment: 9
+      pivot: {x: .485820711, y: .355632871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImperialBall_7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 29
+        width: 67
+        height: 102
+      alignment: 9
+      pivot: {x: .492910802, y: .350975871}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

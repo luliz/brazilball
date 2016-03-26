@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bcd02dcf09f20c648ada74bb51fb444e
-timeCreated: 1446291233
+timeCreated: 1459011327
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -36,6 +36,7 @@ TextureImporter:
     21300058: Armas_41
     21300060: Armas_43
     21300062: Armas_48
+    21300064: Armas_26
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -399,6 +400,16 @@ TextureImporter:
         y: 31
         width: 93
         height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Armas_26
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 132
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
