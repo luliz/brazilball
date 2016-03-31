@@ -96,7 +96,6 @@ public class PlayerController : MonoBehaviour{
 		
 		
 		if (Input.GetKey (Controls.climbLadderUp) && touchingLadder && !onLadder) {
-			print ("you da boss");
 			onLadder = true;
 			transform.position = new Vector2 (lockedXPosition, transform.position.y);
 			myRigidBody2D.velocity = new Vector2 (0, 0);

@@ -6,7 +6,7 @@ public abstract class BasicAI : MonoBehaviour {
 	public bool attacking = false;
 	//PRIVATE VARIABLES
 
-	private PlayerStatus status;
+	protected PlayerStatus status;
 	static public int health ;
 	protected float memory;
 	public int estado = 0;
@@ -19,6 +19,7 @@ public abstract class BasicAI : MonoBehaviour {
 	private float decisionCounter;
 	protected bool canFlip = true;
 	protected float raycastOffset;
+	protected GameManager gameManager;
 
     protected float minDistanceToAttack;
     protected float maxDistanceToAttack;
@@ -48,6 +49,7 @@ public abstract class BasicAI : MonoBehaviour {
 		target = GameObject.Find ("Player").transform;
 		thisCollider = GetComponentInChildren<Collider2D>();
 		status = GameObject.Find ("Player").GetComponent<PlayerStatus> ();
+		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
 	}
 	void Update() {
 
@@ -81,6 +83,8 @@ public abstract class BasicAI : MonoBehaviour {
 			}
 		}
 
+		if (status.invisible && !saw)
+			estado = 0;
 		DoExtraStuff ();
 		if (canFlip) {
 			Flip ();
@@ -134,7 +138,9 @@ public abstract class BasicAI : MonoBehaviour {
 
 	protected bool Found()
 	{
-		saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - raycastOffset), Vector2.right * facingDirection, 10f, visao);
+		saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - raycastOffset), Vector2.right * facingDirection, 4f, visao);
+		if (saw.transform)
+			print (saw.transform.name);
 		if (saw.transform == target  && !status.invisible)
 		{
 			

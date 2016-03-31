@@ -1,13 +1,21 @@
 fileFormatVersion: 2
 guid: 6b256e04d42510c47b2f40fb98a92d9d
-timeCreated: 1457734359
+timeCreated: 1459456268
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Paraball_0
+    21300002: Paraball_1
+    21300004: Paraball_2
+    21300006: Paraball_3
+    21300008: Paraball_4
+    21300010: Paraball_5
+    21300012: Paraball_6
+    21300014: Paraball_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -17,7 +25,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -26,11 +34,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -2
+  maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +46,177 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 160
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Paraball_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 46
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: 46}
+        - {x: -33, y: 46}
+        - {x: -46, y: 22}
+        - {x: -46, y: -1}
+        - {x: -29, y: -45}
+        - {x: -25, y: -46}
+        - {x: 22, y: -46}
+        - {x: 46, y: -16}
+        - {x: 46, y: 41}
+    - name: Paraball_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 46
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 46}
+        - {x: -46, y: 20}
+        - {x: -46, y: -5}
+        - {x: -36, y: -34}
+        - {x: -19, y: -46}
+        - {x: 36, y: -46}
+        - {x: 46, y: -20}
+        - {x: 46, y: 11}
+        - {x: 23, y: 46}
+    - name: Paraball_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 46
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 46}
+        - {x: -46, y: 20}
+        - {x: -46, y: -5}
+        - {x: -36, y: -34}
+        - {x: -27, y: -46}
+        - {x: 38, y: -46}
+        - {x: 46, y: -44}
+        - {x: 46, y: 15}
+        - {x: 23, y: 46}
+    - name: Paraball_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 46
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 46}
+        - {x: -46, y: 20}
+        - {x: -46, y: -5}
+        - {x: -36, y: -34}
+        - {x: -19, y: -46}
+        - {x: 36, y: -46}
+        - {x: 46, y: -20}
+        - {x: 46, y: 11}
+        - {x: 23, y: 46}
+    - name: Paraball_4
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 46
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 46}
+        - {x: -46, y: 20}
+        - {x: -46, y: -5}
+        - {x: -35, y: -34}
+        - {x: -20, y: -46}
+        - {x: 21, y: -46}
+        - {x: 41, y: -42}
+        - {x: 46, y: -27}
+        - {x: 46, y: 12}
+        - {x: 21, y: 46}
+    - name: Paraball_5
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 44
+        width: 92
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 47}
+        - {x: -46, y: 20}
+        - {x: -46, y: -9}
+        - {x: -35, y: -47}
+        - {x: 40, y: -47}
+        - {x: 46, y: -26}
+        - {x: 46, y: 12}
+        - {x: 19, y: 47}
+    - name: Paraball_6
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 44
+        width: 92
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 29}
+        - {x: 22, y: 47}
+        - {x: -21, y: 47}
+        - {x: -46, y: 19}
+        - {x: -46, y: -40}
+        - {x: -30, y: -47}
+        - {x: 46, y: -47}
+    - name: Paraball_7
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 44
+        width: 92
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 47}
+        - {x: -46, y: 21}
+        - {x: -46, y: -18}
+        - {x: -41, y: -44}
+        - {x: -28, y: -47}
+        - {x: 34, y: -47}
+        - {x: 46, y: -17}
+        - {x: 46, y: 12}
+        - {x: 23, y: 47}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
