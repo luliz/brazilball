@@ -1281,6 +1281,14 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 452816, guid: 4758ec20821420d4dac8fe379e203b5e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 452816, guid: 4758ec20821420d4dac8fe379e203b5e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4758ec20821420d4dac8fe379e203b5e, type: 2}
   m_IsPrefabParent: 0
@@ -3287,7 +3295,7 @@ GameObject:
   - 58: {fileID: 1202755098}
   m_Layer: 2
   m_Name: Nordesteball_8
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
