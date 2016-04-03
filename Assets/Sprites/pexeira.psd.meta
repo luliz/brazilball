@@ -1,13 +1,19 @@
 fileFormatVersion: 2
 guid: ba96a8b5c5cb58f42ae0497e47a4a060
-timeCreated: 1459453448
+timeCreated: 1459707728
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: pexeira_0
+    21300002: pexeira_1
+    21300004: pexeira_4
+    21300006: pexeira_6
+    21300008: pexeira_7
+    21300010: pexeira_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,11 +32,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 512
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +44,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +55,142 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: pexeira_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 27
+        width: 56
+        height: 61
+      alignment: 9
+      pivot: {x: 0.17160122, y: 0.17532818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.516163, y: 51.450394}
+        - {x: -9.483837, y: -1.5496044}
+        - {x: -9.483837, y: -8.549604}
+        - {x: -7.483837, y: -10.549604}
+        - {x: 4.516163, y: -10.549604}
+        - {x: 47.516163, y: 36.450394}
+        - {x: 47.516163, y: 51.450394}
+    - name: pexeira_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 28
+        width: 58
+        height: 70
+      alignment: 9
+      pivot: {x: 0.18946913, y: 0.14633991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.08647, y: 56.856537}
+        - {x: 38.08647, y: 60.856537}
+        - {x: 20.086472, y: 60.856537}
+        - {x: 15.086472, y: 57.856537}
+        - {x: -10.913528, y: 5.856537}
+        - {x: -10.913528, y: -10.143463}
+        - {x: 3.0864716, y: -10.143463}
+        - {x: 38.08647, y: 10.856537}
+        - {x: 33.08647, y: 21.856537}
+        - {x: 29.086472, y: 25.856537}
+        - {x: 47.08647, y: 36.856537}
+    - name: pexeira_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 23
+        width: 51
+        height: 76
+      alignment: 9
+      pivot: {x: 0.15355729, y: 0.14633986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.178665, y: 66.000305}
+        - {x: -7.821335, y: 55.000305}
+        - {x: -7.821335, y: -10.999693}
+        - {x: 7.178665, y: -10.999693}
+        - {x: 36.178665, y: 6.000307}
+        - {x: 44.178665, y: 37.000305}
+        - {x: 44.178665, y: 60.000305}
+        - {x: 30.178665, y: 66.000305}
+    - name: pexeira_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 23
+        width: 59
+        height: 74
+      alignment: 9
+      pivot: {x: 0.15233366, y: 0.13678148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.9536896, y: 65.000305}
+        - {x: -8.95369, y: 25.000307}
+        - {x: -8.95369, y: -8.999693}
+        - {x: -7.9536896, y: -9.999693}
+        - {x: 15.04631, y: -9.999693}
+        - {x: 50.04631, y: 11.000307}
+        - {x: 50.04631, y: 53.000305}
+        - {x: 41.04631, y: 65.000305}
+    - name: pexeira_7
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 22
+        width: 77
+        height: 62
+      alignment: 9
+      pivot: {x: 0.15763003, y: 0.29234332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.8143, y: 25.110514}
+        - {x: 52.8143, y: 21.110514}
+        - {x: 54.8143, y: 19.110514}
+        - {x: 57.8143, y: 19.110514}
+        - {x: 58.8143, y: 13.110514}
+        - {x: 54.8143, y: 19.110514}
+        - {x: 51.8143, y: 19.110514}
+        - {x: 49.8143, y: 17.110514}
+        - {x: 49.8143, y: 10.110514}
+        - {x: 49.8143, y: 18.110514}
+        - {x: 50.8143, y: 19.110514}
+        - {x: 50.8143, y: 42.11051}
+        - {x: 21.8143, y: 42.11051}
+        - {x: -12.185699, y: 22.110514}
+        - {x: -12.185699, y: -11.889486}
+        - {x: -0.18569946, y: -17.889486}
+        - {x: 65.8143, y: -17.889486}
+        - {x: 65.8143, y: 28.110514}
+        - {x: 50.8143, y: 35.11051}
+      - - {x: 26.8143, y: 45.11051}
+        - {x: 26.8143, y: 34.11051}
+        - {x: 29.8143, y: 30.110514}
+        - {x: 34.8143, y: 30.110514}
+        - {x: 36.8143, y: 31.110514}
+        - {x: 36.8143, y: 39.11051}
+        - {x: 32.8143, y: 45.11051}
+    - name: pexeira_9
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 26
+        width: 69
+        height: 49
+      alignment: 9
+      pivot: {x: 0.16236147, y: 0.19971512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.029663, y: 40.405518}
+        - {x: -8.970337, y: 3.4055195}
+        - {x: -10.970337, y: -0.5944805}
+        - {x: -10.970337, y: -7.5944805}
+        - {x: -8.970337, y: -9.5944805}
+        - {x: 8.029663, y: -9.5944805}
+        - {x: 48.029663, y: -0.5944805}
+        - {x: 59.029663, y: 10.4055195}
+        - {x: 59.029663, y: 40.405518}
     outline: []
   spritePackingTag: 
   userData: 
