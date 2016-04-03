@@ -8,25 +8,25 @@ SceneSettings:
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
     smallestOccluder: 5
-    smallestHole: .25
+    smallestHole: 0.25
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
   m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: .211999997, g: .226999998, b: .259000003, a: 1}
-  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
-  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SkyboxMaterial: {fileID: 0}
-  m_HaloStrength: .5
+  m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -40,7 +40,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 5
+  serializedVersion: 6
   m_GIWorkflowMode: 1
   m_LightmapsMode: 1
   m_GISettings:
@@ -66,7 +66,7 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightmapSnapshot: {fileID: 0}
+  m_LightingDataAsset: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -74,15 +74,15 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: .5
+    agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: .400000006
+    agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
-    cellSize: .166666672
+    cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &479157574
@@ -93,7 +93,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 479157576}
-  - 114: {fileID: 479157575}
   - 114: {fileID: 479157577}
   m_Layer: 5
   m_Name: EventSystem
@@ -102,17 +101,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &479157575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 479157574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df291560c698f994ab765095a0aeb75a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &479157576
 Transform:
   m_ObjectHideFlags: 0
@@ -120,8 +108,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479157574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.242424011, z: 90}
-  m_LocalScale: {x: .0303030312, y: .0303030312, z: .0303030312}
+  m_LocalPosition: {x: 0, y: -0.24242401, z: 90}
+  m_LocalScale: {x: 0.030303031, y: 0.030303031, z: 0.030303031}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -137,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutTexture: {fileID: 2800000, guid: 581293491fdc72149b26c203b990111e, type: 3}
-  fadeSpeed: .800000012
+  fadeSpeed: 0.8
 --- !u!1 &751917429
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,14 +175,14 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  near clip plane: .300000012
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -210,7 +198,7 @@ Camera:
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
-  m_StereoSeparation: .0219999999
+  m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
 --- !u!4 &751917434
 Transform:
@@ -224,49 +212,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!1 &1176738289
+--- !u!1 &873921606
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 224: {fileID: 1176738290}
-  - 222: {fileID: 1176738292}
-  - 114: {fileID: 1176738291}
+  - 224: {fileID: 873921607}
+  - 222: {fileID: 873921610}
+  - 114: {fileID: 873921609}
+  - 114: {fileID: 873921608}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1176738290
+--- !u!224 &873921607
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1176738289}
+  m_GameObject: {fileID: 873921606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1247638541}
   m_RootOrder: 0
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -7.62939453e-06, y: 5.45696821e-12}
-  m_SizeDelta: {x: 550, y: 460}
-  m_Pivot: {x: .5, y: .5}
---- !u!114 &1176738291
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1024, y: 768}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &873921608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1176738289}
+  m_GameObject: {fileID: 873921606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d5bc741aa2870449bc412433d7dc2a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 20533a77d2f66a1419dbef28e3f2b1c7, type: 3}
+  - {fileID: 21300000, guid: 03f9b51e766195e419f8bf9b2b4d72e7, type: 3}
+  - {fileID: 21300000, guid: 87eec7e6c4cdf1e4793f39cdd3e4b9ad, type: 3}
+  - {fileID: 21300000, guid: e3001d179dc49b242b30e1fb447039d3, type: 3}
+  - {fileID: 21300000, guid: b8eb5a91c26e57c4ea8f2a578633e7a4, type: 3}
+  - {fileID: 21300000, guid: d785d668b54a1de428e57460024f8f3a, type: 3}
+  - {fileID: 21300000, guid: fe9903e6d7b935e419c16363b6a957d6, type: 3}
+  - {fileID: 21300000, guid: 7c95d9eadb2195243b6fa2dec82dd44c, type: 3}
+  proximaFase: 5
+  image: {fileID: 873921609}
+--- !u!114 &873921609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 873921606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -277,37 +288,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Nos encontramos no come\xE7o do s\xE9culo 15 em Portugal. O rei Dom Jo\xE3o
-    1 tem o desejo de armar seus dois filhos cavaleiros, o clero deseja expandir a
-    f\xE9 crist\xE3 a outros lugares, a nascente burguesia Portuguesa cobi\xE7a os
-    produtos vindos do rico oriente, No ano de 1415 todos esses interesses convergiam
-    em um \xFAnico objetivo, conquistar a cidade de Ceuta, cidade no norte da \xC1frica
-    e banhada pelo Mediterr\xE2neo. Caso a vit\xF3ria fosse alcan\xE7ada o rei teria
-    motivo para dar o t\xEDtulo de cavaleiro a seus filhos, o clero ganharia uma base
-    de evangeliza\xE7\xE3o no oriente e a burguesia passaria a ter acesso as rotas
-    de caravaneiras orientais. A expedi\xE7\xE3o em dire\xE7\xE3o a cidade zarpou
-    no dia 25 de Julho de 1415, 20.000 cavaleiros e soldados portugueses, ingleses,
-    galegos e biscainhos partiram para a guerra. \nNo dia 22 de Agosto de 1415 esses
-    homens invadiram a cidade, a guarni\xE7\xE3o tentou fechar os port\xF5es a tempo
-    embora sem exito. \n\n(Enter para continuar)"
---- !u!222 &1176738292
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &873921610
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1176738289}
+  m_GameObject: {fileID: 873921606}
 --- !u!1 &1247638537
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +374,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!224 &1247638541
 RectTransform:
   m_ObjectHideFlags: 0
@@ -390,7 +385,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1176738290}
+  - {fileID: 873921607}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
