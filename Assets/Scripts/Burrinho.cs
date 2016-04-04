@@ -19,7 +19,7 @@ public class Burrinho : MonoBehaviour {
 
 		if (finalCounter >= 3f) {
 
-			Application.LoadLevel(0);
+			Application.LoadLevel(9);
 		}
 		if (!arrived)
 			transform.Translate (Vector3.right * speed * Time.deltaTime);
@@ -32,7 +32,7 @@ public class Burrinho : MonoBehaviour {
 			Destroy (gameObject);
 			gameManager.GameOver ();
 		}
-		if (transform.position.x >= 313f) {
+		if (transform.position.x >= 280f) {
 			Destroy (GameObject.Find("MasterRespawn"));
 			if (transform.position.x >= 92f) {
 

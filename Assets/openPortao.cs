@@ -17,6 +17,8 @@ public class openPortao : MonoBehaviour {
 
         if (prosseguir >= 13)
         {
+			print ("ready?");
+			GameObject.Find ("Boss").SetActive (true);
             if(GameObject.Find("Player").transform.position.x <= 212.4 && transform.position.y < -3.15)
             {
                 transform.Translate(new Vector3(0, 0.5f * Time.deltaTime, 0));

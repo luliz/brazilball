@@ -27,6 +27,12 @@ public class enemyOnHorseAI : MonoBehaviour {
 	private float velocidade;
 
 	// Use this for initialization
+	public void Die() {
+
+		MasterRespawnFase5.enemiesKilled++;
+		Destroy (gameObject);
+	}
+
 	void Start () {
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
 

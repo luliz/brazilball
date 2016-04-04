@@ -112,7 +112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54be62a9a9548e543a716df57a551b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 15
   tempoEntreRespawns: 5
+  maxEnemies: 20
   enemyOnHorse: {fileID: 162570, guid: 1ffc0f2f450883d4eb8a0155347fc19f, type: 2}
 --- !u!4 &47477915
 Transform:

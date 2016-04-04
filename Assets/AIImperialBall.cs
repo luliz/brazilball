@@ -3,17 +3,28 @@ using System.Collections;
 
 public class AIImperialBall : BasicAI {
 
-	public float[] xPositions;
-	public float[] timeToWait;
+	private float[] xPositions;
+	private float[] timeToWait;
+
+	private float timeToAwake;
 
 	private int currentTargetPosition = 0;
 	private float waitTime = 0;
 	private float freezeTimer=0.5f;
 
 	void Start () {
+		Physics2D.IgnoreLayerCollision (2, 2);
 		target = GameObject.Find ("Player").transform;
 		speed = 1f;
 		raycastOffset = 0f;
+		xPositions = new float[2];
+		xPositions [0] = transform.position.x - 5f;
+		xPositions [1] = transform.position.x + 5f;
+
+		timeToWait = new float[2];
+		timeToWait [0] = 1.5f;
+		timeToWait [1] = 1.5f;
+		timeToAwake = Random.value*2;
 	}
 	protected override void Search () {
 		if (Found ()) {
@@ -60,6 +71,13 @@ public class AIImperialBall : BasicAI {
 	}
 
 	public override void DoExtraStuff () {
+
+		timeToAwake -= Time.deltaTime;
+		if (timeToAwake > 0) {
+
+			estado = 2;
+		} else
+			estado = 0;
 		if (status.invisible)
 			Physics2D.IgnoreCollision (GetComponent<CircleCollider2D> (), target.GetComponent<CircleCollider2D> ());
 		else

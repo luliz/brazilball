@@ -18,7 +18,7 @@ public class bullet : MonoBehaviour
 			if (other.gameObject.GetComponent<BasicAI> ())
 				other.gameObject.GetComponent<BasicAI> ().TakeDamage ();
 			if (other.gameObject.GetComponent<enemyOnHorseAI> ())
-				Destroy (other.gameObject);
+				other.gameObject.GetComponent<enemyOnHorseAI> ().Die ();
 			if (other.gameObject.GetComponent<AINordestinoRifle> ())
 				other.gameObject.GetComponent<AINordestinoRifle> ().Take ();
 			Destroy (gameObject);
