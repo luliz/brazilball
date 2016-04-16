@@ -80,6 +80,7 @@ public class MaceAI : BasicAI {
 			pontuacao.pontos += 50;
             Objetivo.inimigos++; 
 			GameManager.enemiesKilled.Add(this.enemyID);
+			ParticleDeath.Die (transform, particles);
 			Destroy(this.gameObject);
 		}
 	}

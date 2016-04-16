@@ -6,6 +6,8 @@ public abstract class BasicAI : MonoBehaviour {
 	public bool attacking = false;
 	//PRIVATE VARIABLES
 
+	public GameObject particles;
+
 	protected PlayerStatus status;
 	static public int health ;
 	protected float memory;
@@ -56,11 +58,9 @@ public abstract class BasicAI : MonoBehaviour {
 		Found ();
 
 		if (estado == 0) {
-
 			Search ();
 
 		} else if (estado == 1) {
-
 			Follow ();
 
 		} else if (estado == 2){
@@ -82,7 +82,6 @@ public abstract class BasicAI : MonoBehaviour {
 				}
 			}
 		}
-
 		if (status.invisible && !saw)
 			estado = 0;
 		DoExtraStuff ();
@@ -139,8 +138,9 @@ public abstract class BasicAI : MonoBehaviour {
 	protected bool Found()
 	{
 		saw = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - raycastOffset), Vector2.right * facingDirection, 4f, visao);
-		if (saw.transform)
-			print (saw.transform.name);
+	
+		//if (saw.transform)
+		//	print (saw.transform);
 		if (saw.transform == target  && !status.invisible)
 		{
 			

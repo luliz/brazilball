@@ -5,7 +5,7 @@ using System.Collections;
 public class AINordestinoRifle : MonoBehaviour
 {
 
-	private float contador;
+	private float contador = 1;
 	public int health = 0;
 	public GameObject arrow;
 	public Transform Ponta;
@@ -26,26 +26,29 @@ public class AINordestinoRifle : MonoBehaviour
 	}
 	void Update()
 	{
-		contador += Time.deltaTime;
 
 		if (transform.position.x > target.position.x)
 		{
 			facingDirection = -1;
 			Flip() ;
 
-			if (Mathf.Abs(target.position.x - transform.position.x) > 10 || Mathf.Abs(target.position.x - transform.position.x) > 12)
+			if (Mathf.Abs(target.position.x - transform.position.x) > 5)
 			{
-				facingDirection = -1;
-				Walk();
+				if (Mathf.Abs (target.position.x - transform.position.x) < 10) {
+					facingDirection = -1;
+					Walk ();
+				}
 			}
 
 			else
 			{
-				if (contador >= 5)
+				contador += Time.deltaTime;
+				if (contador >= 2)
 				{
 					GameObject currentBullet = (GameObject) Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
 					
 					currentBullet.GetComponent<bullet> ().moveSpeed *= facingDirection;
+					currentBullet.GetComponent<bullet> ().canKillEnemy = false;
 					AudioSource.PlayClipAtPoint(soundshoot, transform.position);
 					contador = 0;
 				}
@@ -64,17 +67,23 @@ public class AINordestinoRifle : MonoBehaviour
 		{
 			facingDirection = 1;
 			Flip();
-			if (Mathf.Abs(target.position.x - transform.position.x) > 10 || Mathf.Abs(target.position.x - transform.position.x) > 12)
+			if (Mathf.Abs(target.position.x - transform.position.x) > 5)
 			{
-				facingDirection = 1;
-				Walk();
+				if (Mathf.Abs (target.position.x - transform.position.x) < 10) {
+					facingDirection = 1;
+					Walk ();
+				}
 			}
 
 			else
 			{
+				contador += Time.deltaTime;
 				if (contador >= 2)
 				{
-					Instantiate(arrow, Ponta.transform.position, Ponta.rotation);
+					GameObject currentBullet = (GameObject) Instantiate(arrow, Ponta.transform.position, Quaternion.identity);
+
+					currentBullet.GetComponent<bullet> ().moveSpeed *= facingDirection;
+					currentBullet.GetComponent<bullet> ().canKillEnemy = false;
 					AudioSource.PlayClipAtPoint(soundshoot, transform.position);
 					contador = 0;
 				}

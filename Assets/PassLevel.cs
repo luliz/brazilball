@@ -9,7 +9,8 @@ public class PassLevel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.anyKeyDown) {
+		
+		if (Input.GetKeyDown (KeyCode.Return)) {
 
 			SceneManager.LoadScene (nextLevel);
 		}

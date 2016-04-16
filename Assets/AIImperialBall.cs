@@ -11,6 +11,7 @@ public class AIImperialBall : BasicAI {
 	private int currentTargetPosition = 0;
 	private float waitTime = 0;
 	private float freezeTimer=0.5f;
+	private bool once = false;
 
 	void Start () {
 		Physics2D.IgnoreLayerCollision (2, 2);
@@ -30,6 +31,7 @@ public class AIImperialBall : BasicAI {
 		if (Found ()) {
 
 			estado = 1;
+			return;
 		}
 		if (Mathf.Abs(transform.position.x - xPositions [currentTargetPosition]) < 0.5f) {
 
@@ -59,6 +61,7 @@ public class AIImperialBall : BasicAI {
 	}
 
 	public override void Follow () {
+		print ("ue");
 		target.GetComponent<PlayerController> ().enabled = false;
 		freezeTimer -= Time.deltaTime;
 		if (freezeTimer <= 0) {
@@ -72,12 +75,15 @@ public class AIImperialBall : BasicAI {
 
 	public override void DoExtraStuff () {
 
+		print (estado);
 		timeToAwake -= Time.deltaTime;
 		if (timeToAwake > 0) {
 
 			estado = 2;
-		} else
+		} else if (!once) {
 			estado = 0;
+			once = true;
+		}
 		if (status.invisible)
 			Physics2D.IgnoreCollision (GetComponent<CircleCollider2D> (), target.GetComponent<CircleCollider2D> ());
 		else
