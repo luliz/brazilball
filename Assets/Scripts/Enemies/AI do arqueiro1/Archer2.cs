@@ -3,9 +3,9 @@ using System.Collections;
 
 public class Archer2 : MonoBehaviour {
 
-    private int estado = 0;    
-   
-	public int enemyID;
+    private int estado = 0;
+    public GameObject particles;
+    public int enemyID;
     private SpriteRenderer expression;
     public Sprite exclamation;
     public Sprite interrogation;
@@ -122,7 +122,8 @@ public class Archer2 : MonoBehaviour {
 
 		GameManager.enemiesKilled.Add (this.enemyID);
         pontuacao.pontos += 30;
-        Objetivo.inimigos++; 
-		Destroy (this.gameObject);
+        Objetivo.inimigos++;
+        ParticleDeath.Die(transform, particles);
+        Destroy (this.gameObject);
 	}
 }

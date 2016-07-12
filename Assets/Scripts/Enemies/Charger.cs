@@ -115,7 +115,8 @@ public class Charger : BasicAI {
 			pontuacao.pontos += 30;
             Objetivo.inimigos++; 
 			GameManager.enemiesKilled.Add(this.enemyID);
-			Destroy(this.gameObject);
+            ParticleDeath.Die(transform, particles);
+            Destroy(this.gameObject);
 		}
 	}
 }
