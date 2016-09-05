@@ -9,7 +9,7 @@ public class CloudMaker : MonoBehaviour {
 
 	void Awake () {
 
-		player = GameObject.Find ("Player").transform;
+		player = GameObject.FindGameObjectWithTag ("Player").transform;
 	}
 
 	// Update is called once per frame

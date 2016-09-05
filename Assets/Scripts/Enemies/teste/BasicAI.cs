@@ -48,9 +48,9 @@ public abstract class BasicAI : MonoBehaviour {
 
 	public int enemyID;
 	void Awake() {
-		target = GameObject.Find ("Player").transform;
+		target = GameObject.FindGameObjectWithTag ("Player").transform;
 		thisCollider = GetComponentInChildren<Collider2D>();
-		status = GameObject.Find ("Player").GetComponent<PlayerStatus> ();
+		status = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerStatus> ();
 		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager> ();
 	}
 	void Update() {

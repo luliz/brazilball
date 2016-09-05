@@ -138,16 +138,16 @@ public class GameManager : MonoBehaviour {
     }
 	public void Pause () {
 		if (Time.timeScale == 1) {
-			if (GameObject.Find ("Player").GetComponent<PlayerController> ())
-				GameObject.Find ("Player").GetComponent<PlayerController> ().enabled = false;
-			else if (GameObject.Find ("Player").GetComponent<PlayerFase5> ())
-				GameObject.Find ("Player").GetComponent<PlayerFase5> ().enabled = false;
+			if (GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ())
+				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().enabled = false;
+			else if (GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerFase5> ())
+				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerFase5> ().enabled = false;
 			Time.timeScale = 0.0000001f;
 		} else {
-			if (GameObject.Find ("Player").GetComponent<PlayerController> ())
-				GameObject.Find ("Player").GetComponent<PlayerController> ().enabled = true;
-			else if (GameObject.Find ("Player").GetComponent<PlayerFase5> ())
-				GameObject.Find ("Player").GetComponent<PlayerFase5> ().enabled = true;
+			if (GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ())
+				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().enabled = true;
+			else if (GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerFase5> ())
+				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerFase5> ().enabled = true;
 			Time.timeScale = 1;
 		}
 	}

@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: 60e024be9c33a0e4eaa09cea1b4b0075
-timeCreated: 1464732889
+timeCreated: 1473040982
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: DitaduraBall_0
+    21300002: DitaduraBall_1
+    21300004: DitaduraBall_2
+    21300006: DitaduraBall_3
+    21300008: DitaduraBall_4
+    21300010: DitaduraBall_5
+    21300012: DitaduraBall_6
+    21300014: DitaduraBall_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,10 +35,10 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +46,159 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: DitaduraBall_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 29
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 38}
+        - {x: -35, y: 28}
+        - {x: -35, y: -38}
+        - {x: 35, y: -38}
+        - {x: 35, y: 38}
+    - name: DitaduraBall_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 29
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 38}
+        - {x: -35, y: 37}
+        - {x: -35, y: -21}
+        - {x: -25, y: -37}
+        - {x: -21, y: -38}
+        - {x: 27, y: -38}
+        - {x: 35, y: -32}
+        - {x: 35, y: 34}
+        - {x: 28, y: 38}
+    - name: DitaduraBall_2
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 29
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 38}
+        - {x: -35, y: -36}
+        - {x: -26, y: -38}
+        - {x: 28, y: -38}
+        - {x: 35, y: -25}
+        - {x: 35, y: 35}
+        - {x: 25, y: 38}
+    - name: DitaduraBall_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 29
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 38}
+        - {x: -35, y: 36}
+        - {x: -35, y: -33}
+        - {x: -21, y: -38}
+        - {x: 31, y: -38}
+        - {x: 35, y: -34}
+        - {x: 35, y: 34}
+        - {x: 29, y: 38}
+    - name: DitaduraBall_4
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 29
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 38}
+        - {x: -35, y: -38}
+        - {x: 22, y: -38}
+        - {x: 35, y: -33}
+        - {x: 35, y: 25}
+        - {x: 25, y: 38}
+    - name: DitaduraBall_5
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 29
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 38}
+        - {x: -35, y: 31}
+        - {x: -35, y: -34}
+        - {x: -25, y: -38}
+        - {x: 35, y: -38}
+        - {x: 35, y: 38}
+    - name: DitaduraBall_6
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 29
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 38}
+        - {x: -35, y: -27}
+        - {x: -27, y: -38}
+        - {x: 26, y: -38}
+        - {x: 35, y: -21}
+        - {x: 35, y: 38}
+    - name: DitaduraBall_7
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 29
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 38}
+        - {x: -35, y: -38}
+        - {x: 22, y: -38}
+        - {x: 35, y: -33}
+        - {x: 35, y: 25}
+        - {x: 25, y: 38}
     outline: []
   spritePackingTag: 
   userData: 

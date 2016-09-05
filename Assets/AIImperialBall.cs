@@ -15,7 +15,7 @@ public class AIImperialBall : BasicAI {
 
 	void Start () {
 		Physics2D.IgnoreLayerCollision (2, 2);
-		target = GameObject.Find ("Player").transform;
+		target = GameObject.FindGameObjectWithTag ("Player").transform;
 		speed = 1f;
 		raycastOffset = 0f;
 		xPositions = new float[2];

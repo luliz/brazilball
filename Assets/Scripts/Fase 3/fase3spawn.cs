@@ -73,7 +73,9 @@ public class fase3spawn : MonoBehaviour {
 					
 						gateToRespawn = Random.Range (0, respawnPoints.Length);
 					
-						instantiated = (GameObject) Instantiate (enemyToSpawn, respawnPoints [(int)gateToRespawn].position, Quaternion.identity);
+						//new Vector3(respawnPoints [(int)gateToRespawn].position.x + Random.Range(1, 2), respawnPoints [(int)gateToRespawn].position.y, respawnPoints [(int)gateToRespawn].position.z);
+					
+						instantiated = (GameObject) Instantiate (enemyToSpawn, new Vector3(respawnPoints [(int)gateToRespawn].position.x + Random.Range(-1f, 1f), respawnPoints [(int)gateToRespawn].position.y, respawnPoints [(int)gateToRespawn].position.z), Quaternion.identity);
 						instantiated.transform.SetParent (parentInimigos);
 					}
 					timeLeftToRespawn = timeToRespawn;
