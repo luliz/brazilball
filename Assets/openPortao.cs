@@ -14,7 +14,6 @@ public class openPortao : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         prosseguir = GameObject.Find("GameManager").GetComponent<GameManager>().index;
-		print (prosseguir);
         if (prosseguir >= 13)
         {
 			boss.SetActive (true);

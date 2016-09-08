@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour{
 
@@ -33,6 +34,10 @@ public class PlayerController : MonoBehaviour{
     }
 
 	void Start() {
+		
+		if (SceneManager.GetActiveScene ().name == "Fase 2") {
+			playerSpawnPosition = new Vector3 (-34f, -4f);
+		}
 		if (playerSpawnPosition != new Vector3 (-34f, -4f)) {
 			print("damn");
 			transform.position = playerSpawnPosition;
